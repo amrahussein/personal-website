@@ -2,11 +2,13 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amromoorie.github.io/personal-website/",
+  "homepage": "https://amromoorie.github.io/personal-website",
   "scripts": {
+    "replaceFilePaths": "node replacer.js",
     "dev": "next dev -p 3001",
-    "build": "next build",
+    "build": "next build && next export -o build && npm run replaceFilePaths",
     "start": "next start",
+    "export": "next export -o build && npm run replaceFilePaths",
     "lint": "next lint",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
