@@ -20,8 +20,13 @@
     "replace-in-file": "^6.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.2",
     "eslint": "^8.0.1",
     "eslint-config-next": "11.1.2",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.16"
   }
 }

@@ -1,16 +1,15 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Hero from './Hero';
 // import Image from 'next/image'
-
 
 export default function Home() {
   return (
     <div>
-       <Head>
+      
 
-        </Head>
-
-        <main></main>
-       
+      <main>
+        <Hero />
+      </main>
     </div>
-  )
+  );
 }
