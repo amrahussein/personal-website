@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -14,7 +16,7 @@ module.exports = {
         serious: '#403A03',
       },
       fontFamily: {
-        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif'],
+        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },

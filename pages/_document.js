@@ -4,9 +4,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-        <meta name="description" content="personal webpage" />
+        
           {/* Global Site Tag (gtag.js) - Google Analytics */}
+        {/* <Head>
+        <meta name="description" content="personal webpage" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
@@ -23,7 +24,8 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-        </Head>
+        </Head> */}
+        
         <body>
           <Main />
           <NextScript />

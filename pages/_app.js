@@ -7,9 +7,11 @@ config.autoAddCss = false
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Layout> */}
-
+      
       <Head>
+          {/* <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com/; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline';" /> */}
+        </Head>
+      {/* <Head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -31,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-      </Head>
+      </Head> */}
       <Head>
         <title>amromoorie| Welcome to my page!</title>
         <meta
@@ -41,7 +43,6 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-      {/* </Layout> */}
     </>
   );
 }

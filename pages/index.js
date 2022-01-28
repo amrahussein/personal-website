@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Socials from '../components/micros/Socials';
+// import Socials from '../components/micros/Socials';
 import Hero from './Hero';
 // import Image from 'next/image'
 
