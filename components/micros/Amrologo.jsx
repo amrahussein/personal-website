@@ -1,10 +1,10 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Amrologo({ w = 200, h = 200, style }) {
   return (
     <figure className="">
       <div className="ml-4 bg-accent inline-block rounded-full  ring ring-primary">
-        <Image
+        <img
           className={style}
           src="/img/amrologo.jpg"
           alt="Picture of the author"
