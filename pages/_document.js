@@ -4,6 +4,8 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+                <Head />
+
         
           {/* Global Site Tag (gtag.js) - Google Analytics */}
         {/* <Head>
@@ -25,6 +27,8 @@ export default class MyDocument extends Document {
             }}
           />
         </Head> */}
+        {/* <meta httpEquiv="Content-Security-Policy" content="default-src 'self';font-src fonts.gstatic.com;style-src 'self' fonts.googleapis.com" /> */}
+     
         
         <body>
           <Main />

@@ -19,7 +19,6 @@
   .line:before {
     content: '';
     background-color: #00798F;
-    /* background-color: red; */
     display: block;
     margin-top: 5px;
     width: 25px;
@@ -49,7 +48,7 @@
 /*  */
 
 @layer base {
-  :root {
+  /* :root {
     --color-text-base: 255, 255, 255;
     --color-text-muted: 199, 210, 254;
     --color-text-inverted: 79, 70, 229;
@@ -75,11 +74,11 @@
     --color-button-accent: 36, 52, 3;
     --color-button-accent-hover: 55, 79, 5;
     --color-button-muted: 212, 255, 122;
-  }
+  } */
 }
 
-@layer components {
+/* @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
-}
+} */

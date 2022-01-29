@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -16,7 +16,7 @@ module.exports = {
         serious: '#403A03',
       },
       fontFamily: {
-        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
+        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif'],
       },
     },
   },
@@ -26,5 +26,3 @@ module.exports = {
     // require('tailwind-scrollbar')
   ],
 };
-
-
