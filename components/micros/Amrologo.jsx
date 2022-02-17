@@ -13,15 +13,15 @@ export default function Amrologo({ w = 200, h = 200, style }) {
         />
         <figcaption className=" hidden">amromoorie</figcaption>
         <div className="text-gray-500 flex flex-col justify-center items-center">
-          <h1>
+          <h1 className="mt-[0.2rem]">
             <span className="text-primary font-extrabold">@</span>{' '}
             <strong>amromoorie</strong>
           </h1>
           <br></br>
 
-          <p className="mt-[-1.5rem] mb-[1rem] text-sm">
+          <p className="mb-[1rem] text-sm">
             {/* <em>Let&apos;s do it!</em> */}
-            <em>Hello World!👋</em>
+            <em>Hello World! 👋</em>
           </p>
         </div>
       </div>
