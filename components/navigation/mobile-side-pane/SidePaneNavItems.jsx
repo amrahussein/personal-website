@@ -8,13 +8,11 @@ export default function SidePaneNavItems() {
  
         <ul className='space-y-14'>
           {links.map((item) => (
-            <>
               <li key={item.key} className='hover:underline hover:underline-offset-4'>
                 <Link href={item.link}>
                   <a>{item.name}</a>
                 </Link>
               </li>
-            </>
           ))}
         </ul>
       </nav>

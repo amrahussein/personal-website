@@ -1,16 +1,12 @@
-import Head from 'next/head';
-// import Socials from '../components/micros/Socials';
-import Hero from './Hero';
-// import Image from 'next/image'
+
+import MobileLandingViewHero from '../components/HeroLanding/MobileLandingViewHero'
+import Layout from '../components/layout/TheLayout'
+
 
 export default function Home() {
   return (
-    <div>
-      
-
-      <main>
-        <Hero />
-      </main>
-    </div>
-  );
+    <Layout>
+      <MobileLandingViewHero />
+    </Layout>
+  )
 }

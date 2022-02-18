@@ -1,6 +1,12 @@
+import Heading from "../micros/typography/Heading";
+import Link from "../micros/typography/Link";
+
 export default function Childhood() {
   return (
     <>
+    <Heading>
+    In my old days...
+    </Heading>
       <p>
         Looking back into my old days, I was curious about learning languages,
         knowing people online, playing games esp soccer games. I remember PES 6
@@ -9,8 +15,8 @@ export default function Childhood() {
       <p>
         Technology, for sure, has been a great part of my life since my
         childhood. <aside>I remember my first email was around 2007, and my first FB
-        was around 2009 fb.com/amr.tiger.96780 before my main one
-        fb.com/amromoorie/ and it&apos;s a great idea to get connected!</aside>
+        was around 2009 <Link href='https://fb.com/amr.tiger.96780'>fb.com/amr.tiger.96780</Link> before my main one 
+        <Link href='https://fb.com/amromoorie/' rel='facebook'> fb.com/amromoorie/</Link> and it&apos;s a great idea to get connected!</aside>
       </p>
       <p>
         One of the things about myself, that came obvious to me early on, was

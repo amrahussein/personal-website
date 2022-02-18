@@ -1,19 +1,12 @@
-import Link from 'next/link'
+import Heading from './typography/Heading'
+import Link from './typography/Link'
 
 export default function ContactMe() {
   return (
     <>
-      <article className='hover:underline'>
-        <Link href='mailto:amr.abdelkamel96@outlook.com'>
-          <a>amr.abdelkamel96@outlook.com</a>
-        </Link>
-      </article>
-
-      <article className='hover:underline'>
-        <Link href='https://telegram.me/amromoorie'>
-          <a>reach me on telegram</a>
-        </Link>
-      </article>
+      <span className='text-serious'>email: </span><Link href='mailto:amromoorie@gmail.com' rel='email'>amromoorie@gmail.com</Link>
+<br />
+      <span className='text-serious'>telegram: </span><Link href='https://telegram.me/amromoorie' rel='telegram'>reach me on telegram</Link>
     </>
   )
 }

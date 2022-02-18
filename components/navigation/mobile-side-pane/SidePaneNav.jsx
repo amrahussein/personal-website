@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Copyright from "../../micros/Copyright";
 import LandingNavBrand from "../../micros/LandingNavBrand";
 import ToggleMenu from "../../micros/ToggleMenu";
 import SidePaneNavItems from "./SidePaneNavItems";
@@ -9,13 +10,17 @@ export default function SidePaneNav() {
   return (
     <>
       <div
-        className={`z-50 top-0 right-0 fixed bg-secondary w-full h-full ease-out duration-200 ${
+        className={`z-10 top-0 right-0 fixed bg-secondary w-full h-full ease-out duration-200 ${
           paneOpened ? 'translate-x-0' : 'translate-x-full'
         } `}
       >
 
         <LandingNavBrand dark={true} />
         <SidePaneNavItems />
+        <section className='bottom-14 fixed text-accent'>
+
+        <Copyright />
+        </section>
           
       </div>
       {!paneOpened ? (
@@ -35,6 +40,7 @@ export default function SidePaneNav() {
           </aside>{' '}
           <span className='text-2xl font-thin'>X</span>
         </button>
+
           
           
 

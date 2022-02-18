@@ -33,7 +33,7 @@ export default function MobileBottomNav({ mobile }) {
     <>
       {mobile && (
         <section
-          className={`border-[0.13rem] border-t-accent bg-white block fixed inset-x-0 bottom-0 tranistion duration-100 z-10 ${
+          className={`z-10 border-[0.13rem] border-t-accent bg-white block fixed inset-x-0 bottom-0 tranistion duration-100 ${
             hideNav ? 'translate-y-full' : ''
           } `}
         >
