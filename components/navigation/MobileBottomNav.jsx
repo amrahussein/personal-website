@@ -21,7 +21,7 @@ export default function MobileBottomNav({ mobile }) {
     setScrollPrevPosition(scrollCurrentPosition)
   }
   // register scroll event correctly for performance reason - by delaying in between registers
-  const handleScrollDebounced = debounce(handleScroll, 200)
+  const handleScrollDebounced = debounce(handleScroll, 70)
 
   useEffect(() => {
     window.addEventListener('scroll', handleScrollDebounced)

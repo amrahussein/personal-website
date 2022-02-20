@@ -30,18 +30,18 @@ export default function MobileLandingViewHero() {
             <strong className='text-important opacity-80'>
               Amr Abdelkamel
             </strong>
-            . I&apos;m passionate about web development. test four
+            . I&apos;m passionate about web development.
           </p>
 
           <h3 className='p-4 pt-5 text-xl'>
-            Currently seeking opportunities as an entry position web developer{' '}
-            <span className='text-important tracking-wide opacity-50 pl-2'>
+            Currently I&apos;m seeking opportunities as an entry position web developer{' '}
+            {/* <span className='text-important tracking-wide opacity-50 pl-2'>
               !important
-            </span>
+            </span> */}
           </h3>
 
-          <Heading>It starts with a connection!</Heading>
-          <h3 className='pl-5 pb-2 text-3xl text-gray-500'>reach me out on:</h3>
+          <Heading size='text-2xl'>It starts with a connection!</Heading>
+          <h3 className='pl-5 pt-10 text-3xl text-gray-500'>reach me out on:</h3>
         </article>
       </section>
 
@@ -51,23 +51,26 @@ export default function MobileLandingViewHero() {
 
       <Line />
 
-      <section className='pt-20 space-y-14 '>
+      <section className='pt-5 space-y-14 '>
+
         <article>
           <h2 className='pl-2 text-4xl text-primary'>more about me?</h2>
           <LinkPage href='/about'>
             <a>
-              <h2 className='pt-2 pl-4 text-2xl hover:underline'>
+              <h2 className='pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
                 take me to about page
               </h2>
             </a>
           </LinkPage>
         </article>
+
         <article>
           <h2 className='pl-2 text-4xl text-primary'>reach me on</h2>
           <div className='pl-4 pt-2 space-y-2'>
             <ContactMe />
           </div>
         </article>
+
       </section>
 
       <Line />
