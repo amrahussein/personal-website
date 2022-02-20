@@ -11,7 +11,7 @@
     "export": "next export -o build",
     "lint": "next lint",
     "predeploy": "next build && next export -o build",
-    "deploy": "touch ./build/.nojekyll && gh-pages -d build -t true"
+    "deploy": "touch ./build/.nojekyll"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
