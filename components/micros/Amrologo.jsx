@@ -6,7 +6,7 @@ export default function Amrologo({ w = 200, h = 200, style }) {
       <div className="ml-4 bg-accent inline-block rounded-full  ring ring-primary">
         <img
           className={style}
-          src={process.env.BACKEND_URL + "/img/amrologo.jpg"}
+          src={process.env.NEXT_PUBLIC_BASE_PATH + "/img/amrologo.jpg"}
           alt="Picture of the author"
           width={w}
           height={h}
