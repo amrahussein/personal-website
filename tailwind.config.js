@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -16,12 +16,11 @@ module.exports = {
         serious: '#403A03',
       },
       fontFamily: {
-        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif'],
+        sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
   ],
 }
