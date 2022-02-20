@@ -1,11 +1,13 @@
 import Amrologo from '../micros/Amrologo'
 import MobileGoSocials from '../micros/MobileGoSocials'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Copyright from '../micros/Copyright'
 import Line from '../micros/Line'
 import ContactMe from '../micros/ContactMe'
 import FlexCenter from '../micros/FlexCenter'
 import Heading from '../micros/typography/Heading'
+import LinkPage from '../micros/LinkPage'
+import { default as L } from 'next/link'
 
 export default function MobileLandingViewHero() {
   return (
@@ -28,7 +30,7 @@ export default function MobileLandingViewHero() {
             <strong className='text-important opacity-80'>
               Amr Abdelkamel
             </strong>
-            . I&apos;m passionate about web development.
+            . I&apos;m passionate about web development. test four
           </p>
 
           <h3 className='p-4 pt-5 text-xl'>
@@ -38,12 +40,8 @@ export default function MobileLandingViewHero() {
             </span>
           </h3>
 
-          <Heading>
-          It starts with a connection!
-          </Heading>
-          <h3 className='pl-5 pb-2 text-3xl text-gray-500'>
-            reach me out on:
-          </h3>
+          <Heading>It starts with a connection!</Heading>
+          <h3 className='pl-5 pb-2 text-3xl text-gray-500'>reach me out on:</h3>
         </article>
       </section>
 
@@ -56,13 +54,13 @@ export default function MobileLandingViewHero() {
       <section className='pt-20 space-y-14 '>
         <article>
           <h2 className='pl-2 text-4xl text-primary'>more about me?</h2>
-          <Link href='/about'>
+          <LinkPage href='/about'>
             <a>
               <h2 className='pt-2 pl-4 text-2xl hover:underline'>
                 take me to about page
               </h2>
             </a>
-          </Link>
+          </LinkPage>
         </article>
         <article>
           <h2 className='pl-2 text-4xl text-primary'>reach me on</h2>

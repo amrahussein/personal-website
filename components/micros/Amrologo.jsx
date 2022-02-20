@@ -6,7 +6,7 @@ export default function Amrologo({ w = 200, h = 200, style }) {
       <div className="ml-4 bg-accent inline-block rounded-full  ring ring-primary">
         <img
           className={style}
-          src="/img/amrologo.jpg"
+          src={process.env.BACKEND_URL + "/img/amrologo.jpg"}
           alt="Picture of the author"
           width={w}
           height={h}
@@ -21,7 +21,7 @@ export default function Amrologo({ w = 200, h = 200, style }) {
 
           <p className="mb-[1rem] text-sm">
             {/* <em>Let&apos;s do it!</em> */}
-            <em>Hello World! 👋</em>
+            <em>Hello ! 👋</em>
           </p>
         </div>
       </div>

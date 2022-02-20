@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LinkPage from '../../micros/LinkPage.jsx';
 import { links } from '../Nav.links.js';
 
 export default function SidePaneNavItems() {
@@ -9,9 +10,9 @@ export default function SidePaneNavItems() {
         <ul className='space-y-14'>
           {links.map((item) => (
               <li key={item.key} className='hover:underline hover:underline-offset-4'>
-                <Link href={item.link}>
+                <LinkPage href={item.link}>
                   <a>{item.name}</a>
-                </Link>
+                </LinkPage>
               </li>
           ))}
         </ul>

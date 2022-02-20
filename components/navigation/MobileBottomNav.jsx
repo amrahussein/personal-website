@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import LinkPage from '../micros/LinkPage.jsx'
 import { useState, useEffect } from 'react'
 import { links } from './Nav.links.js'
 import { debounce } from 'lodash'
@@ -44,11 +44,11 @@ export default function MobileBottomNav({ mobile }) {
                   key={item.key}
                   className='py-2   w-full  bg-accent rounded-full  inline-block text-center'
                 >
-                  <Link href={item.link}>
+                  <LinkPage href={item.link}>
                     <a className='block text-xs hover:text-important'>
                       {item.name}
                     </a>
-                  </Link>
+                  </LinkPage>
                 </li>
               ))}
             </ul>

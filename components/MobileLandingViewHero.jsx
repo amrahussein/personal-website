@@ -19,9 +19,9 @@ export default function MobileLandingViewHero() {
             </strong>
             . I&apos;m passionate about web development.
           </p>
-
+        
           <h3 className='p-4 pt-5 text-xl'>
-            Currently seeking opportunities as an entry position web developer{' '}
+            Currently I&apos;m seeking opportunities as an entry position web developer{' '}
             <span className='text-important tracking-wide opacity-50 pl-2'>
               !important
             </span>
