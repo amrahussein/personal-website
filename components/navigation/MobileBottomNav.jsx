@@ -1,9 +1,13 @@
-import LinkPage from '../micros/LinkPage.jsx'
+// import LinkPage from '../micros/LinkPage.jsx'
+import { default as NextLink } from 'next/link'
+
 import { useState, useEffect } from 'react'
 import { links } from './Nav.links.js'
 import { debounce } from 'lodash'
+import { useRouter } from 'next/router'
 
 export default function MobileBottomNav({ mobile }) {
+  const router = useRouter()
   const [scrollPrevPosition, setScrollPrevPosition] = useState(0)
   const [hideNav, setHideNav] = useState(false)
   console.log('hideNav: ', hideNav)
@@ -42,13 +46,15 @@ export default function MobileBottomNav({ mobile }) {
               {links.map((item, idx) => (
                 <li
                   key={item.key}
-                  className='py-2   w-full  bg-accent rounded-full  inline-block text-center'
+                  className={`py-2 w-full bg-accent rounded-full inline-block text-center ${
+                    router.pathname === item.link ? 'text-important' : ''
+                  }`}
                 >
-                  <LinkPage href={item.link}>
+                  <NextLink href={item.link}>
                     <a className='block text-xs hover:text-important'>
                       {item.name}
                     </a>
-                  </LinkPage>
+                  </NextLink>
                 </li>
               ))}
             </ul>

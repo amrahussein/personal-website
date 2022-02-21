@@ -1,22 +1,25 @@
-import Link from 'next/link';
-import LinkPage from '../../micros/LinkPage.jsx';
-import { links } from '../Nav.links.js';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { links } from '../Nav.links.js'
 
 export default function SidePaneNavItems() {
+  const router = useRouter()
   return (
     <>
-      <nav className="pt-[10rem] text-accent flex flex-col items-center text-2xl">
- 
-        <ul className='space-y-14'>
+      <nav className='pt-[10rem] text-accent flex flex-col items-center text-2xl'>
+        <ul className='space-y-10'>
           {links.map((item) => (
-              <li key={item.key} className='hover:underline hover:underline-offset-4'>
-                <LinkPage href={item.link}>
-                  <a>{item.name}</a>
-                </LinkPage>
-              </li>
+            <li
+              key={item.key}
+              className={`hover:underline ${router.pathname === item.link ? 'underline decoration-cool' : ''}`}
+            >
+              <Link href={item.link}>
+                <a>{item.name}</a>
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>
     </>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import Heading from "../micros/typography/Heading";
-import Link from "../micros/typography/Link";
+import Heading from "../micros/typography/AppHeading";
+import Link from "../micros/typography/AppLink";
 
 export default function Childhood() {
   return (

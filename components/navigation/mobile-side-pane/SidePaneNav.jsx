@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Copyright from "../../micros/Copyright";
-import LandingNavBrand from "../../micros/LandingNavBrand";
+import GoSocials from "../../micros/GoSocials";
+import Line from "../../micros/Line";
+import MobileLandingNavBrand from "../../micros/mobile-view/MobileLandingNavBrand";
 import ToggleMenu from "../../micros/ToggleMenu";
 import SidePaneNavItems from "./SidePaneNavItems";
 
@@ -9,16 +11,22 @@ export default function SidePaneNav() {
 
   return (
     <>
+
       <div
-        className={`z-10 top-0 right-0 fixed bg-secondary w-full h-full ease-out duration-200 ${
+        className={`z-100 top-0 right-0 fixed bg-secondary w-full h-full ease-out duration-200 ${
           paneOpened ? 'translate-x-0' : 'translate-x-full'
         } `}
       >
 
-        <LandingNavBrand dark={true} />
+        <MobileLandingNavBrand dark={true} />
         <SidePaneNavItems />
-        <section className='bottom-14 fixed text-accent'>
+        <Line color="border-accent" mt='10' />
+        <section className="flex justify-center" >
 
+        <GoSocials />
+        </section>
+        
+        <section className='absolute bottom-1 left-1 text-accent'>
         <Copyright />
         </section>
           
@@ -32,13 +40,13 @@ export default function SidePaneNav() {
         </button>
       ) : (
           <button
-          className='z-50 close text-accent fixed top-0 right-0 mr-4 mt-4'
+          className='z-100 close text-accent fixed top-0 right-0 mr-4 mt-4'
           onClick={() => setPaneOpened(!paneOpened)}
           >
-          <aside className='inline pr-3 align-top text-lg underline underline-offset-2'>
+          <aside className='font-semibold inline align-top text-lg underline underline-offset-3 hover:text-important'>
             Close
           </aside>{' '}
-          <span className='text-2xl font-thin'>X</span>
+          {/* <span className='text-2xl font-thin'>X</span> */}
         </button>
 
           

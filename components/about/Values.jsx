@@ -1,4 +1,4 @@
-import Heading from '../micros/typography/Heading'
+import Heading from '../micros/typography/AppHeading'
 
 export default function Values() {
   return (

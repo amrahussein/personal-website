@@ -1,10 +1,24 @@
 import Head from 'next/head';
 import '../styles/globals.css';
+import {useState, useEffect} from 'react'
+import { AppContext } from '../components/App.context';
+
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
+  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : undefined)
+  const [mobile, setMobile] = useState(false)
+
+  useEffect(() => {
+    // matching tailwind breakpoint of md screens
+    const breakpoint = 768
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    console.log('window.innerWidth: ', window.innerWidth)
+    width <= breakpoint ? setMobile(true) : setMobile(false)
+    return () => window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [width])
   return (
     <>
       
@@ -42,8 +56,10 @@ function MyApp({ Component, pageProps }) {
           key="title"
         />
       </Head>
-     
+     <AppContext.Provider value={mobile}>
+
       <Component {...pageProps} />
+     </AppContext.Provider>
     </>
   );
 }

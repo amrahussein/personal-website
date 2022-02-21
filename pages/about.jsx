@@ -6,9 +6,8 @@ import Postgraduation from '../components/about/Postgraduation'
 import Values from '../components/about/Values'
 import Techstack from '../components/about/Techstack'
 import Layout from '../components/layout/TheLayout'
-import LandingNavBrand from '../components/micros/LandingNavBrand'
-import MobileBottomNav from '../components/navigation/MobileBottomNav'
-export default function About({ mobile }) {
+
+export default function About() {
   return (
     <>
       <Head>
@@ -22,8 +21,8 @@ export default function About({ mobile }) {
           key='description'
         />
       </Head>
-      <header></header>
       <Layout>
+      <header></header>
         <article className='prose text-gray-600'>
           <h2 className='p-4 pt-5 text-4xl text-secondary opacity-50 text-right'>
             Nice to meet you!
