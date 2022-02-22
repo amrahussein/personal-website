@@ -14,11 +14,11 @@ export default function MobileBottomNav() {
   const router = useRouter()
   const [scrollPrevPosition, setScrollPrevPosition] = useState(0)
   const [hideNav, setHideNav] = useState(false)
-  console.log('hideNav: ', hideNav)
+  
 
   const handleScroll = () => {
     const scrollCurrentPosition = window.pageYOffset
-    console.log('scrollCurrentPosition: ', scrollCurrentPosition)
+    
 
     setHideNav(
       (scrollPrevPosition < scrollCurrentPosition &&

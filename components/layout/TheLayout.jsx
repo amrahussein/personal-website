@@ -17,11 +17,10 @@ export default function Layout({ children }) {
           <MobileLandingNavBrand />
           <SidePaneNav />
           <MobileBottomNav />
-         <MobileFooter />
+          <MobileFooter />
         </>
       ) : (
         <>
-
           <DesktopLandingNavBrand />
           <DesktopFooter />
         </>
