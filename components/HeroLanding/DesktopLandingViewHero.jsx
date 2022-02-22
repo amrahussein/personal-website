@@ -10,10 +10,10 @@ export default function DesktopLandingViewHero() {
     <>
       <section>
         <article className=''>
-          <h2 className='italic py-5 pr-4 text-4xl text-secondary opacity-50 text-right'>
+          <h2 className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-50 text-right'>
             Nice to meet you!
           </h2>
-          <div className='flex items-center space-x-8'>
+          <div className='flex items-center justify-center space-x-20'>
             <Amrologo />
 
             <div>

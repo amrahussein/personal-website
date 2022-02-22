@@ -1,25 +1,29 @@
-import Heading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading'
 import Link from '../micros/typography/AppLink'
 
 export default function Techstack() {
   return (
-    <>
-      <Heading>What about my tech stack specialization?</Heading>
+    <div className='space-y-4'>
+      <AppHeading>What about my tech stack specialization?</AppHeading>
       <p>
         {' '}
-        I, deeply, focus on JavaScript with Frontend Libraries and Frameworks
-        such as React, NextJS.
+        I, deeply, focus on{' '}
+        <em className='underline text-secondary'>
+          <strong>JavaScript</strong>
+        </em>{' '}
+        with Frontend Libraries and Frameworks such as React, NextJS.
       </p>
-      <Heading>What am I currently into?</Heading>
+      <AppHeading>What am I currently into?</AppHeading>
       <p>
-        Building a usable website that addresses user needs (UX) lies at my
-        core.
+        Building a <em className='underline text-secondary'>usable website</em>{' '}
+        that addresses user needs <strong className='text-secondary'>UX</strong>{' '}
+        lies at my core.
       </p>
       <p>
         As the digital platforms expand, it&apos;s not practical to have various
-        sources of truth; that&apos;s the user data. Using flux-like
-        architecture in React apps comes to the rescue and addresses business
-        needs.
+        <em>sources of truth;</em> that&apos;s the{' '}
+        <em className='underline'>user data.</em> Using flux-like architecture
+        in React apps comes to the rescue and addresses business needs.
       </p>
       <p>
         Although I know basic redux, I need to implement what I have learned
@@ -27,22 +31,25 @@ export default function Techstack() {
       </p>
       <p>
         In addition, I&apos;d like to dig deeper into micro-frameworks like
-        ExpressJS, FastAPI, and Flask that can help me manage APIs. It gives me
-        the flexibility to address the philosophy of the modern web.
+        <em className='text-secondary'>ExpressJS, FastAPI, and Flask</em> that
+        can help me manage APIs. It gives me the flexibility to address{' '}
+        <em className='text-secondary'>the philosophy of the modern web.</em>
       </p>
 
-      <Heading size='lg'>
-        You can check my latest projects at my
-      </Heading>
-        <Link href='https://github.com/amromoorie' rel='github' styles=''>
-          GitHub account.
-        </Link>
-      <Link
+      <p className='text-secondary pt-4'>
+        <em>
+          You can check my latest projects at my{' '}
+          <Link href='https://github.com/amromoorie' rel='github' styles=''>
+            GitHub account
+          </Link>
+        </em>
+      </p>
+      {/* <Link
         href='https://github.com/amromoorie?tab=repositories'
         rel='github-repositories' styles={'block'}
       >
         take me to Github repo
-      </Link>
-    </>
+      </Link> */}
+    </div>
   )
 }

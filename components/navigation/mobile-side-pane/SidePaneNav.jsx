@@ -23,7 +23,7 @@ export default function SidePaneNav() {
         <Line color="border-accent" mt='10' />
         <section className="flex justify-center" >
 
-        <GoSocials />
+        <GoSocials styleSocialItems='flex space-x-8 pt-7' socialNames={false} linkStyle='w-8 h-8 rounded-lg hover:scale-110 p-1 bg-accent'  />
         </section>
         
         <section className='absolute bottom-1 left-1 text-accent'>

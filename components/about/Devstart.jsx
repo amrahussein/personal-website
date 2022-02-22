@@ -1,13 +1,13 @@
-import Heading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading'
 
 export default function Devstart() {
   return (
-    <>
-      <Heading>How has my DEV started?</Heading>
+    <div className='space-y-4'>
+      <AppHeading>How has my DEV started?</AppHeading>
 
       <p>
         My journey started with a scholarship by Udacity that taught me the
-        basics of programming.
+        core principles of programming.
       </p>
       <p>
         I was introduced to computational thinking; that&apos;s how to think
@@ -19,9 +19,8 @@ export default function Devstart() {
         with descriptive programming
       </p>
       <p>
-        My primary motivation, besides my passion for tech, was the influence of
-        digital transformation I saw. The influence that can be brought by the
-        tech.
+        My primary motivation, was the influence of the
+        digital transformation I saw. The influence that can be brought by Technology.
       </p>
       <p>
         It was a dream for me to have positive influence on the world or simply
@@ -32,10 +31,10 @@ export default function Devstart() {
         before having to specialize.
       </p>
       <p>
-        However, I decided to have a different approach, which was to specialize
-        in a specific area: frontend development along with learning core
-        science and exploring new stuff as I love to solve problems.
+        However, I decided to have a different approach, which was to <em>specialize</em>
+        in a specific area: <strong><em className='underline text-secondary'>frontend development</em></strong> along with learning core
+        science and exploring new stuff as <em>I love to solve problems.</em>
       </p>
-    </>
+    </div>
   )
 }

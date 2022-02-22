@@ -11,7 +11,11 @@ export default function SidePaneNavItems() {
           {links.map((item) => (
             <li
               key={item.key}
-              className={`hover:underline ${router.pathname === item.link ? 'underline decoration-cool' : ''}`}
+              className={`hover:underline underline-offset-3 ${
+                router.pathname === item.link
+                  ? 'underline underline-offset-3 decoration-cool '
+                  : ''
+              }`}
             >
               <Link href={item.link}>
                 <a>{item.name}</a>

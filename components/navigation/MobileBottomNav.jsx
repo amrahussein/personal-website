@@ -1,12 +1,16 @@
-// import LinkPage from '../micros/LinkPage.jsx'
-import { default as NextLink } from 'next/link'
+import Link from 'next/link'
 
 import { useState, useEffect } from 'react'
+import { useContext } from 'react'
+import { AppContext } from '../App.context'
+
 import { links } from './Nav.links.js'
 import { debounce } from 'lodash'
 import { useRouter } from 'next/router'
 
-export default function MobileBottomNav({ mobile }) {
+export default function MobileBottomNav() {
+  const mobile = useContext(AppContext)
+
   const router = useRouter()
   const [scrollPrevPosition, setScrollPrevPosition] = useState(0)
   const [hideNav, setHideNav] = useState(false)
@@ -50,11 +54,11 @@ export default function MobileBottomNav({ mobile }) {
                     router.pathname === item.link ? 'text-important' : ''
                   }`}
                 >
-                  <NextLink href={item.link}>
+                  <Link href={item.link}>
                     <a className='block text-xs hover:text-important'>
                       {item.name}
                     </a>
-                  </NextLink>
+                  </Link>
                 </li>
               ))}
             </ul>

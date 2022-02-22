@@ -1,6 +1,5 @@
 import SidePaneNav from '../navigation/mobile-side-pane/SidePaneNav'
 import MobileBottomNav from '../navigation/MobileBottomNav'
-import Copyright from '../micros/Copyright'
 import { useContext } from 'react'
 import { AppContext } from '../App.context'
 import DesktopLandingNavBrand from '../micros/desktop-view/DesktopLandingNavBrand'
@@ -12,16 +11,17 @@ export default function Layout({ children }) {
   const mobile = useContext(AppContext)
 
   return (
-    <main className='relative mx-2 mt-[1.5rem] py-[5rem] break-words text-gray-600'>
+    <main className='sm:mx-4 lg:mx-8 mx-2 relative mt-[1.5rem] py-[5rem] break-words text-gray-600'>
       {mobile ? (
         <>
           <MobileLandingNavBrand />
           <SidePaneNav />
-          <MobileBottomNav mobile={mobile} />
+          <MobileBottomNav />
          <MobileFooter />
         </>
       ) : (
         <>
+
           <DesktopLandingNavBrand />
           <DesktopFooter />
         </>

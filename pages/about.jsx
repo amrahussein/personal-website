@@ -3,7 +3,7 @@ import Intro from '../components/about/Intro'
 import Childhood from '../components/about/Childhood'
 import Devstart from '../components/about/Devstart'
 import Postgraduation from '../components/about/Postgraduation'
-import Values from '../components/about/Values'
+import CoreValues from '../components/about/CoreValues'
 import Techstack from '../components/about/Techstack'
 import Layout from '../components/layout/TheLayout'
 
@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>amromoorie| Welcome to my page!</title>
+        <title>amromoorie| Let&apos;s connect!</title>
       </Head>
 
       <Head>
@@ -22,9 +22,8 @@ export default function About() {
         />
       </Head>
       <Layout>
-      <header></header>
-        <article className='prose text-gray-600'>
-          <h2 className='p-4 pt-5 text-4xl text-secondary opacity-50 text-right'>
+        <article className='sm:max-w-4xl prose text-gray-500 space-y-10 ... sm:text-lg'>
+          <h2 className='p-4 pt-5 italic text-4xl text-secondary opacity-50 text-right sm:mr-[5rem] lg:mr-[-5rem] xl:mr-[-16rem]'>
             Nice to meet you!
           </h2>
 
@@ -32,7 +31,7 @@ export default function About() {
           <Childhood />
           <Devstart />
           <Postgraduation />
-          <Values />
+          <CoreValues />
           <Techstack />
         </article>
       </Layout>

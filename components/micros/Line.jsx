@@ -1,6 +1,6 @@
 
-export default function Line({color= 'border-important', mt='10'}) {
+export default function Line({color= 'border-secondary', mt='10'}) {
   return (
-    <hr className={`border mx-5 opacity-50 ${color} mt-${mt}`} />
+    <hr className={`border mx-5 opacity-30 ${color} mt-${mt}`} />
   )
 }

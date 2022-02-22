@@ -18,7 +18,7 @@ export default function ContactMe() {
 
       <span className='text-serious'>telegram: </span>
       <AppLink href='https://telegram.me/amromoorie' rel='telegram'>
-        <a className='pl-2 text-important underline hover:text-cool'>
+        <a className='pl-2'>
           reach me on telegram
         </a>
       </AppLink>

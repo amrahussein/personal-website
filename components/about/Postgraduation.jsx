@@ -1,17 +1,18 @@
-import Heading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading'
 
 export default function Postgraduation() {
   return (
-    <>
-      <Heading>After graduation</Heading>
+    <div className='space-y-4'>
+
+      <AppHeading>After graduation</AppHeading>
       <p>
         Fast forward after graduation, I began to be more aware of what
         direction I should be going, I had to know myself deeper. That&apos;s
         why, I seek Coursera courses in various non-tech areas, besides any
-        activity that would introduce me to the community and people.
+        activity that would introduce me to the community and the people.
       </p>
       <p>
-        I joined the GCP scholarship by google which partnered with Pluralsight,
+        I joined <em className='text-secondary'>GCP scholarship</em> by google which partnered with Pluralsight,
         I had a great introduction to the cloud as well as a great involvement
         with the community. I learned a lot and gained a lot of perspectives.
       </p>
@@ -22,12 +23,12 @@ export default function Postgraduation() {
       </p>
       <p>
         {' '}
-        I, then, followed volunteering activities to apply what I have learned.
+        I, then, followed <em className='underline text-secondary'>volunteering activities</em> to apply what I have learned.
         What I can say is that willing to get to know different peoples&apos;
         thoughts increase the chance of mutual matching of common goal and
         value. It&apos;s absolutely an integral part of any project&apos;s
         success.
       </p>
-    </>
+    </div>
   )
 }
