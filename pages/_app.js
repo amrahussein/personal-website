@@ -2,12 +2,27 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import { useState, useEffect } from 'react'
 import { AppContext } from '../components/App.context'
-
+import Script from 'next/script'
+import { useRouter } from 'next/router'
+import * as gtag from '../lib/gtag'
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
+  // GA related
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
+  //  Determine window inner width on initial rendering for responsive view
   const [width, setWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : undefined
   )
@@ -22,12 +37,24 @@ function MyApp({ Component, pageProps }) {
     return () =>
       window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [width])
+
   return (
     <>
       <Head>
+        <title>amromoorie| Nice to meet you!</title>
+
+        {/* <meta charset='UTF-8' />
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' /> */}
+
+        <meta
+          property='og:description'
+          content="Passionate about web development. Here, I share a bit about me. Let's get connected!"
+          key='description'
+        />
+
         {/* <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com/; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline';" /> */}
-      </Head>
-      <Head>
+
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -50,14 +77,27 @@ function MyApp({ Component, pageProps }) {
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
       </Head>
-      <Head>
-        <title>amromoorie| Welcome to my page!</title>
-        <meta
-          property='og:title'
-          content="Here is my website where I share a bit about me. Let's get connected!"
-          key='title'
-        />
-      </Head>
+
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy='afterInteractive'
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id='gtag-init'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+
       <AppContext.Provider value={mobile}>
         <Component {...pageProps} />
       </AppContext.Provider>

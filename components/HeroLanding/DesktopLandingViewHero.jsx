@@ -7,7 +7,7 @@ import Amrologo from '../micros/Amrologo'
 
 export default function DesktopLandingViewHero() {
   return (
-    <>
+    <main>
       <section>
         <article className=''>
           <h2 className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-50 text-right'>
@@ -68,6 +68,6 @@ export default function DesktopLandingViewHero() {
           </div>
         </article>
       </section>
-    </>
+    </main>
   )
 }

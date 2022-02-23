@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Ubuntu', 'Roboto', 'Open Sans', 'sans-serif'],
+        mono: ['Ubuntu Mono', 'monospace']
       },
       zIndex: {
         '100': '100',

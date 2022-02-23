@@ -8,7 +8,7 @@ import Amrologo from '../micros/Amrologo'
 
 export default function MobileLandingViewHero() {
   return (
-    <>
+    <main>
       <FlexCenter>
         <section className='shrink-0 space-y-3'>
           <Amrologo w={200} h={200} />
@@ -51,7 +51,7 @@ export default function MobileLandingViewHero() {
           <AppHeading size='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!
           </AppHeading>
-          <h3 className='pl-5 pt-5 text-3xl italic text-gray-500'>
+          <h3 className='font-mono pl-5 pt-5 text-3xl italic text-gray-500'>
             reach me out on:
           </h3>
         </article>
@@ -74,6 +74,6 @@ export default function MobileLandingViewHero() {
       </section>
 
       <Line />
-    </>
+    </main>
   )
 }
