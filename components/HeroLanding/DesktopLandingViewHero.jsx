@@ -19,7 +19,7 @@ export default function DesktopLandingViewHero() {
             <div>
               <p className='pl-5 pt-4 text-lg'>
                 Hey, I am{' '}
-                <strong className='text-important opacity-80'>
+                <strong className='text-secondary opacity-80'>
                   Amr Abdelkamel
                 </strong>
                 . I&apos;m passionate about web development.
@@ -44,7 +44,7 @@ export default function DesktopLandingViewHero() {
           <h2 className='pl-2 text-4xl text-primary'>more about me?</h2>
           <Link href='/about'>
             <a>
-              <h2 className='pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
+              <h2 className='font-mono italic pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
                 take me to about page
               </h2>
             </a>
@@ -55,7 +55,7 @@ export default function DesktopLandingViewHero() {
           <AppHeading size='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!
           </AppHeading>
-          <h3 className='pl-5 pt-5 text-3xl italic text-gray-500'>
+          <h3 className='font-mono pl-5 pt-5 text-3xl italic text-gray-500'>
             reach me out on:
           </h3>
           <div className='mb-32 pl-4 pt-5 flex justify-around'>

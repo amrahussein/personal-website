@@ -22,7 +22,7 @@ export default function About() {
         />
       </Head>
       <Layout>
-        <article className='sm:max-w-4xl prose text-gray-500 space-y-10 ... sm:text-lg'>
+        <article className='mb-16 sm:max-w-4xl prose text-gray-500 space-y-10 ... sm:text-lg'>
           <h2 className='p-4 pt-5 italic text-4xl text-secondary opacity-50 text-right sm:mr-[5rem] lg:mr-[-5rem] xl:mr-[-16rem]'>
             Nice to meet you!
           </h2>

@@ -32,7 +32,7 @@ export default function Devstart() {
       </p>
       <p>
         However, I decided to have a different approach, which was to <em>specialize</em>
-        in a specific area: <strong><em className='underline text-secondary'>frontend development</em></strong> along with learning core
+        {' '}in a specific area: <strong><em className='underline text-secondary'>frontend development</em></strong> along with learning core
         science and exploring new stuff as <em>I love to solve problems.</em>
       </p>
     </div>

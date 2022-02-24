@@ -13,7 +13,7 @@ export default function Techstack() {
         </em>{' '}
         with Frontend Libraries and Frameworks such as React, NextJS.
       </p>
-      <AppHeading>What am I currently into?</AppHeading>
+      <h2 className='text-2xl text-secondary italic underline pt-2'>What am I currently into?</h2>
       <p>
         Building a <em className='underline text-secondary'>usable website</em>{' '}
         that addresses user needs <strong className='text-secondary'>UX</strong>{' '}
