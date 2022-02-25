@@ -1,7 +1,7 @@
 export default function Amrologo({ w = 200, h = 200 }) {
   return (
     <figure>
-      <div className='ml-4 bg-accent inline-block rounded-full '>
+      <div className='ml-4 border-2 border-accent inline-block rounded-full '>
         <img
           className='rounded-full'
           src={'/img/amrologo.jpg'}
@@ -9,7 +9,7 @@ export default function Amrologo({ w = 200, h = 200 }) {
           width={w}
           height={h}
         />
-        <figcaption className=' hidden'>amromoorie</figcaption>
+        <figcaption className=' hidden'><h1>Amr Abdelkamel</h1></figcaption>
         <div className='text-gray-500 flex flex-col justify-center items-center'>
           <h1 className='mt-[0.2rem]'>
             <span className='text-primary font-extrabold'>@</span>{' '}
@@ -17,7 +17,7 @@ export default function Amrologo({ w = 200, h = 200 }) {
           </h1>
           <br></br>
 
-          <p className='mb-[1rem] mt-[-1rem] text-sm'>
+          <p className='mb-[1rem] mt-[0.5rem] text-sm text-secondary'>
             <em>Hello World! 👋</em>
           </p>
         </div>

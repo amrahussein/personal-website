@@ -1,13 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout/TheLayout'
+import { useRouter } from 'next/router'
+import Layout from '../components/TheLayout'
 import AppLink from '../components/micros/typography/AppLink'
 
-export default function blog() {
+export default function Blog() {
+  const { pathname } = useRouter()
+  const siteName = 'https://amromoorie.com'
+  const canonicalURL = siteName + pathname
+  
   return (
     <>
       <Head>
         <title>Blog| main page</title>
+        <link rel='canonical' href={canonicalURL} />
 
         <meta
           property='og:description'
@@ -23,7 +29,7 @@ export default function blog() {
         <section>
           <article>
             <Link href='/blog/fake-article'>
-              <a>go to arigicle</a>
+              <a>go to article</a>
             </Link>
           </article>
         </section>

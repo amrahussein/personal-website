@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import DesktopTopNav from '../../navigation/DesktopTopNav'
 export default function DesktopLandingNavBrand({ dark = false }) {
-  let topNavDark = `flex flex-row justify-between pt-3 pb-2 pr-4 pl-2 top-0 inset-x-0 fixed  sm:px-4 ... lg:px-8 ${
+  let topNavDark = `flex flex-row justify-between pt-2 pb-1 pr-4 pl-2 top-0 inset-x-0 fixed  sm:px-4 ... lg:px-8 ${
     dark
       ? 'bg-secondary text-accent'
       : 'z-10 bg-white border-[0.13rem] border-b-accent text-gray-600'
@@ -10,7 +10,7 @@ export default function DesktopLandingNavBrand({ dark = false }) {
     <>
       <header className={topNavDark}>
 
-        <h1 className='text-3xl font-extrabold'>
+        <h1 className='text-3xl font-extrabold pt-[0.18rem]'>
           <Link href='/'>
             <a>
               <strong className=''>amromoorie</strong>

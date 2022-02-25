@@ -11,14 +11,12 @@ import { useRouter } from 'next/router'
 export default function MobileBottomNav() {
   const mobile = useContext(AppContext)
 
-  const router = useRouter()
+  const { pathname } = useRouter()
   const [scrollPrevPosition, setScrollPrevPosition] = useState(0)
   const [hideNav, setHideNav] = useState(false)
-  
 
   const handleScroll = () => {
     const scrollCurrentPosition = window.pageYOffset
-    
 
     setHideNav(
       (scrollPrevPosition < scrollCurrentPosition &&
@@ -51,7 +49,7 @@ export default function MobileBottomNav() {
                 <li
                   key={item.key}
                   className={`py-2 w-full bg-accent rounded-full inline-block text-center ${
-                    router.pathname === item.link ? 'text-important' : ''
+                    pathname === item.link ? 'text-important' : ''
                   }`}
                 >
                   <Link href={item.link}>

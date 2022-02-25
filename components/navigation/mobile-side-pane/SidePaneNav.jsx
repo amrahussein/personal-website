@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Copyright from '../../micros/Copyright'
 import GoSocials from '../../micros/GoSocials'
 import Line from '../../micros/Line'
-import MobileLandingNavBrand from '../../micros/mobile-view/MobileLandingNavBrand'
+import MobileLandingNavBrand from '../../micros/mobile-landing-view/MobileLandingNavBrand'
 import ToggleMenu from '../../micros/ToggleMenu'
 import SidePaneNavItems from './SidePaneNavItems'
 
@@ -34,7 +34,7 @@ export default function SidePaneNav() {
       {!paneOpened ? (
         <button
           onClick={() => setPaneOpened(!paneOpened)}
-          className='fixed z-10 top-0 right-0 mr-4 mt-4'
+          className='fixed z-10 top-0 right-0 mr-4 mt-[1.21rem]'
         >
           <ToggleMenu />
         </button>
