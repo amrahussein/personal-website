@@ -4,7 +4,7 @@ import AppLink from '../micros/typography/AppLink'
 
 export default function ProjectListItem({ projectData: data }) {
   return (
-    <article className='pl-3 py-5 border-2 border-accent rounded-lg space-y-4'>
+    <article className='pl-3 pr-1 py-5 border-2 border-accent rounded-lg space-y-4'>
       <AppHeading styles='text-2xl ... pl-2' >
         project repo:{' '}
         <p className='inline-block text-secondary underline italic'>{data.name}</p>
@@ -17,6 +17,12 @@ export default function ProjectListItem({ projectData: data }) {
         Preview:{' '}
         <span className='italic'>
           <AppLink href={data.url}>{data.url}</AppLink>
+        </span>
+      </h2>
+      <h2 className=''>
+        Project repo:{' '}
+        <span className='italic'>
+          <AppLink href={data.name}>{data.name}</AppLink>
         </span>
       </h2>
 

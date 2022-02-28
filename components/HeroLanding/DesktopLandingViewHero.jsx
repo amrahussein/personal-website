@@ -22,7 +22,8 @@ export default function DesktopLandingViewHero() {
                 <strong className='text-secondary opacity-80'>
                   Amr Abdelkamel
                 </strong>
-                . I&apos;m passionate about web development.
+                I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
+
               </p>
 
               <p className='p-4 pt-5 text-lg'>

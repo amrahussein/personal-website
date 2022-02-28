@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   const mobile = useContext(AppContext)
 
   return (
-    <div className='pl-2 sm:mx-4 lg:mx-8 mx-2 relative mt-[1.5rem] py-[5rem] break-words text-gray-600'>
+    <div className='px-2 mx-2 relative mt-[1.5rem] py-[5rem] break-words text-gray-600 ... sm:mx-4 lg:mx-8 lg:ml-16'>
       {mobile ? (
         <>
           <MobileLandingNavBrand />
