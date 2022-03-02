@@ -13,15 +13,16 @@ export default function DesktopLandingViewHero() {
           <aside className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-50 text-right'>
             Nice to meet you!
           </aside>
-          <div className='flex items-center space-x-20 max-w-4xl'>
+
+          <div className='flex items-center space-x-20 max-w-4xl ... md:flex-col lg:flex-row'>
             <Amrologo />
 
             <div>
               <p className='pl-5 pt-4 text-lg'>
-                Hey, I am{' '}
+                Hey, my name is{' '}
                 <strong className='text-secondary opacity-80'>
                   Amr Abdelkamel
-                </strong>
+                </strong>. {' '}
                 I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
 
               </p>

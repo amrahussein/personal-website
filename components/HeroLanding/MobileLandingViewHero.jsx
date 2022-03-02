@@ -23,11 +23,12 @@ export default function MobileLandingViewHero() {
           </aside>
 
           <p className='pt-4 text-lg'>
-            Hey, I am{' '}
+            Hey, my name is{' '}
             <strong className='text-secondary opacity-80'>
               Amr Abdelkamel
-            </strong>
-            I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
+            </strong>.
+            <br></br>
+          {' '}  I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
           </p>
 
           <p className='pt-5 text-lg'>
