@@ -16,7 +16,7 @@ export default function DesktopTopNav() {
             }`}
           >
             <Link href={item.link}>
-              <a>{item.name}</a>
+              <a aria-label={item.name}>{item.name}</a>
             </Link>
           </li>
         ))}

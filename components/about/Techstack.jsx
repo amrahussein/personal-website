@@ -4,7 +4,7 @@ import Link from '../micros/typography/AppLink'
 export default function Techstack() {
   return (
     <div className='space-y-4'>
-      <AppHeading>What about my tech stack specialization?</AppHeading>
+      <AppHeading>My tech stack specialization?</AppHeading>
       <p>
         {' '}
         I, deeply, focus on{' '}
@@ -13,10 +13,12 @@ export default function Techstack() {
         </em>{' '}
         with Frontend Libraries and Frameworks such as React, NextJS.
       </p>
-      <h2 className='text-2xl text-secondary italic underline pt-2'>What am I currently into?</h2>
+      <h2 className='text-2xl text-secondary italic underline pt-2'>
+        What am I currently into?
+      </h2>
       <p>
         Building a <em className='underline text-secondary'>usable website</em>{' '}
-        that addresses user needs <strong className='text-secondary'>UX</strong>{' '}
+        that addresses user needs. <strong className='text-secondary'>UX</strong>{' '}
         lies at my core.
       </p>
       <p>
@@ -30,7 +32,7 @@ export default function Techstack() {
         into big projects.
       </p>
       <p>
-        In addition, I&apos;d like to dig deeper into micro-frameworks like
+        In addition, I&apos;d like to dig deeper into micro-frameworks like{' '}
         <em className='text-secondary'>ExpressJS, FastAPI, and Flask</em> that
         can help me manage APIs. It gives me the flexibility to address{' '}
         <em className='text-secondary'>the philosophy of the modern web.</em>

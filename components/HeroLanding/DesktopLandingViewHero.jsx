@@ -14,11 +14,11 @@ export default function DesktopLandingViewHero() {
             Nice to meet you!
           </aside>
 
-          <div className='flex items-center space-x-20 max-w-4xl ... md:flex-col lg:flex-row'>
+          <div className='lg:pl-28 md:pl-12 flex items-center lg:space-x-20 sm:space-x-12 max-w-4xl ... md:flex-fcol lg:flex-row'>
             <Amrologo />
 
-            <div>
-              <p className='pl-5 pt-4 text-lg'>
+            <div className='lg:pl-5 pt-8 text-lg'>
+              <p>
                 Hey, my name is{' '}
                 <strong className='text-secondary opacity-80'>
                   Amr Abdelkamel
@@ -27,8 +27,8 @@ export default function DesktopLandingViewHero() {
 
               </p>
 
-              <p className='p-4 pt-5 text-lg'>
-                Currently I&apos;m seeking opportunities as an entry position
+              <p className='pt-3'>
+                Currently I&apos;m open for <em>opportunities</em> as an entry position
                 web developer{' '}
                 <span className='text-important italic font-mono tracking-wide pl-2'>
                   !important

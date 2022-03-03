@@ -11,12 +11,13 @@ export default function Layout({ children }) {
   const mobile = useContext(AppContext)
 
   return (
-    <div className='px-2 mx-2 relative mt-[1.5rem] py-[5rem] break-words text-gray-600 ... sm:mx-4 lg:mx-8 lg:ml-16'>
+    <div className='px-2 mx-2 relative mt-[1.5rem] py-[5rem] break-words text-gray-600 selection:bg-primary selection:text-accent ... sm:mx-4 lg:mx-8 lg:ml-16'>
       {mobile ? (
         <>
           <MobileLandingNavBrand />
           <SidePaneNav />
           <MobileBottomNav />
+
           {children}
 
           <MobileFooter />
@@ -24,7 +25,9 @@ export default function Layout({ children }) {
       ) : (
         <>
           <DesktopLandingNavBrand />
+
           {children}
+          
           <DesktopFooter />
         </>
       )}

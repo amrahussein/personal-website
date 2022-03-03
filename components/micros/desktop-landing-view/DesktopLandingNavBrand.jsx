@@ -10,7 +10,7 @@ export default function DesktopLandingNavBrand({ dark = false }) {
     <>
       <header className={topNavDark}>
 
-        <h1 className='text-3xl font-extrabold pt-[0.18rem]'>
+        <h1 className='text-3xl font-extrabold pt-[0.18rem] pr-4'>
           <Link href='/'>
             <a>
               <strong className=''>amromoorie</strong>

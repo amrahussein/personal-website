@@ -35,6 +35,7 @@ export default function SidePaneNav() {
         <button
           onClick={() => setPaneOpened(!paneOpened)}
           className='fixed z-10 top-0 right-0 mr-4 mt-[1.21rem]'
+          aria-label='open navigational menu'
         >
           <ToggleMenu />
         </button>
@@ -42,6 +43,7 @@ export default function SidePaneNav() {
         <button
           className='z-100 close text-accent fixed top-0 right-0 mr-4 mt-4'
           onClick={() => setPaneOpened(!paneOpened)}
+          aria-label='close navigational menu'
         >
           <aside className='font-semibold inline align-top text-lg underline underline-offset-3 hover:text-important'>
             Close

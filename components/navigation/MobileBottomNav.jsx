@@ -45,7 +45,7 @@ export default function MobileBottomNav() {
         >
           <nav className=' py-2 text-primary font-extrabold  text-xl  '>
             <ul className='px-3 flex justify-around  flex-row space-x-5'>
-              {links.map((item, idx) => (
+              {links.map((item) => (
                 <li
                   key={item.key}
                   className={`py-2 w-full bg-accent rounded-full inline-block text-center ${
@@ -53,7 +53,7 @@ export default function MobileBottomNav() {
                   }`}
                 >
                   <Link href={item.link}>
-                    <a className='block text-xs hover:text-important'>
+                    <a aria-label={item.name} className='block text-xs hover:text-important'>
                       {item.name}
                     </a>
                   </Link>

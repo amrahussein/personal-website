@@ -18,7 +18,7 @@ export default function SidePaneNavItems() {
               }`}
             >
               <Link href={item.link}>
-                <a>{item.name}</a>
+                <a aria-label={item.name}>{item.name}</a>
               </Link>
             </li>
           ))}

@@ -11,7 +11,7 @@ export default function MobileLandingViewHero() {
     <main>
       <FlexCenter>
         <section className='shrink-0 space-y-3'>
-          <Amrologo w={200} h={200} />
+          <Amrologo w={150} h={150} />
         </section>
       </FlexCenter>
 

@@ -51,6 +51,7 @@ function MyApp({ Component, pageProps }) {
 
 
         <meta
+          name='description'
           property='og:description'
           content="Passionate about web development. Here, I share a bit about me. Let's get connected!"
           key='description'
