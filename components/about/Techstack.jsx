@@ -1,18 +1,64 @@
 import AppHeading from '../micros/typography/AppHeading'
 import Link from '../micros/typography/AppLink'
+import {useState} from 'react'
+
 
 export default function Techstack() {
+
+  const [toggleBtn, setToggleBtn] = useState(true)
+  const technologies = [
+    {
+    tech: 'HTML5',
+    level: 'w-[80%]',
+  },{
+    tech: 'CSS3',
+    level: 'w-[90%]',
+  },{
+    tech: 'JavaScript',
+    level: 'w-[90%]',
+  },{
+    tech: 'React',
+    level: 'w-[90%]',
+  },{
+    tech: 'React Native',
+    level: 'w-[70%]',
+  },{
+    tech: 'NextJS',
+    level: 'w-[85%]',
+  },
+]
   return (
     <div className='space-y-4'>
       <AppHeading>My tech stack specialization?</AppHeading>
       <p>
         {' '}
-        I, deeply, focus on{' '}
+        In general, I, deeply, focus on{' '}
         <em className='underline text-secondary'>
           <strong>JavaScript</strong>
         </em>{' '}
         with Frontend Libraries and Frameworks such as React, NextJS.
       </p>
+
+      <button onClick={() => setToggleBtn(!toggleBtn)}>skills</button>
+      {
+        toggleBtn &&  <div className={`   transition-all ease-out duration-400 `}>
+          <ul className={`list-disc pl-10 grid grid-cols-6 items-center opacity-100 `}>
+
+        {Array.isArray(technologies) &&
+            technologies.map((item, idx) => (
+              <>
+              <li key={idx} className='text-important '>
+              <h2 className='text-secondary'>{item.tech}:</h2> 
+  
+              </li>
+              <span className={`col-span-5 block h-2 bg-primary opacity-60 rounded-full ${item.level} `}></span>
+              </>
+  
+  ))}
+  </ul>
+        </div>
+      }
+      
       <h2 className='text-2xl text-secondary italic underline pt-2'>
         What am I currently into?
       </h2>
