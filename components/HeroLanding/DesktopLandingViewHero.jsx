@@ -10,7 +10,7 @@ export default function DesktopLandingViewHero() {
     <main>
       <section>
         <article className=''>
-          <aside className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-50 text-right'>
+          <aside className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-70 text-right'>
             Nice to meet you!
           </aside>
 
@@ -46,7 +46,7 @@ export default function DesktopLandingViewHero() {
           <h2 className='pl-2 text-4xl text-primary'>more about me?</h2>
           <Link href='/about'>
             <a>
-              <h2 className='font-mono italic pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
+              <h2 className='inline-block font-mono italic pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
                 take me to about page
               </h2>
             </a>
