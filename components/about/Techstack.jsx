@@ -1,71 +1,126 @@
+import { useState } from 'react'
 import AppHeading from '../micros/typography/AppHeading'
 import Link from '../micros/typography/AppLink'
-import {useState} from 'react'
-
 
 export default function Techstack() {
-
-  const [toggleBtn, setToggleBtn] = useState(true)
+  const [toggleBtn, setToggleBtn] = useState(false)
   const technologies = [
     {
-    tech: 'HTML5',
-    level: 'w-[80%]',
-  },{
-    tech: 'CSS3',
-    level: 'w-[90%]',
-  },{
-    tech: 'JavaScript',
-    level: 'w-[90%]',
-  },{
-    tech: 'React',
-    level: 'w-[90%]',
-  },{
-    tech: 'React Native',
-    level: 'w-[70%]',
-  },{
-    tech: 'NextJS',
-    level: 'w-[85%]',
-  },
-]
+      tech: 'HTML5',
+      level: 'w-[86%]',
+    },
+    {
+      tech: 'CSS3',
+      level: 'w-[96%]',
+    },
+    {
+      tech: 'Tailwindcss',
+      level: 'w-[95%]',
+    },
+    {
+      tech: 'Mui',
+      level: 'w-[77%]',
+    },
+    {
+      tech: 'JavaScript',
+      level: 'w-[92%]',
+    },
+    {
+      tech: 'React (Redux, RQ)',
+      level: 'w-[92%]',
+    },
+    {
+      tech: 'NextJS',
+      level: 'w-[90%]',
+    },
+  ]
+
+  const tags = [
+    'Responsive design',
+    'User Experience (UX)',
+    'ReactNative',
+    'Webpack (Vite)',
+    'Version Control (Git)',
+    'Linux',
+    'Docker',
+    'ExpressJs',
+    'Strapi',
+    'JAM stack',
+  ]
   return (
     <div className='space-y-4'>
       <AppHeading>My tech stack specialization?</AppHeading>
       <p>
         {' '}
-        In general, I, deeply, focus on{' '}
+        Generally, I deeply focus on{' '}
         <em className='underline text-secondary'>
           <strong>JavaScript</strong>
         </em>{' '}
-        with Frontend Libraries and Frameworks such as React, NextJS.
+        and React library with its ecosystem as of now.
       </p>
 
-      <button onClick={() => setToggleBtn(!toggleBtn)}>skills</button>
-      {
-        toggleBtn &&  <div className={`   transition-all ease-out duration-400 `}>
-          <ul className={`list-disc pl-10 grid grid-cols-6 items-center opacity-100 `}>
-
-        {Array.isArray(technologies) &&
-            technologies.map((item, idx) => (
-              <>
-              <li key={idx} className='text-important '>
-              <h2 className='text-secondary'>{item.tech}:</h2> 
-  
-              </li>
-              <span className={`col-span-5 block h-2 bg-primary opacity-60 rounded-full ${item.level} `}></span>
-              </>
-  
-  ))}
-  </ul>
+      {!toggleBtn && (
+        <div className='flex justify-center'>
+          <button
+            className='flex items-center px-8 py-2 cursor-pointerr rounded-full tracking-widest bg-accent text-secondary hover:bg-primary hover:text-white'
+            onClick={() => setToggleBtn(!toggleBtn)}
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-5 w-5'
+              viewBox='0 0 20 20'
+              fill='currentColor'
+            >
+              <path
+                fillRule='evenodd'
+                d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+                clipRule='evenodd'
+              />
+            </svg>
+            <span className='pl-3 pb-1'>visualize skills</span>
+          </button>
         </div>
-      }
-      
-      <h2 className='text-2xl text-secondary italic underline pt-2'>
+      )}
+      {toggleBtn && (
+        <div className={` pl-10   transition-all ease-out duration-400 `}>
+          <ul className={`list-disc py-3 grid grid-cols-6 items-center`}>
+            {Array.isArray(technologies) &&
+              technologies.map((item, idx) => (
+                <>
+                  <li key={idx} className='text-primary pt-3'>
+                    <h2 className='text-secondary'>{item.tech}</h2>
+                  </li>
+                  <span
+                    className={`mt-3 col-span-5 block h-2 bg-secondary opacity-60 rounded-full relative`}
+                  >
+                    <span
+                      className={`${item.level} bg-primary rounded-full absolute inset-0`}
+                    ></span>
+                  </span>
+                </>
+              ))}
+          </ul>
+          <ul className='space-x-2 space-y-2'>
+            {Array.isArray(tags) &&
+              tags.map((tag, idx) => (
+                <li
+                  key={idx}
+                  className='rounded-full list-none bg-accent inline-block px-4 py-1'
+                >
+                  {tag}
+                </li>
+              ))}
+          </ul>
+        </div>
+      )}
+
+      {/* <h2 className='text-2xl text-secondary italic underline pt-2'>
         What am I currently into?
       </h2>
       <p>
         Building a <em className='underline text-secondary'>usable website</em>{' '}
-        that addresses user needs. <strong className='text-secondary'>UX</strong>{' '}
-        lies at my core.
+        that addresses user needs.{' '}
+        <strong className='text-secondary'>UX</strong> lies at my core.
       </p>
       <p>
         As the digital platforms expand, it&apos;s not practical to have various
@@ -82,7 +137,7 @@ export default function Techstack() {
         <em className='text-secondary'>ExpressJS, FastAPI, and Flask</em> that
         can help me manage APIs. It gives me the flexibility to address{' '}
         <em className='text-secondary'>the philosophy of the modern web.</em>
-      </p>
+      </p> */}
 
       <p className='text-secondary pt-4'>
         <em>

@@ -5,7 +5,7 @@ export default function ProjectList() {
   return (
     <section className='space-y-4'>
       {projectData.map((data) => (
-        <ProjectListItem key ={data.id} projectData={data}  />
+        <ProjectListItem key={data.id} projectData={data} />
       ))}
     </section>
   )

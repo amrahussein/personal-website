@@ -1,13 +1,14 @@
-import React from 'react'
 import AppHeading from '../micros/typography/AppHeading'
 import AppLink from '../micros/typography/AppLink'
 
 export default function ProjectListItem({ projectData: data }) {
   return (
     <article className='pl-3 pr-1 py-5 border-2 border-accent rounded-lg space-y-4'>
-      <AppHeading styles='text-2xl ... pl-2' >
+      <AppHeading styles='text-2xl ... pl-2'>
         project repo:{' '}
-        <p className='inline-block text-secondary underline italic'>{data.name}</p>
+        <p className='inline-block text-secondary underline italic'>
+          {data.name}
+        </p>
       </AppHeading>
       <div>
         <h2 className='text-2xl italic font-mono'>Description: </h2>
@@ -38,7 +39,7 @@ export default function ProjectListItem({ projectData: data }) {
       </div>
 
       <div>
-      <h2 className=''>Technologies: </h2>
+        <h2 className=''>Technologies: </h2>
         <ul className='pl-10 text-secondary'>
           {data.technologies.map((tech, idx) => (
             <li key={idx} className='list-disc'>
@@ -47,10 +48,11 @@ export default function ProjectListItem({ projectData: data }) {
           ))}
         </ul>
       </div>
-      {data.notes && 
-            <h2 className='italic font-mono'>Notes: <span className='text-gray-500 '>{data.notes}</span></h2>
-      }
-
+      {data.notes && (
+        <h2 className='italic font-mono'>
+          Notes: <span className='text-gray-500 '>{data.notes}</span>
+        </h2>
+      )}
     </article>
   )
 }

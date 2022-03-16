@@ -24,12 +24,12 @@ export default function GoSocials({
             <div
               className={`${
                 linkStyle
-                  ? linkStyle
-                  : 'flex flex-col p-2 w-24 h-24 space-y-4 rounded-3xl hover:scale-110 hover:bg-accent'
+                ? linkStyle
+                : 'flex flex-col p-2 w-24 h-24 space-y-4 rounded-3xl hover:scale-110 hover:bg-accent'
               }`}
-            >
+              >
               {item.icon}
-              {socialNames && <p className='text-sm'>{item.name}</p>}
+              {socialNames && <p className='text-sm text-secondary opacity-100 hover:opacity-100'>{item.name}</p>}
             </div>
           </a>
         </Link>

@@ -1,16 +1,16 @@
-import Line from '../micros/Line'
-import ContactMe from '../micros/ContactMe'
-import AppHeading from '../micros/typography/AppHeading'
 import Link from 'next/link'
-import GoSocials from '../micros/GoSocials'
 import Amrologo from '../micros/Amrologo'
+import ContactMe from '../micros/ContactMe'
+import GoSocials from '../micros/GoSocials'
+import Line from '../micros/Line'
+import AppHeading from '../micros/typography/AppHeading'
 
 export default function DesktopLandingViewHero() {
   return (
-    <main>
+    <main className=''>
       <section>
         <article className=''>
-          <aside className='italic py-5 mr-[5rem] text-4xl text-secondary opacity-70 text-right'>
+          <aside className='italic py-5 text-4xl text-secondary opacity-70 text-right ... lg:mr-[-15rem]'>
             Nice to meet you!
           </aside>
 
@@ -22,42 +22,47 @@ export default function DesktopLandingViewHero() {
                 Hey, my name is{' '}
                 <strong className='text-secondary opacity-80'>
                   Amr Abdelkamel
-                </strong>. {' '}
-                I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
-
+                </strong>
+                . I&apos;m passionate about developing and designing modern web
+                apps with{' '}
+                <em className='underline font-mono font-semibold'>usability</em>{' '}
+                in mind.
               </p>
 
               <p className='pt-3'>
-                Currently I&apos;m open for <em>opportunities</em> as an entry position
-                web developer{' '}
+                Currently I&apos;m open for <em>opportunities</em> as a front-end developer.{' '}
                 <span className='text-important italic font-mono tracking-wide pl-2'>
                   !important
                 </span>
               </p>
+
+              {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
+          <Link href='/about'>
+            <a>
+              <h3 className='mt-2 px-4 py-1 ml-6 tracking-widest float-right bg-accent rounded-full transition duration-200 italic text-secodary underline hover:text-cool border-2 border-b-primary hover:border-b-cool border-x-0 border-t-0 '>
+                more about me?
+              </h3>
+            </a>
+        
+          </Link>
             </div>
           </div>
         </article>
       </section>
 
       <Line />
+    
 
       <section className='pt-6 space-y-14 '>
-        <article>
-          <h2 className='pl-2 text-4xl text-primary'>more about me?</h2>
-          <Link href='/about'>
-            <a>
-              <h2 className='inline-block font-mono italic pt-2 pl-4 text-2xl text-important underline hover:text-cool'>
-                take me to about page
-              </h2>
-            </a>
-          </Link>
-        </article>
+        {/* <article>
+          
+        </article> */}
 
-        <article>
+        <article className='flex flex-col items-center'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!
           </AppHeading>
-          <h3 className='font-mono pl-5 pt-2 text-3xl italic text-gray-500'>
+          <h3 className='tracking-wider font-mono pl-5 pt-2 text-3xl italic text-gray-500'>
             reach me out on:
           </h3>
           <div className='mb-32 pl-4 pt-5 flex flex-col space-y-6 justify-around max-w-4xl'>

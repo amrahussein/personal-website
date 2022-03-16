@@ -9,7 +9,6 @@ export default function DesktopLandingNavBrand({ dark = false }) {
   return (
     <>
       <header className={topNavDark}>
-
         <h1 className='text-3xl font-extrabold pt-[0.18rem] pr-4'>
           <Link href='/'>
             <a>
@@ -19,8 +18,9 @@ export default function DesktopLandingNavBrand({ dark = false }) {
               </span>
             </a>
           </Link>
+        {/* <span className='border-2 border-gray-300 mx-4 rounded-full'></span> */}
         </h1>
- 
+
         <DesktopTopNav />
       </header>
     </>

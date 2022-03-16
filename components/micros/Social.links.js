@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-  faGithub,
+  faGithub, faInstagram,
+  faLinkedin, faTwitter
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const socials = [
   {

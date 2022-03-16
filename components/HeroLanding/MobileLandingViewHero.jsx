@@ -1,10 +1,10 @@
-import Line from '../micros/Line'
+import Link from 'next/link'
+import Amrologo from '../micros/Amrologo'
 import ContactMe from '../micros/ContactMe'
 import FlexCenter from '../micros/FlexCenter'
-import AppHeading from '../micros/typography/AppHeading'
-import Link from 'next/link'
 import GoSocials from '../micros/GoSocials'
-import Amrologo from '../micros/Amrologo'
+import Line from '../micros/Line'
+import AppHeading from '../micros/typography/AppHeading'
 
 export default function MobileLandingViewHero() {
   return (
@@ -18,7 +18,7 @@ export default function MobileLandingViewHero() {
       <section>
         <Line />
         <article className=' mt-5'>
-          <aside className='italic py-5 pr-1 text-4xl text-secondary opacity-50 text-right'>
+          <aside className='italic py-5 pr-1 text-4xl text-secondary opacity-70 text-right'>
             Nice to meet you!
           </aside>
 
