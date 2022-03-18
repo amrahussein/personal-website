@@ -3,7 +3,7 @@ import AppHeading from '../micros/typography/AppHeading'
 export default function Devstart() {
   return (
     <div className='space-y-4'>
-      <AppHeading>How has my DEV started?</AppHeading>
+      <AppHeading>my DEV journey..</AppHeading>
 
       <p>
         Started my programming journey with Python &amp; Java: Python introduced
@@ -22,7 +22,7 @@ export default function Devstart() {
       <p>
         I was introduced to core concepts like computational thinking,
         procedural and descriptive programming. In addition to the importance of
-        abstract thinking that has to do with descriptive programming
+        abstract thinking that has to do with descriptive programming.
       </p>
 
       <p>

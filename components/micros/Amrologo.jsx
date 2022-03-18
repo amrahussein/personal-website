@@ -1,28 +1,44 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { AppContext } from '../App.context'
 
 export default function Amrologo({ w = 200, h = 200 }) {
+  const mobile = useContext(AppContext)
   const [mainLogo, setMainLogo] = useState(true)
 
   return (
     <figure>
       <div className='border-2 border-accent inline-block rounded-full'>
-        <img
-          className='rounded-full'
-          src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
-          alt={
-            mainLogo
-              ? 'an image logo-like of Amr Abdelkamel'
-              : 'a cat wondering'
-          }
-          width={w}
-          height={h}
-          // Click for Mobile mainly
-          onClick={() => setMainLogo(!mainLogo)}
-          // Hover for Desktop mainly
-          onMouseOut={() => setMainLogo(true)}
-          onMouseOver={() => setMainLogo(false)}
-        />
+        {mobile ? (
+          <img
+            className='rounded-full'
+            src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
+            alt={
+              mainLogo
+                ? 'an image logo-like of Amr Abdelkamel'
+                : 'a cat wondering'
+            }
+            width={w}
+            height={h}
+            // Click for Mobile mainly
+            onClick={() => setMainLogo(!mainLogo)}
+          />
+        ) : (
+          <img
+            className='rounded-full'
+            src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
+            alt={
+              mainLogo
+                ? 'an image logo-like of Amr Abdelkamel'
+                : 'a cat wondering'
+            }
+            width={w}
+            height={h}
+            // Hover for Desktop mainly
+            onMouseOut={() => setMainLogo(true)}
+            onMouseOver={() => setMainLogo(false)}
+          />
+        )}
         <figcaption className='hidden'>
           <h1>Amr Abdelkamel</h1>
         </figcaption>
