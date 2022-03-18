@@ -15,6 +15,7 @@ export default function Blog() {
         <link rel='canonical' href={canonicalURL} />
 
         <meta
+          name='description'
           property='og:description'
           content='Sharing my inspiration in my blog. Hope you find it interesting!'
           key='description'

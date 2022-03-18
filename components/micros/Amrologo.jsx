@@ -1,13 +1,17 @@
+import { useState } from "react"
+
 export default function Amrologo({ w = 200, h = 200 }) {
+  const [mainLogo, setMainLogo] = useState(true)
   return (
     <figure>
       <div className='border-2 border-accent inline-block rounded-full'>
         <img
           className='rounded-full'
-          src={'/img/amrologo.jpg'}
-          alt='Picture of the author'
+          src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
+          alt={mainLogo ? 'an image-logo like of Amr Abdelkamel' : 'a cat wondering'}
           width={w}
           height={h}
+          onClick={() => setMainLogo(!mainLogo)}
         />
         <figcaption className='hidden'>
           <h1>Amr Abdelkamel</h1>

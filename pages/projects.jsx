@@ -16,6 +16,7 @@ export default function Projects() {
         <link rel='canonical' href={canonicalURL} />
 
         <meta
+          name='description'
           property='og:description'
           content="Here's a my portofolio. Hope you find it interesting!"
           key='description'

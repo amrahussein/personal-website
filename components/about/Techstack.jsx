@@ -44,6 +44,7 @@ export default function Techstack() {
     'Linux',
     'Docker',
     'ExpressJs',
+    'MERN',
     'Strapi',
     'JAM stack',
   ]

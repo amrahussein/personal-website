@@ -22,6 +22,7 @@ export default function About() {
 
       <Head>
         <meta
+          name='description'
           property='og:description'
           content="Here's a summary about me. Let's get connected!"
           key='description'

@@ -5,10 +5,10 @@ export default function ProjectListItem({ projectData: data }) {
   return (
     <article className='pl-3 pr-1 py-5 border-2 border-accent rounded-lg space-y-4'>
       <AppHeading styles='text-2xl ... pl-2'>
-        project repo:{' '}
-        <p className='inline-block text-secondary underline italic'>
           {data.name}
-        </p>
+        {/* project repo:{' '}
+        <p className='inline-block text-secondary underline italic'>
+        </p> */}
       </AppHeading>
       <div>
         <h2 className='text-2xl italic font-mono'>Description: </h2>
@@ -17,13 +17,13 @@ export default function ProjectListItem({ projectData: data }) {
       <h2 className=''>
         Preview:{' '}
         <span className='italic'>
-          <AppLink href={data.url}>{data.url}</AppLink>
+          <AppLink href={data.url_live}>{data.url_live}</AppLink>
         </span>
       </h2>
       <h2 className=''>
         Project repo:{' '}
         <span className='italic'>
-          <AppLink href={data.name}>{data.name}</AppLink>
+          <AppLink href={data.url_repo}>{data.name}</AppLink>
         </span>
       </h2>
 
