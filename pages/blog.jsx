@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import AppLink from '../components/micros/typography/AppLink'
 import Layout from '../components/TheLayout'
@@ -29,9 +30,9 @@ export default function Blog() {
         </h2>
         <section>
           <article>
-            {/* <Link href='/blog/fake-article'>
+            <Link href='/blog/fake-article'>
               <a>go to article</a>
-            </Link> */}
+            </Link>
           </article>
 
           <h2 className='text-3xl mx-11 mt-11 pt-20 text-center text-primary'>

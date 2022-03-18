@@ -25,8 +25,10 @@ export default function Layout({ children }) {
       ) : (
         <>
           <DesktopLandingNavBrand />
-
+          
+          <div className='sm:max-w-4xl'>
           {children}
+          </div>
 
           <DesktopFooter />
         </>

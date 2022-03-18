@@ -1,8 +1,12 @@
 // import fs from 'fs'
+import { marked } from 'marked'
 import Head from 'next/head'
+import AppHeading from '../../components/micros/typography/AppHeading';
+import Layout from '../../components/TheLayout'
 import fetchBlogContent from '../../lib/fetchBlogContent'
 // // blog template
 export default function BlogPost({ content, data }) {
+  console.log('data: ', data);
   // console.log('fetchBlogContent: ', fetchBlogContent())
   return (
     <>
@@ -10,11 +14,14 @@ export default function BlogPost({ content, data }) {
         {/* <title>{data.title}</title> */}
         {/* description */}
       </Head>
-      {/* <Layout>
-        <section>
+       <Layout>
+         <main className='mb-16'>
+      <AppHeading>{data.title}</AppHeading>
+        <section className='pt-8'>
           <article dangerouslySetInnerHTML={{ __html: content }}></article>
         </section>
-      </Layout> */}
+         </main>
+      </Layout> 
     </>
   )
 }
@@ -46,8 +53,11 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params: {slug}}) => {
   const blogContent = fetchBlogContent()
 
-  // console.log('params:::::::::::: ', slug);
+  console.log('params:::::::::::: ', slug);
   try {
+
+    const {data, content } = blogContent.find(post => post.slug === slug)
+    // console.log('data: ', data);
     
     // reading markdowned posts
     // const markdownWithMetaInfo = fs.readFileSync(
@@ -57,7 +67,7 @@ export const getStaticProps = async ({params: {slug}}) => {
 
 //     const markdownParsed = matter(markdownWithMetaInfo)
 
-//     const blogPostHTML = marked(markdownParsed.content)
+    const blogPostHTML = marked(content)
 //     // console.log('blogPostHTML: ', markdownParsed);
 
 // // Blog body with no meta info parsed into HTML elements
@@ -65,8 +75,8 @@ export const getStaticProps = async ({params: {slug}}) => {
 
     return {
       props: {
-        // content: ,
-        // data: ,
+        data,
+        content: blogPostHTML
       },
     }
   } catch (err) {
@@ -74,4 +84,5 @@ export const getStaticProps = async ({params: {slug}}) => {
       `Error encountered while reading info within posts directory:: ${err}`
     )
   }
+
 }
