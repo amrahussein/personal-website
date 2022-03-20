@@ -3,6 +3,7 @@ import Amrologo from '../micros/Amrologo'
 import ContactMe from '../micros/ContactMe'
 import FlexCenter from '../micros/FlexCenter'
 import GoSocials from '../micros/GoSocials'
+import HeroMessage from '../micros/HeroMessage'
 import Line from '../micros/Line'
 import AppHeading from '../micros/typography/AppHeading'
 
@@ -22,19 +23,8 @@ export default function MobileLandingViewHero() {
             Nice to meet you!
           </aside>
 
-          <p className='pt-4 text-lg'>
-            Hey, my name is{' '}
-            <strong className='text-secondary opacity-80'>
-              Amr Abdelkamel
-            </strong>.
-            <br></br>
-          {' '}  I&apos;m passionate about developing and designing modern web apps with <em className='underline font-mono font-semibold'>usability</em> in mind.
-          </p>
-
-          <p className='pt-5 text-lg'>
-            Currently I&apos;m seeking opportunities as an entry position web
-            developer.{' '}
-          </p>
+          <HeroMessage />
+          
         </article>
 
         <article>
@@ -65,7 +55,6 @@ export default function MobileLandingViewHero() {
       <Line />
 
       <section className='pt-5'>
-
         <article>
           {/* <h2 className='pl-2 text-4xl text-primary'>reach me on</h2> */}
           <div className='pl-4 pt-5'>
