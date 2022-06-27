@@ -12,7 +12,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Blog| main page</title>
+        <title>Blog | main page</title>
         <link rel='canonical' href={canonicalURL} />
 
         <meta
