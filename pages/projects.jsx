@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>my portofolio!</title>
+        <title>amromoorie | Portofolio</title>
         <link rel='canonical' href={canonicalURL} />
 
         <meta
