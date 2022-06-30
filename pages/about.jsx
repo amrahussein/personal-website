@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>amromoorie| Let&apos;s connect!</title>
+        <title>amromoorie | Let&apos;s connect!</title>
         <link rel='canonical' href={canonicalURL} />
       </Head>
 
