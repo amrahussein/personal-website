@@ -6,19 +6,19 @@ export default function ContactMe() {
 
   return (
     <>
-      <section className='pt-10'>
-        <h3 className='tracking-wider font-mono pl-5 pt-5 text-3xl italic text-gray-500'>
-          send me a quick message
-        </h3>
-      </section>
       {state.succeeded ? (
         <section className='px-4 py-2 border-2 border-primary rounded'>
           Message Submitted. Thanks!
         </section>
       ) : (
         <>
-          <div className='decorate-form text-gray-600 font-semibold leading-tight'>
-            <form onSubmit={handleSubmit} className='px-8 bg-white'>
+          <section className='pt-4 ... md:pt-10'>
+          <h3 className='pl-5 pt-5 pb-2 font-mono text-xl font-bold italic text-gray-500 ... md:text-3xl md:tracking-wider md:font-normal'>
+            send me a quick message
+          </h3>
+        </section>
+          <div className='ml-[-1rem] decorate-form text-gray-600 font-semibold leading-tight ... md:ml-[-2rem]'>
+            <form onSubmit={handleSubmit} className='px-4 bg-white ... md:px-8'>
               <div className='py-6 space-y-6'>
                 <section className='flex flex-col space-y-2'>
                   <label className='' htmlFor='message'>
@@ -33,7 +33,7 @@ export default function ContactMe() {
                 </section>
 
                 <section className='space-y-2'>
-                  <label className=''>Name</label>
+                  <label className='' htmlFor='name'>Name</label>
                   <input
                     name='name'
                     required
@@ -43,7 +43,7 @@ export default function ContactMe() {
                 </section>
 
                 <section className='space-y-2'>
-                  <label htmlFor='email' className='w-full '>
+                  <label className='' htmlFor='email' >
                     Email
                   </label>
                   <input
@@ -69,7 +69,8 @@ export default function ContactMe() {
           </div>
         </>
       )}
-      <section className='space-y-4'>
+
+      <section className='space-y-4 pt-4 -ml-4 ... md:ml-[-2rem]'>
         <div>
           <span className='text-serious'>prefer a casual chat? </span>
           <AppLink href='https://telegram.me/amromoorie/' rel='telegram'>
