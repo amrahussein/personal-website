@@ -11,6 +11,7 @@
     "deploy": "next build && next export -o build && touch ./build/.nojekyll && touch ./build/CNAME && echo \"amromoorie.com\" >> build/CNAME"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",

@@ -25,7 +25,7 @@ export default function GoSocials({
               className={`${
                 linkStyle
                 ? linkStyle
-                : 'flex flex-col p-2 w-24 h-24 space-y-4 rounded-3xl hover:scale-110 hover:bg-accent'
+                : 'flex flex-col p-2 w-24 h-24 space-y-4 rounded-3xl hover:scale-110 hover:bg-accent ... sm:w-32 sm:h-32'
               }`}
               >
               {item.icon}

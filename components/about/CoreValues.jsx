@@ -26,8 +26,8 @@ export default function CoreValues() {
       </p>
       <p>
         One of the values, Back in my University days, I learned that has an
-        impact on my personality is to <em>communicate well</em>{' '}
-        <em className='underline text-secondary'>Clean code and simplicity</em>{' '}
+        impact on my personality is to <em>communicate well</em>.{' '}
+        As <em className='underline text-secondary'>Clean code and simplicity</em>{' '}
         can, surely, scale any project pretty well.
       </p>
     </div>

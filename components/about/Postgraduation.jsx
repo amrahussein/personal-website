@@ -27,7 +27,7 @@ export default function Postgraduation() {
         <em className='underline text-secondary'>volunteering activities</em> to
         apply what I have learned. What I can say is that willing to get to know
         different peoples&apos; thoughts increase the chance of mutual matching
-        of common goal and value. It&apos;s absolutely an integral part of any
+        of common goal and value. I see it as an integral part of any
         project&apos;s success.
       </p>
     </div>
