@@ -64,11 +64,11 @@ export default function MobileLandingViewHero() {
 
       <Line />
 
-      <section className='pt-5'>
+      <section className=''>
 
         <article>
           {/* <h2 className='pl-2 text-4xl text-primary'>reach me on</h2> */}
-          <div className='pl-4 pt-5'>
+          <div className='pl-4'>
             <ContactMe />
           </div>
         </article>
