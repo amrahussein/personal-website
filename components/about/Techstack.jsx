@@ -1,10 +1,57 @@
 import { useState } from 'react'
-import { tags, technologies } from '../../lib/technologies-tags'
 import AppHeading from '../micros/typography/AppHeading'
 import Link from '../micros/typography/AppLink'
 
 export default function Techstack() {
   const [toggleBtn, setToggleBtn] = useState(false)
+  const technologies = [
+    {
+      tech: 'HTML5',
+      level: 'w-[86%]',
+    },
+    {
+      tech: 'CSS3',
+      level: 'w-[96%]',
+    },
+    {
+      tech: 'Tailwindcss',
+      level: 'w-[95%]',
+    },
+    {
+      tech: 'Mui',
+      level: 'w-[77%]',
+    },
+    {
+      tech: 'JavaScript',
+      level: 'w-[95%]',
+    },
+    {
+      tech: 'React',
+      level: 'w-[93%]',
+    },
+    {
+      tech: 'Redux',
+      level: 'w-[92%]',
+    },
+    {
+      tech: 'NextJS',
+      level: 'w-[90%]',
+    },
+  ]
+
+  const tags = [
+    'Responsive design',
+    'User Experience (UX)',
+    'ReactNative',
+    'Webpack (Vite)',
+    'Version Control (Git)',
+    'Linux',
+    'Docker',
+    'ExpressJs',
+    'MERN',
+    'Strapi',
+    'JAM stack',
+  ]
 
   return (
     <div className='space-y-4'>
@@ -42,18 +89,14 @@ export default function Techstack() {
       )}
       {toggleBtn && (
         <div className='transition-all ease-out duration-400'>
-          <ul
-            className='pl-8 list-disc py-3 grid items-center space-y-3 ... sm:pl-10 sm:grid-cols-6 sm:space-y-0'
-          >
+          <ul className='pl-8 list-disc py-3 grid items-center space-y-3 ... sm:pl-10 sm:grid-cols-6 sm:space-y-0'>
             {Array.isArray(technologies) &&
               technologies.map((item, idx) => (
                 <>
                   <li key={idx} className='text-primary pt-3'>
                     <h2 className='text-secondary'>{item.tech}</h2>
                   </li>
-                  <div
-                    className='mt-3 top-[16.7%] block h-2 bg-secondary opacity-60 rounded-full relative ... sm:col-span-5'
-                  >
+                  <div className='mt-3 top-[16.7%] block h-2 bg-secondary opacity-60 rounded-full relative ... sm:col-span-5'>
                     <span
                       className={`${item.level} bg-primary rounded-full absolute inset-0`}
                     ></span>

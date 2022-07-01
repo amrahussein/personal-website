@@ -2,7 +2,8 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+    - skillbar
 
   pull_request:
     branches: [ main ]
@@ -40,7 +41,7 @@ jobs:
  
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/skillbar' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
