@@ -12,7 +12,11 @@ export default function Amrologo({ w = 200, h = 200 }) {
         {mobile ? (
           <img
             className='rounded-full'
-            src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
+            src={
+              mainLogo
+                ? '/img/hero-landing/amrologo.jpg'
+                : '/img/hero-landing/catlogo.jpg'
+            }
             alt={
               mainLogo
                 ? 'an image logo-like of Amr Abdelkamel'
@@ -26,7 +30,11 @@ export default function Amrologo({ w = 200, h = 200 }) {
         ) : (
           <img
             className='rounded-full'
-            src={mainLogo ? '/img/amrologo.jpg' : '/img/catlogo.jpg'}
+            src={
+              mainLogo
+                ? '/img/hero-landing/amrologo.jpg'
+                : '/img/hero-landing/catlogo.jpg'
+            }
             alt={
               mainLogo
                 ? 'an image logo-like of Amr Abdelkamel'
