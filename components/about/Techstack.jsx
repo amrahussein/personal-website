@@ -96,7 +96,7 @@ export default function Techstack() {
                   <li key={idx} className='text-primary pt-3'>
                     <h2 className='text-secondary'>{item.tech}</h2>
                   </li>
-                  <div className='mt-3 top-[16.7%] block h-2 bg-secondary opacity-60 rounded-full relative ... sm:col-span-5'>
+                  <div className='top-[16.7%] block h-2 bg-secondary opacity-60 rounded-full relative ... sm:col-span-5'>
                     <span
                       className={`${item.level} bg-primary rounded-full absolute inset-0`}
                     ></span>
