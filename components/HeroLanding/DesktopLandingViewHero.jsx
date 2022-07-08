@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Amrologo from '../micros/Amrologo'
+import ButtonBrand from '../micros/buttons/ButtonBrand'
 import ContactMe from '../micros/ContactMe'
 import GoSocials from '../micros/GoSocials'
 import HeroMessage from '../micros/HeroMessage'
@@ -31,9 +32,7 @@ export default function DesktopLandingViewHero() {
               {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
               <Link href='/about'>
                 <a>
-                  <h3 className='mt-2 px-4 py-1 ml-6 tracking-widest float-right bg-accent rounded-full transition duration-200 italic text-secodary hover:text-cool border-2 border-b-primary hover:border-b-cool border-x-0 border-t-0 '>
-                    more about me?
-                  </h3>
+                  <ButtonBrand>more about me?</ButtonBrand>
                 </a>
               </Link>
             </div>
