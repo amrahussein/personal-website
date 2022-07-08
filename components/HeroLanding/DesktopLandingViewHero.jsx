@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Amrologo from '../micros/Amrologo'
-import ButtonBrandBlue from '../micros/buttons/ButtonBrandBlue'
+import ButtonBrand from '../micros/buttons/ButtonBrand'
 import ContactMe from '../micros/ContactMe'
 import GoSocials from '../micros/GoSocials'
 import Line from '../micros/Line'
@@ -41,7 +41,7 @@ export default function DesktopLandingViewHero() {
               {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
               <Link href='/about'>
                 <a>
-                  <ButtonBrandBlue>more about me?</ButtonBrandBlue>
+                  <ButtonBrand>more about me?</ButtonBrand>
                 </a>
               </Link>
             </div>
