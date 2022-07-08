@@ -4,6 +4,11 @@ import AppLink from '../micros/typography/AppLink'
 export default function ProjectListItem({ projectData: data }) {
   return (
     <article className='pl-3 pr-1 py-5 border-2 border-accent rounded-lg space-y-4'>
+       <img
+          className='rounded-ffull'
+          src={'/img/catlogo.jpg'}
+         
+        />
       <AppHeading styles='text-2xl ... pl-2'>
         project repo:{' '}
         <p className='inline-block text-secondary underline italic'>
