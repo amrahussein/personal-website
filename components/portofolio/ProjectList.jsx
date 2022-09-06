@@ -1,12 +1,15 @@
 import { projectData } from '../../lib/project-data'
 import ProjectListItem from './ProjectListItem'
+import Slider from './Slider.test'
 
 export default function ProjectList() {
-  return (
-    <section className='space-x-8 grid grid-cols-3'>
+  return (<>
+      {/* <Slider /> */}
+    <section className=''>
       {projectData.map((data) => (
-        <ProjectListItem key={data.id} projectData={data} />
-      ))}
+        <ProjectListItem key={data.id} id={data.id} projectData={data} />
+        ))}
     </section>
+        </>
   )
 }

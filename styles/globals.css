@@ -36,7 +36,11 @@
 }
 
 .decorate-form {
-  @apply pt-3 pl-3 bg-accent rounded-tr rounded-br
+  @apply pt-3 pl-3 bg-accent rounded-tl
 }
 
 }
+
+
+
+

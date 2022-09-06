@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import DesktopTopNav from '../../navigation/DesktopTopNav'
+import DesktopTopNav from '../navigation/DesktopTopNav'
+
 export default function DesktopLandingNavBrand({ dark = false }) {
   let topNavDark = `flex flex-row justify-between pt-2 pb-1 pr-4 pl-2 top-0 inset-x-0 fixed  sm:px-4 ... lg:px-8 ${
     dark

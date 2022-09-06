@@ -6,6 +6,7 @@ import FlexCenter from '../micros/FlexCenter'
 import GoSocials from '../micros/GoSocials'
 import Line from '../micros/Line'
 import AppHeading from '../micros/typography/AppHeading'
+import AboutLandingInfo from './AboutLandingInfo'
 
 export default function MobileLandingViewHero() {
   return (
@@ -34,10 +35,16 @@ export default function MobileLandingViewHero() {
             mind.
           </p>
 
-          <p className='pt-5 text-lg'>
+          <Line />
+          <div className='pl-4'>
+            
+          <AboutLandingInfo />
+          </div>
+
+          {/* <p className='pt-5 text-lg'>
             Currently I&apos;m seeking opportunities as an entry position web
             developer.{' '}
-          </p>
+          </p> */}
         </article>
 
         <article>

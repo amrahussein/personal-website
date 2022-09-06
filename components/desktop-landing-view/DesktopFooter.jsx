@@ -1,5 +1,6 @@
-import Copyright from '../Copyright'
-import GoSocials from '../GoSocials'
+import Copyright from "../micros/Copyright";
+import GoSocials from "../micros/GoSocials";
+
 
 export default function DesktopFooter() {
   return (

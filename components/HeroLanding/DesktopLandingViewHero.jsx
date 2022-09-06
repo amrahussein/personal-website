@@ -5,6 +5,7 @@ import ContactMe from '../micros/ContactMe'
 import GoSocials from '../micros/GoSocials'
 import Line from '../micros/Line'
 import AppHeading from '../micros/typography/AppHeading'
+import AboutLandingInfo from './AboutLandingInfo'
 
 export default function DesktopLandingViewHero() {
   return (
@@ -30,13 +31,16 @@ export default function DesktopLandingViewHero() {
                 in mind.
               </p>
 
-              <p className='pt-3'>
+              {/* <p className='pt-3'>
                 Currently I&apos;m open for <em>opportunities</em> as a
                 front-end developer.{' '}
                 <span className='text-important italic font-mono tracking-wide pl-2'>
                   !important
                 </span>
-              </p>
+              </p> */}
+              <Line />
+
+              <AboutLandingInfo />
 
               {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
               <Link href='/about'>

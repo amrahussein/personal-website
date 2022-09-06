@@ -18,7 +18,7 @@ export default function ContactMe() {
           </h3>
         </section>
           <div className='ml-[-1rem] decorate-form text-gray-600 font-semibold leading-tight ... md:ml-[-2rem]'>
-            <form onSubmit={handleSubmit} className='px-4 bg-white ... md:px-8'>
+            <form onSubmit={handleSubmit} className='px-4 py-8 bg-white ... md:px-8'>
               <div className='py-6 space-y-6'>
                 <section className='flex flex-col space-y-2'>
                   <label className='' htmlFor='message'>

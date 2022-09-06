@@ -1,34 +1,46 @@
 import AppHeading from '../micros/typography/AppHeading'
 import AppLink from '../micros/typography/AppLink'
+// import CarouselManager from './carousel/CarouselManager';
+import Slider from './Slider.test';
 
-export default function ProjectListItem({ projectData: data }) {
+
+
+
+export default function ProjectListItem({ projectData: data, id }) {
+
+
+  const isEven = id % 2 === 0 ? true : false;
+  console.log('isEven: ', isEven);
+  
+ 
   return (
-    <article className='pl-3 pr-1 py-5 border-2 border-accent rounded-lg space-y-4'>
-       <img
-          className='rounded-ffull'
-          src={'/img/catlogo.jpg'}
-         
-        />
+  
+      <article className='mt-20'>
       <AppHeading styles='text-2xl ... pl-2'>
-        project repo:{' '}
         <p className='inline-block text-secondary underline italic'>
           {data.name}
         </p>
       </AppHeading>
+      <section className={`h-full mt-4 bg-gradient-to-t from-accent pb-3 ${isEven ? 'pl-3 rounded-bl': 'pr-3 rounded-br'}`}>
+
+        <section className='bg-white h-full px-4'>
+
+
+
       <div>
-        <h2 className='text-2xl italic font-mono'>Description: </h2>
+        {/* <h2 className='text-2xl italic font-mono'>Description: </h2> */}
         <p className='text-secondary'>{data.description}</p>
       </div>
       <h2 className=''>
         Preview:{' '}
         <span className='italic'>
-          <AppLink href={data.url}>{data.url}</AppLink>
+          <AppLink href={data.url_live}>{data.url_live}</AppLink>
         </span>
       </h2>
       <h2 className=''>
         Project repo:{' '}
         <span className='italic'>
-          <AppLink href={data.name}>{data.name}</AppLink>
+          <AppLink href={data.url_repo}>{data.name}</AppLink>
         </span>
       </h2>
 
@@ -53,11 +65,19 @@ export default function ProjectListItem({ projectData: data }) {
           ))}
         </ul>
       </div>
-      {data.notes && (
+      {/* {data.notes && (
         <h2 className='italic font-mono'>
           Notes: <span className='text-gray-500 '>{data.notes}</span>
         </h2>
-      )}
+      )} */}
+
+
+</section>
+
+      </section>
+
     </article>
+     
+   
   )
 }

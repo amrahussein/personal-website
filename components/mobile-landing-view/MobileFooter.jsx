@@ -1,4 +1,4 @@
-import Copyright from '../Copyright'
+import Copyright from '../micros/Copyright'
 
 export default function MobileFooter() {
   return (
