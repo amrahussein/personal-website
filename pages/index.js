@@ -14,7 +14,7 @@ export default function Home() {
   const siteName = 'https://amromoorie.com'
   const canonicalURL = siteName + pathname
 
-  const mobile = useContext(AppContext)
+  const isMobile = useContext(AppContext)
 
   return (
     <>
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel='canonical' href={canonicalURL} />
       </Head>
       <Layout>
-        {mobile ? <MobileLandingViewHero /> : <DesktopLandingViewHero />}
+        {isMobile ? <MobileLandingViewHero /> : <DesktopLandingViewHero />}
       </Layout>
     </>
   )

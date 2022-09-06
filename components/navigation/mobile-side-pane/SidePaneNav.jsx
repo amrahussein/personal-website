@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Copyright from '../../micros/Copyright'
 import GoSocials from '../../micros/GoSocials'
 import Line from '../../micros/Line'
-import MobileLandingNavBrand from '../../micros/mobile-landing-view/MobileLandingNavBrand'
+import MobileLandingNavBrand from '../../mobile-landing-view/MobileLandingNavBrand'
 import ToggleMenu from '../../micros/ToggleMenu'
 import SidePaneNavItems from './SidePaneNavItems'
 

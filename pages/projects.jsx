@@ -38,7 +38,7 @@ export default function Projects() {
         </h4>
 
         <section className='ml-[-0.5rem] mb-44 max-w-4xl'>
-          <ProjectList />
+          {/* <ProjectList /> */}
         </section>
       </Layout>
     </>

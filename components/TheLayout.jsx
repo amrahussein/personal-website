@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import { AppContext } from './App.context'
-import DesktopFooter from './micros/desktop-landing-view/DesktopFooter'
-import DesktopLandingNavBrand from './micros/desktop-landing-view/DesktopLandingNavBrand'
-import MobileFooter from './micros/mobile-landing-view/MobileFooter'
-import MobileLandingNavBrand from './micros/mobile-landing-view/MobileLandingNavBrand'
+import DesktopFooter from './desktop-landing-view/DesktopFooter'
+import DesktopLandingNavBrand from './desktop-landing-view/DesktopLandingNavBrand'
+import MobileFooter from './mobile-landing-view/MobileFooter'
+import MobileLandingNavBrand from './mobile-landing-view/MobileLandingNavBrand'
 import SidePaneNav from './navigation/mobile-side-pane/SidePaneNav'
 import MobileBottomNav from './navigation/MobileBottomNav'
 
