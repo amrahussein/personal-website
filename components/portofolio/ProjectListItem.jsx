@@ -18,7 +18,7 @@ export default function ProjectListItem({ projectData: data, id }) {
       <article className='mt-20'>
       <AppHeading styles='text-2xl ... pl-2'>
         <p className='inline-block text-secondary underline italic'>
-        </p> */}
+        </p> 
       </AppHeading>
       <section className={`h-full mt-4 bg-gradient-to-t from-accent pb-3 ${isEven ? 'pl-3 rounded-bl': 'pr-3 rounded-br'}`}>
 

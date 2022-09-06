@@ -24,7 +24,7 @@ export default function Projects() {
       </Head>
 
       <Layout>
-        <h2 className='text-5xl italic text-right text-bg-secondary mx-11 my-14 ...  lg:mr-[-46rem]'>
+        <h2 className='text-5xl italic text-right text-bg-secondary mx-11 my-14 ...  lg:mr-[-26rem]'>
           Portofolio
         </h2>
         <h3 className='italic'>
