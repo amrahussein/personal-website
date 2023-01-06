@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import AppLink from '../components/micros/typography/AppLink'
-import ProjectList from '../components/portofolio/ProjectList'
 import Layout from '../components/TheLayout'
+import AppLink from '../components/micros/typography/AppLink'
 
 export default function Projects() {
   const { pathname } = useRouter()

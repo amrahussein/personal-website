@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-import AppLink from '../components/micros/typography/AppLink'
 import Layout from '../components/TheLayout'
+import AppLink from '../components/micros/typography/AppLink'
 
 export default function Blog() {
   const { pathname } = useRouter()

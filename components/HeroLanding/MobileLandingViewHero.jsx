@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import Amrologo from '../micros/Amrologo'
-import ButtonBrand from '../micros/buttons/ButtonBrand'
 import ContactMe from '../micros/ContactMe'
 import FlexCenter from '../micros/FlexCenter'
 import GoSocials from '../micros/GoSocials'
-import HeroMessage from '../micros/HeroMessage'
 import Line from '../micros/Line'
+import ButtonBrand from '../micros/buttons/ButtonBrand'
 import AppHeading from '../micros/typography/AppHeading'
 import AboutLandingInfo from './AboutLandingInfo'
 
