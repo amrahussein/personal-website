@@ -1,44 +1,57 @@
-import { useState } from 'react'
-import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue'
-import AppHeading from '../micros/typography/AppHeading'
-import Link from '../micros/typography/AppLink'
+import { useState } from 'react';
+import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
+import AppHeading from '../micros/typography/AppHeading';
+import Link from '../micros/typography/AppLink';
 
 export default function Techstack() {
-  const [toggleBtn, setToggleBtn] = useState(false)
+  const [toggleBtn, setToggleBtn] = useState(false);
   const technologies = [
     {
       tech: 'HTML5',
-      level: 'w-[86%]',
+      level: '90',
+      width: 'w-[90%]',
     },
     {
       tech: 'CSS3',
-      level: 'w-[96%]',
+      level: '96',
+      width: 'w-[96%]',
     },
     {
       tech: 'Tailwindcss',
-      level: 'w-[95%]',
+      level: '95',
+      width: 'w-[95%]',
     },
     {
       tech: 'Mui',
-      level: 'w-[77%]',
+      level: '77',
+      width: 'w-[77%]',
     },
     {
       tech: 'JavaScript',
-      level: 'w-[95%]',
+      level: '96',
+      width: 'w-[96%]',
+    },
+    {
+      tech: 'TypeScript',
+      level: '90%',
+      width: 'w-[90%]',
     },
     {
       tech: 'React',
-      level: 'w-[93%]',
+      level: '95',
+      width: 'w-[95%]',
     },
     {
       tech: 'Redux',
-      level: 'w-[92%]',
+      level: '92',
+      width: 'w-[92%]',
     },
     {
       tech: 'NextJS',
-      level: 'w-[90%]',
+      level: '90',
+      width: 'w-[90%]',
     },
-  ]
+  ];
 
   const tags = [
     'Responsive design',
@@ -52,10 +65,10 @@ export default function Techstack() {
     'MERN',
     'Strapi',
     'JAM stack',
-  ]
+  ];
 
   return (
-    <div className='space-y-4'>
+    <section className='space-y-4'>
       <AppHeading>My tech stack specialization?</AppHeading>
       <p>
         {' '}
@@ -84,12 +97,17 @@ export default function Techstack() {
                   </li>
                   <div className='top-[16.7%] block h-2 bg-secondary opacity-60 rounded-full relative ... sm:col-span-5'>
                     <span
-                      className={`${item.level} bg-primary rounded-full absolute inset-0`}
+                      className={`${item.width} bg-primary rounded-full absolute inset-0 `}
+                      role='progressbar'
+                      aria-valuenow={item.level}
+                      aria-valuemin='0'
+                      aria-valuemax='100'
                     ></span>
                   </div>
                 </>
               ))}
           </ul>
+
           <ul className='space-x-2 space-y-2 pt-4'>
             {Array.isArray(tags) &&
               tags.map((tag, idx) => (
@@ -143,6 +161,6 @@ export default function Techstack() {
       >
         take me to Github repo
       </Link> */}
-    </div>
-  )
+    </section>
+  );
 }

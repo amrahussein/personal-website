@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import Amrologo from '../micros/Amrologo'
-import ButtonBrand from '../micros/buttons/ButtonBrand'
-import ContactMe from '../micros/ContactMe'
-import GoSocials from '../micros/GoSocials'
-import HeroMessage from '../micros/HeroMessage'
-import Line from '../micros/Line'
-import AppHeading from '../micros/typography/AppHeading'
-import AboutLandingInfo from './AboutLandingInfo'
+import Link from 'next/link';
+import Amrologo from '../micros/Amrologo';
+import ContactMe from '../micros/ContactMe';
+import GoSocials from '../micros/GoSocials';
+import Line from '../micros/Line';
+import ButtonBrand from '../micros/buttons/ButtonBrand';
+import AppHeading from '../micros/typography/AppHeading';
+import AboutLandingInfo from './AboutLandingInfo';
 
 export default function DesktopLandingViewHero() {
   return (
@@ -21,7 +20,6 @@ export default function DesktopLandingViewHero() {
             <Amrologo />
 
             <div className='lg:pl-5 pt-8 '>
-
               {/* <p className='pt-3'>
                 Currently I&apos;m open for <em>opportunities</em> as a
                 front-end developer.{' '}
@@ -62,7 +60,6 @@ export default function DesktopLandingViewHero() {
             <GoSocials
               styleSocialItems='flex space-x-6'
               linkStyle='flex flex-col p-2 mb-8 w-24 h-24 space-y-4 rounded-3xl bg-accent hover:scale-125 hover:text-important hover:rotate-[5deg]'
-              socialNames={false}
             />
             {/* <ContactMe /> */}
             <Line />
@@ -72,5 +69,5 @@ export default function DesktopLandingViewHero() {
         </article>
       </section>
     </main>
-  )
+  );
 }
