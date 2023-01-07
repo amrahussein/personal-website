@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import Layout from '../components/TheLayout'
-import AppLink from '../components/micros/typography/AppLink'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import Layout from '../components/TheLayout';
+import AppLink from '../components/micros/typography/AppLink';
+import ProjectList from '../components/portofolio/ProjectList';
 
 export default function Projects() {
-  const { pathname } = useRouter()
-  const siteName = 'https://amromoorie.com'
-  const canonicalURL = siteName + pathname
+  const { pathname } = useRouter();
+  const siteName = 'https://amromoorie.com';
+  const canonicalURL = siteName + pathname;
 
   return (
     <>
@@ -23,12 +24,10 @@ export default function Projects() {
       </Head>
 
       <Layout>
-        <h2 className='text-5xl italic text-right text-bg-secondary mx-11 my-14 ...  lg:mr-[-26rem]'>
+        <h2 className='text-5xl italic text-right text-bg-secondary mx-11 my-14 ...  lg:mr-[-16rem]'>
           Portofolio
         </h2>
-        <h3 className='italic'>
-          Note that my portofolio is under development
-        </h3>
+        <h3 className='italic'>my portofolio is under development...</h3>
         <h4 className='pb-5'>
           you can check my lates work on{' '}
           <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
@@ -36,10 +35,8 @@ export default function Projects() {
           </AppLink>
         </h4>
 
-        <section className='ml-[-0.5rem] mb-44 max-w-4xl'>
-          {/* <ProjectList /> */}
-        </section>
+        <ProjectList />
       </Layout>
     </>
-  )
+  );
 }

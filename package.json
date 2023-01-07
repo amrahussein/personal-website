@@ -9,7 +9,7 @@
     "export": "next export -o build",
     "lint": "next lint",
     "deploy": "next build && next export -o build && touch ./build/.nojekyll && touch ./build/CNAME && echo \"amromoorie.com\" >> build/CNAME",
-    "format": "prettier --write \"**/*.{js,json,css,scss,md}\""
+    "format": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@formspree/react": "^2.2.5",
