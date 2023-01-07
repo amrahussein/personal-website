@@ -36,7 +36,7 @@ export default function ProjectListItem({ projectData: data }) {
           </h2>
 
           {data.features ? (
-            <>
+            <div>
               <h2 className=''>Features: </h2>
               <ul className='pl-10 text-secondary'>
                 {data.features.map((li, idx) => (
@@ -45,11 +45,11 @@ export default function ProjectListItem({ projectData: data }) {
                   </li>
                 ))}
               </ul>
-            </>
+            </div>
           ) : null}
 
           {data.technologies ? (
-            <>
+            <div>
               <h2 className=''>Technologies: </h2>
               <ul className='pl-10 text-secondary'>
                 {data.technologies.map((tech, idx) => (
@@ -58,7 +58,7 @@ export default function ProjectListItem({ projectData: data }) {
                   </li>
                 ))}
               </ul>
-            </>
+            </div>
           ) : null}
           {data.notes && (
             <h2 className='italic font-mono py-5'>
