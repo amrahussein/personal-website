@@ -1,5 +1,5 @@
-import AppLink from '../components/micros/typography/AppLink'
-import Layout from '../components/TheLayout'
+import Layout from '../components/app-layout/TheLayout';
+import AppLink from '../components/micros/typography/AppLink';
 
 export default function Custom404() {
   return (
@@ -14,5 +14,5 @@ export default function Custom404() {
         </AppLink>
       </div>
     </Layout>
-  )
+  );
 }

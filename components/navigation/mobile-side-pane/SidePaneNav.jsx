@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import Copyright from '../../micros/Copyright'
-import GoSocials from '../../micros/GoSocials'
-import Line from '../../micros/Line'
-import MobileLandingNavBrand from '../../mobile-landing-view/MobileLandingNavBrand'
-import ToggleMenu from '../../micros/ToggleMenu'
-import SidePaneNavItems from './SidePaneNavItems'
+import { useState } from 'react';
+import MobileNavBrand from '../../app-layout/MobileNavBrand';
+import Copyright from '../../micros/Copyright';
+import GoSocials from '../../micros/GoSocials';
+import Line from '../../micros/Line';
+import ToggleMenu from '../../micros/ToggleMenu';
+import SidePaneNavItems from './SidePaneNavItems';
 
 export default function SidePaneNav() {
-  const [paneOpened, setPaneOpened] = useState(false)
+  const [paneOpened, setPaneOpened] = useState(false);
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function SidePaneNav() {
           paneOpened ? 'translate-x-0' : 'translate-x-full'
         } `}
       >
-        <MobileLandingNavBrand dark={true} />
+        <MobileNavBrand dark={true} />
         <SidePaneNavItems />
         <Line color='border-accent' mt='10' />
         <section className='flex justify-center'>
@@ -52,5 +52,5 @@ export default function SidePaneNav() {
         </button>
       )}
     </>
-  )
+  );
 }

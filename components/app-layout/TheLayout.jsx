@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from 'react';
-import { AppContext } from './App.context';
-import DesktopFooter from './desktop-landing-view/DesktopFooter';
-import DesktopLandingNavBrand from './desktop-landing-view/DesktopLandingNavBrand';
-import LoadingSpinner from './micros/LoadingSpinner';
-import MobileFooter from './mobile-landing-view/MobileFooter';
-import MobileLandingNavBrand from './mobile-landing-view/MobileLandingNavBrand';
-import MobileBottomNav from './navigation/MobileBottomNav';
-import SidePaneNav from './navigation/mobile-side-pane/SidePaneNav';
+import { AppContext } from '../App.context';
+import DesktopFooter from './DesktopFooter';
+import DesktopNavBrand from './DesktopNavBrand';
+import MobileFooter from './MobileFooter';
+import MobileNavBrand from './MobileNavBrand';
+import LoadingSpinner from '../micros/LoadingSpinner';
+import SidePaneNav from '../navigation/mobile-side-pane/SidePaneNav';
+import MobileBottomNav from '../navigation/MobileBottomNav';
 
 export default function Layout({ children }) {
   const mobile = useContext(AppContext);
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
     if (mobile) {
       return (
         <>
-          <MobileLandingNavBrand />
+          <MobileNavBrand />
           <SidePaneNav />
           <MobileBottomNav />
 
@@ -34,18 +34,17 @@ export default function Layout({ children }) {
           <MobileFooter />
         </>
       );
-    } 
-      return (
-        <>
-          <DesktopLandingNavBrand />
+    }
+    return (
+      <>
+        <DesktopNavBrand />
 
-          {/* set container width to desktop screens */}
-          <div className='sm:max-w-4xl'>{children}</div>
+        {/* set container width to desktop screens */}
+        <div className='sm:max-w-4xl'>{children}</div>
 
-          <DesktopFooter />
-        </>
-      );
-    
+        <DesktopFooter />
+      </>
+    );
   };
 
   return (

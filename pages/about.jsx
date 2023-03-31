@@ -1,17 +1,17 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import Childhood from '../components/about/Childhood'
-import CoreValues from '../components/about/CoreValues'
-import Devstart from '../components/about/Devstart'
-import Intro from '../components/about/Intro'
-import Postgraduation from '../components/about/Postgraduation'
-import Techstack from '../components/about/Techstack'
-import Layout from '../components/TheLayout'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import Childhood from '../components/about/Childhood';
+import CoreValues from '../components/about/CoreValues';
+import Devstart from '../components/about/Devstart';
+import Intro from '../components/about/Intro';
+import Postgraduation from '../components/about/Postgraduation';
+import Techstack from '../components/about/Techstack';
+import Layout from '../components/app-layout/TheLayout';
 
 export default function About() {
-  const { pathname } = useRouter()
-  const siteName = 'https://amromoorie.com'
-  const canonicalURL = siteName + pathname
+  const { pathname } = useRouter();
+  const siteName = 'https://amromoorie.com';
+  const canonicalURL = siteName + pathname;
 
   return (
     <>
@@ -43,5 +43,5 @@ export default function About() {
         </article>
       </Layout>
     </>
-  )
+  );
 }

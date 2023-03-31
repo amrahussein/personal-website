@@ -2,7 +2,7 @@ import { useForm, ValidationError } from '@formspree/react'
 import AppLink from './typography/AppLink'
 
 export default function ContactMe() {
-  const [state, handleSubmit] = useForm('xdobvjqa')
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_CODE)
 
   return (
     <>

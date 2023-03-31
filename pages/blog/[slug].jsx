@@ -1,12 +1,12 @@
 // import fs from 'fs'
-import { marked } from 'marked'
-import Head from 'next/head'
+import { marked } from 'marked';
+import Head from 'next/head';
 import AppHeading from '../../components/micros/typography/AppHeading';
-import Layout from '../../components/TheLayout'
-import fetchBlogContent from '../../lib/fetchBlogContent'
+import fetchBlogContent from '../../lib/fetchBlogContent';
+import Layout from '../../components/app-layout/TheLayout';
 // // blog template
 export default function BlogPost({ content, data }) {
-  console.log('data: ', data);
+  // console.log('data: ', data);
   // console.log('fetchBlogContent: ', fetchBlogContent())
   return (
     <>
@@ -14,21 +14,21 @@ export default function BlogPost({ content, data }) {
         {/* <title>{data.title}</title> */}
         {/* description */}
       </Head>
-       <Layout>
-         <main className='mb-16'>
-      <AppHeading>{data.title}</AppHeading>
-        <section className='pt-8'>
-          <article dangerouslySetInnerHTML={{ __html: content }}></article>
-        </section>
-         </main>
-      </Layout> 
+      <Layout>
+        <main className='mb-16'>
+          <AppHeading>{data.title}</AppHeading>
+          <section className='pt-8'>
+            <article dangerouslySetInnerHTML={{ __html: content }}></article>
+          </section>
+        </main>
+      </Layout>
     </>
-  )
+  );
 }
 
 // prepare posts paths beforehand
 export const getStaticPaths = async () => {
-  const blogContent = fetchBlogContent()
+  const blogContent = fetchBlogContent();
   // console.log('fetchBlogContent: ', fetchBlogContent())
 
   try {
@@ -36,53 +36,51 @@ export const getStaticPaths = async () => {
       params: {
         slug: article.slug,
       },
-    }))
+    }));
 
     return {
       paths,
       fallback: false,
-    }
+    };
   } catch (err) {
     console.error(
-      `Error encountered while constructing slugs out of directory names:: ${err}`
-    )
+      `Error encountered while constructing slugs out of directory names:: ${err}`,
+    );
   }
-}
+};
 
 // fetch blog posts
-export const getStaticProps = async ({params: {slug}}) => {
-  const blogContent = fetchBlogContent()
+export const getStaticProps = async ({ params: { slug } }) => {
+  const blogContent = fetchBlogContent();
 
   console.log('params:::::::::::: ', slug);
   try {
-
-    const {data, content } = blogContent.find(post => post.slug === slug)
+    const { data, content } = blogContent.find((post) => post.slug === slug);
     // console.log('data: ', data);
-    
+
     // reading markdowned posts
     // const markdownWithMetaInfo = fs.readFileSync(
     //   path.join('pages/blog/posts', slug + '.md')
     // )
     // ;('utf-8')
 
-//     const markdownParsed = matter(markdownWithMetaInfo)
+    //     const markdownParsed = matter(markdownWithMetaInfo)
 
-    const blogPostHTML = marked(content)
-//     // console.log('blogPostHTML: ', markdownParsed);
+    const blogPostHTML = marked(content);
+    //     // console.log('blogPostHTML: ', markdownParsed);
 
-// // Blog body with no meta info parsed into HTML elements
-// const blogPostHTML = marked(markdownParsed.content)
+    // // Blog body with no meta info parsed into HTML elements
+    // const blogPostHTML = marked(markdownParsed.content)
 
     return {
       props: {
         data,
-        content: blogPostHTML
+        content: blogPostHTML,
       },
-    }
+    };
   } catch (err) {
     console.error(
-      `Error encountered while reading info within posts directory:: ${err}`
-    )
+      `Error encountered while reading info within posts directory:: ${err}`,
+    );
   }
-
-}
+};

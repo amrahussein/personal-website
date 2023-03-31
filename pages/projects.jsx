@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Layout from '../components/TheLayout';
+import Layout from '../components/app-layout/TheLayout';
 import AppLink from '../components/micros/typography/AppLink';
 import ProjectList from '../components/portofolio/ProjectList';
 
