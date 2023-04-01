@@ -1,21 +1,21 @@
-import Link from 'next/link'
-import Amrologo from '../micros/Amrologo'
-import ContactMe from '../micros/ContactMe'
-import FlexCenter from '../micros/FlexCenter'
-import GoSocials from '../micros/GoSocials'
-import Line from '../micros/Line'
-import ButtonBrand from '../micros/buttons/ButtonBrand'
-import AppHeading from '../micros/typography/AppHeading'
-import AboutLandingInfo from './AboutLandingInfo'
+import Link from 'next/link';
+import Amrologo from '../micros/Amrologo';
+import ConnectMobileLanding from '../micros/ConnectMobileLanding';
+import ContactMe from '../micros/ContactMe';
+import FlexCenter from '../micros/FlexCenter';
+import GoSocials from '../micros/GoSocials';
+import Line from '../micros/Line';
+import ButtonBrand from '../micros/buttons/ButtonBrand';
+import AppHeading from '../micros/typography/AppHeading';
+import AboutLandingInfo from './AboutLandingInfo';
 
 export default function MobileLandingViewHero() {
   return (
     <main>
-      <FlexCenter>
-        <section className='shrink-0 space-y-3'>
-          <Amrologo w={150} h={150} />
-        </section>
-      </FlexCenter>
+      <section className='flex '>
+        <Amrologo />
+        <ConnectMobileLanding />
+      </section>
 
       <section>
         <Line />
@@ -37,8 +37,7 @@ export default function MobileLandingViewHero() {
 
           <Line />
           <div className='pl-4'>
-            
-          <AboutLandingInfo />
+            <AboutLandingInfo />
           </div>
 
           {/* <p className='pt-5 text-lg'>
@@ -83,5 +82,5 @@ export default function MobileLandingViewHero() {
 
       <Line />
     </main>
-  )
+  );
 }
