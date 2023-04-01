@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MobileNavBrand from '../../app-layout/MobileNavBrand';
 import Copyright from '../../micros/Copyright';
 import GoSocials from '../../micros/GoSocials';
@@ -8,6 +8,11 @@ import SidePaneNavItems from './SidePaneNavItems';
 
 export default function SidePaneNav() {
   const [paneOpened, setPaneOpened] = useState(false);
+
+  // stop scroll behavior while sidepane is open
+  useEffect(() => {
+    document.body.style.overflow = paneOpened ? 'hidden' : 'auto';
+  }, [paneOpened]);
 
   return (
     <>
