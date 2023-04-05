@@ -1,12 +1,15 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Childhood from '../components/about/Childhood';
+import CoreSkills from '../components/about/CoreSkills';
 import CoreValues from '../components/about/CoreValues';
 import Devstart from '../components/about/Devstart';
 import Intro from '../components/about/Intro';
 import Postgraduation from '../components/about/Postgraduation';
-import Techstack from '../components/about/Techstack';
+import SkillsVisualized from '../components/about/SkillsVisualized';
 import Layout from '../components/app-layout/TheLayout';
+import FlexCenter from '../components/micros/FlexCenter';
 
 export default function About() {
   const { pathname } = useRouter();
@@ -29,17 +32,21 @@ export default function About() {
         />
       </Head>
       <Layout>
-        <article className='mb-16 text-gray-500 space-y-10 ... sm:text-lg'>
-          {/* <aside className='p-4 pt-5 italic text-4xl text-secondary opacity-50 text-right sm:mr-[5rem] lg:mr-[-5rem] xl:mr-[-16rem]'>
-            Nice to meet you!
-          </aside> */}
+        <article className='mb-16 space-y-10 text-gray-500 sm:text-lg'>
+          <SkillsVisualized />
+
+          <FlexCenter>
+            <button className='flex items-center rounded-full bg-accent px-8 py-2 tracking-widest text-secondary hover:bg-primary hover:text-white'>
+              <Link href='/projects'>Go to Portofolio Page | See Projects</Link>
+            </button>
+          </FlexCenter>
 
           <Intro />
           <Childhood />
           <Devstart />
           <Postgraduation />
           <CoreValues />
-          <Techstack />
+          <CoreSkills />
         </article>
       </Layout>
     </>

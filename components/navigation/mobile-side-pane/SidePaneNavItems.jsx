@@ -1,20 +1,19 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { links } from '../Nav.links.js'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { links } from '../Nav.links.js';
 
 export default function SidePaneNavItems() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
-      <nav className='pt-[10rem] text-accent flex flex-col items-center text-2xl'>
+      <nav className='flex flex-col items-center pt-[10rem] text-2xl text-accent'>
         <ul className='space-y-10'>
           {links.map((item) => (
             <li
               key={item.key}
-              className={`hover:underline underline-offset-3 ${
-                router.pathname === item.link
-                  ? 'underline underline-offset-3 decoration-cool '
-                  : ''
+              className={`underline-offset-3 hover:underline ${
+                router.pathname === item.link &&
+                'underline-offset-3 underline decoration-cool'
               }`}
             >
               <Link href={item.link}>
@@ -25,5 +24,5 @@ export default function SidePaneNavItems() {
         </ul>
       </nav>
     </>
-  )
+  );
 }

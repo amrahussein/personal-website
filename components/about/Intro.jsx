@@ -1,4 +1,4 @@
-import AppHeading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading';
 
 export default function Intro() {
   return (
@@ -23,5 +23,5 @@ export default function Intro() {
         use language in context!{' '}
       </p>
     </div>
-  )
+  );
 }

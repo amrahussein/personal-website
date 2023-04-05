@@ -1,4 +1,4 @@
-import AppHeading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading';
 
 export default function Devstart() {
   return (
@@ -37,12 +37,15 @@ export default function Devstart() {
       <p>
         However, I decided to have a different approach, which was to{' '}
         <em>specialize</em> in a specific area:{' '}
-        <strong>
-          <em className='underline text-secondary'>frontend development</em>
-        </strong>{' '}
-        along with learning core science and exploring new stuff as{' '}
-        <em>I love to solve problems.</em>
+        <strong>frontend development</strong> along with learning core science
+        and exploring new stuff as <em>I love to solve problems.</em>
+      </p>
+
+      <p>
+        I&apos;ve also expanded my <strong>backend knowledge</strong> as an ITI
+        graduate, I gained much professional experience in{' '}
+        <strong>backend development</strong> with real-world projects.
       </p>
     </div>
-  )
+  );
 }

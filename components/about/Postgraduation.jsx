@@ -1,4 +1,4 @@
-import AppHeading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading';
 
 export default function Postgraduation() {
   return (
@@ -24,12 +24,12 @@ export default function Postgraduation() {
       <p>
         {' '}
         I, then, followed{' '}
-        <em className='underline text-secondary'>volunteering activities</em> to
+        <em className='text-secondary underline'>volunteering activities</em> to
         apply what I have learned. What I can say is that willing to get to know
         different peoples&apos; thoughts increase the chance of mutual matching
         of common goal and value. I see it as an integral part of any
         project&apos;s success.
       </p>
     </div>
-  )
+  );
 }

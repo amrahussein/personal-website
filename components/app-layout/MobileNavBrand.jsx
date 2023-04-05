@@ -7,7 +7,7 @@ export default function MobileNavBrand({ dark = false }) {
   return (
     <>
       <header className={topNavDark}>
-        <h1 className='text-3xl pb-1 font-extrabold'>
+        <h1 className='pb-1 text-3xl font-extrabold'>
           <Link href='/'>
             <a>
               <strong className=''>amromoorie</strong>

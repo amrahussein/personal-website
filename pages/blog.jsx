@@ -23,7 +23,7 @@ export default function Blog() {
       </Head>
       <Layout>
         <div className='mb-96'>
-          <h2 className='text-3xl text-gray-600 mx-11 my-11  '>
+          <h2 className='mx-11 my-11 text-3xl text-gray-600  '>
             very soon - no blog available at the moment
           </h2>
           <section>
@@ -33,7 +33,7 @@ export default function Blog() {
             </Link> */}
             </article>
 
-            <h2 className='text-3xl mx-11 mt-11 pt-20 text-center text-primary'>
+            <h2 className='mx-11 mt-11 pt-20 text-center text-3xl text-primary'>
               you can react me at twitter:
               <AppLink rel='twitter' href='https://twitter.com/amromoorie'>
                 {' '}

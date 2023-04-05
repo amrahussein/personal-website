@@ -8,7 +8,7 @@ export default function Amrologo({ w = 300, h = 300 }) {
 
   return (
     <figure>
-      <div className='w-[8rem] border-2 border-accent inline-block rounded-full'>
+      <div className='inline-block w-[8rem] rounded-full border-2 border-accent'>
         {mobile ? (
           <img
             className='rounded-full'
@@ -50,18 +50,18 @@ export default function Amrologo({ w = 300, h = 300 }) {
         <figcaption className='hidden'>
           <h1>Amr Abdelkamel</h1>
         </figcaption>
-        <div className='py-4 text-gray-500 flex flex-col justify-center items-center ... lg:py-6'>
-          <h1 className='pb-3 leading-3 font-extrabold ... sm:text-base md:textd-lg'>
+        <div className='flex flex-col items-center justify-center py-4 text-gray-500 lg:py-6'>
+          <h1 className='md:textd-lg pb-3 font-extrabold leading-3 sm:text-base'>
             <Link href='https://twitter.com/amromoorie' rel='twitter'>
               <a aria-label='twitter' target='_blank'>
                 <span className='text-primary hover:text-secondary'>@</span>{' '}
-                <strong className='underline font-extrabold text-secondary opacity-70 hover:text-primary'>
+                <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary'>
                   amromoorie
                 </strong>
               </a>
             </Link>
           </h1>
-          <p className='mb-[0.2rem] text-sm text-center text-secondary ...  sm:px-6 sm:leading-5'>
+          <p className='mb-[0.2rem] text-center text-sm text-secondary  sm:px-6 sm:leading-5'>
             <em>Passionate Developer</em>
           </p>
         </div>

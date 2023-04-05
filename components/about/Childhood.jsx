@@ -1,4 +1,4 @@
-import AppHeading from '../micros/typography/AppHeading'
+import AppHeading from '../micros/typography/AppHeading';
 
 export default function Childhood() {
   return (
@@ -14,7 +14,7 @@ export default function Childhood() {
       <p>
         One of the things about myself, that came obvious to me early on, was
         that{' '}
-        <em className='underline text-secondary'>
+        <em className='text-secondary underline'>
           I liked to explore the world, in addition to, learning from different
           people.
         </em>
@@ -37,11 +37,5 @@ export default function Childhood() {
         </strong>
       </p>
     </div>
-  )
-}
-
-{
-  /* <AppLink href='https://fb.com/amromoorie/' rel='facebook'>
-            fb.com/amromoorie
-          </AppLink>.{' '} */
+  );
 }

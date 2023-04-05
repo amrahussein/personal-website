@@ -12,15 +12,15 @@ import AboutLandingInfo from './AboutLandingInfo';
 export default function MobileLandingViewHero() {
   return (
     <main>
-      <section className='flex '>
+      <section className='flex'>
         <Amrologo />
         <ConnectMobileLanding />
       </section>
 
       <section>
         <Line />
-        <article className=' mt-5'>
-          <aside className='italic py-5 pr-1 text-4xl text-secondary opacity-70 text-right'>
+        <article className='mt-5'>
+          <aside className='py-5 pr-1 text-right text-4xl italic text-secondary opacity-70'>
             Nice to meet you!
           </aside>
 
@@ -31,7 +31,7 @@ export default function MobileLandingViewHero() {
             </strong>
             .<br></br> I&apos;m passionate about developing and designing modern
             web apps with{' '}
-            <em className='underline font-mono font-semibold'>usability</em> in
+            <em className='font-mono font-semibold underline'>usability</em> in
             mind.
           </p>
 
@@ -59,7 +59,7 @@ export default function MobileLandingViewHero() {
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!
           </AppHeading>
-          <h3 className='font-mono pl-5 pt-2 text-3xl italic text-gray-500'>
+          <h3 className='pl-5 pt-2 font-mono text-3xl italic text-gray-500'>
             reach me out on:
           </h3>
         </article>

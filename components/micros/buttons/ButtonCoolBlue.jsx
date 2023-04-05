@@ -1,8 +1,8 @@
-export default function ButtonCoolBlue({ children, toggleBtn, setToggleBtn }) {
+export default function ButtonCoolBlue({ children, setOpen }) {
   return (
     <button
-      className='flex items-center px-8 py-2 cursor-pointerr rounded-full tracking-widest bg-accent text-secondary hover:bg-primary hover:text-white'
-      onClick={() => setToggleBtn(!toggleBtn)}
+      className='flex items-center rounded-full bg-accent px-8 py-2 tracking-widest text-secondary hover:bg-primary hover:text-white'
+      onClick={() => setOpen(true)}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -18,5 +18,5 @@ export default function ButtonCoolBlue({ children, toggleBtn, setToggleBtn }) {
       </svg>
       <span className='pl-3 pb-1'>{children}</span>
     </button>
-  )
+  );
 }

@@ -1,9 +1,9 @@
 // import fs from 'fs'
 import { marked } from 'marked';
 import Head from 'next/head';
+import Layout from '../../components/app-layout/TheLayout';
 import AppHeading from '../../components/micros/typography/AppHeading';
 import fetchBlogContent from '../../lib/fetchBlogContent';
-import Layout from '../../components/app-layout/TheLayout';
 // // blog template
 export default function BlogPost({ content, data }) {
   // console.log('data: ', data);

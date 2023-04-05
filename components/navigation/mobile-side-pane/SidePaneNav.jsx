@@ -17,7 +17,7 @@ export default function SidePaneNav() {
   return (
     <>
       <div
-        className={`z-100 top-0 right-0 fixed bg-secondary w-full h-full ease-out duration-200 ${
+        className={`fixed top-0 right-0 z-100 h-full w-full bg-secondary duration-200 ease-out ${
           paneOpened ? 'translate-x-0' : 'translate-x-full'
         } `}
       >
@@ -39,18 +39,18 @@ export default function SidePaneNav() {
       {!paneOpened ? (
         <button
           onClick={() => setPaneOpened(!paneOpened)}
-          className='fixed z-10 top-0 right-0 mr-4 mt-[1.21rem]'
+          className='fixed top-0 right-0 z-10 mr-4 mt-[1.21rem]'
           aria-label='open navigational menu'
         >
           <ToggleMenu />
         </button>
       ) : (
         <button
-          className='z-100 close text-accent fixed top-0 right-0 mr-4 mt-4'
+          className='close fixed top-0 right-0 z-100 mr-4 mt-4 text-accent'
           onClick={() => setPaneOpened(!paneOpened)}
           aria-label='close navigational menu'
         >
-          <aside className='font-semibold inline align-top text-lg underline underline-offset-3 hover:text-important'>
+          <aside className='underline-offset-3 inline align-top text-lg font-semibold underline hover:text-important'>
             Close
           </aside>{' '}
           {/* <span className='text-2xl font-thin'>X</span> */}
