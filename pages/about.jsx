@@ -36,9 +36,11 @@ export default function About() {
           <SkillsVisualized />
 
           <FlexCenter>
-            <button className='flex items-center rounded-full bg-accent px-8 py-2 tracking-widest text-secondary hover:bg-primary hover:text-white'>
-              <Link href='/projects'>Go to Portofolio Page | See Projects</Link>
-            </button>
+            <Link href='/projects' passHref>
+              <button className='flex items-center rounded-full bg-accent px-8 py-2 tracking-widest text-secondary hover:bg-primary hover:text-white'>
+                Go to Portofolio Page | See Projects
+              </button>
+            </Link>
           </FlexCenter>
 
           <Intro />

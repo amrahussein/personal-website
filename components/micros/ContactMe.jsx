@@ -21,6 +21,7 @@ export default function ContactMe() {
             <form
               onSubmit={handleSubmit}
               className='bg-white px-4 sm:pl-8 sm:pr-16 md:px-8'
+              aria-label="Contact form"
             >
               <div className='space-y-6 py-6'>
                 <section className='flex flex-col space-y-2'>
@@ -32,6 +33,7 @@ export default function ContactMe() {
                     className='input pt-2'
                     rows={6}
                     required
+                    aria-required="true"
                   />
                 </section>
 
@@ -44,6 +46,7 @@ export default function ContactMe() {
                     required
                     type='text'
                     className='input h-10'
+                    aria-required="true"
                   />
                 </section>
 
@@ -56,11 +59,13 @@ export default function ContactMe() {
                     type='email'
                     className='input h-10'
                     required
+                    aria-required="true"
                   />
                   <ValidationError
                     prefix='Email'
                     field='email'
                     errors={state.errors}
+                    role="alert"
                   />
                 </section>
 
@@ -85,7 +90,7 @@ export default function ContactMe() {
 
         <div>
           <span className='text-serious'>reach me directly at: </span>
-          <AppLink href='mailto:amr.abdelkamel3@outlook.com/' rel='email'>
+          <AppLink href='mailto:amr.abdelkamel3@outlook.com' rel='email'>
             <a className='pl-2 text-important underline hover:text-cool'>
               amr.abdelkamel3@outlook.com
             </a>

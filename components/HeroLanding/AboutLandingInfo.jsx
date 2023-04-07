@@ -15,11 +15,13 @@ export default function AboutLandingInfo() {
           Clean code and simplicity are the two pillars I aim to achieve in my
           projects
         </li>
+      </ul>
 
-        <h3 className='pt-4 font-bold text-gray-500'>
-          Things that inspire me as a web developer:
-        </h3>
+      <h3 className='pt-4 font-bold text-gray-500'>
+        Things that inspire me as a web developer:
+      </h3>
 
+      <ul className='list-disc space-y-3 py-2'>
         <li>
           Latest technology trends on Github that make it easier to create &
           maintain web applications

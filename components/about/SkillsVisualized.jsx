@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import FlexCenter from '../micros/FlexCenter';
 import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
 import { tags, technologies } from './tech-stack-skills';
@@ -19,8 +19,8 @@ export default function SkillsVisualized() {
           <ul className='grid list-disc items-center space-y-3 py-3 pl-8 sm:grid-cols-6 sm:space-y-0 sm:pl-10'>
             {Array.isArray(technologies) &&
               technologies.map((item, idx) => (
-                <>
-                  <li key={idx} className='pt-3 text-primary'>
+                <Fragment key={idx}>
+                  <li className='pt-3 text-primary'>
                     <h2 className='text-secondary'>{item.tech}</h2>
                   </li>
                   <div className='relative top-[16.7%] block h-2 rounded-full bg-secondary opacity-60 sm:col-span-5'>
@@ -32,7 +32,7 @@ export default function SkillsVisualized() {
                       aria-valuemax='100'
                     ></span>
                   </div>
-                </>
+                </Fragment>
               ))}
           </ul>
 

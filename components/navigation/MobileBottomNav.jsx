@@ -37,10 +37,10 @@ export default function MobileBottomNav() {
       {mobile && (
         <section
           className={`tranistion fixed inset-x-0 bottom-0 z-10 block border-[0.13rem] border-t-accent bg-white duration-100 ${
-            hideNav ? 'translate-y-full' : ''
+            hideNav && 'translate-y-full'
           } `}
         >
-          <nav className='py-2 text-xl font-extrabold text-primary'>
+          <nav className='py-2 text-xl font-extrabold text-secondary font-mono'>
             <ul className='flex flex-row justify-around space-x-5 px-3'>
               {links.map((item) => (
                 <Link key={item.key} href={item.link} passHref>
@@ -51,6 +51,7 @@ export default function MobileBottomNav() {
                   >
                     <a
                       aria-label={item.name}
+                      rel="internal"
                       className='block text-xs hover:text-important'
                     >
                       {item.name}
