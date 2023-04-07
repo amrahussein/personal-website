@@ -8,7 +8,7 @@ export default function StatusCard() {
       {!close && (
         // Core Feat.
         <div className='mt-4 rounded-lg border-2 border-solid border-accent pl-2 text-sm sm:w-[14.3rem]'>
-          <div className='inline-flex items-center space-x-2'>
+          <div className='flex items-center space-x-2 sm:inline-flex'>
             <span
               title='Project Core Functionalities has Done'
               className='inline-block h-4 w-4 rounded-full bg-green-500'
