@@ -3,7 +3,7 @@ export default function AboutLandingInfo() {
     <>
       <ul className='list-disc space-y-3 py-2'>
         <li>
-          Full-Stack Developer with 3+ in frontend development with great
+          Full-Stack Developer with 3+ in frontend development with a solid
           experience in JavaScript ecosystem
         </li>
 
@@ -15,19 +15,27 @@ export default function AboutLandingInfo() {
           Clean code and simplicity are the two pillars I aim to achieve in my
           projects
         </li>
+
+        <li>
+          My passion for software engineering has driven me to continuously
+          learn and explore, with an aim of having a positive contribution to
+          developing real-world solutions
+        </li>
       </ul>
 
-      <h3 className='pt-4 font-bold text-gray-500'>
+      <h2 className='pt-4 font-bold text-gray-500'>
         Things that inspire me as a web developer:
-      </h3>
+      </h2>
 
       <ul className='list-disc space-y-3 py-2'>
         <li>
-          Latest technology trends on Github that make it easier to create &
-          maintain web applications
+          Latest technologies on Github that make it easier to create & maintain
+          web applications
         </li>
 
-        <li>Dev communities that focus on the quality of the software</li>
+        <li>
+          Various Dev communities that focus on the quality of the software
+        </li>
 
         <li>
           UX works through diverse channels that simplify & enhance the user

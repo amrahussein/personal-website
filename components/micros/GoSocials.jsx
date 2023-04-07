@@ -18,6 +18,7 @@ export default function GoSocials({
             rel='noopener noreferrer'
             target='_blank'
             className='2xl pt-1 text-center font-semibold tracking-wider text-important opacity-75'
+            aria-label={item.ariaLabel}
           >
             <div
               className={`${

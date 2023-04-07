@@ -30,6 +30,7 @@ export default function ContactMe() {
                   </label>
                   <textarea
                     name='message'
+                    id="message"
                     className='input pt-2'
                     rows={6}
                     required
@@ -43,6 +44,7 @@ export default function ContactMe() {
                   </label>
                   <input
                     name='name'
+                    id="name"
                     required
                     type='text'
                     className='input h-10'
@@ -56,16 +58,19 @@ export default function ContactMe() {
                   </label>
                   <input
                     name='email'
+                    id="email"
                     type='email'
                     className='input h-10'
                     required
                     aria-required="true"
+                    aria-describedby="email-error"
                   />
                   <ValidationError
                     prefix='Email'
                     field='email'
                     errors={state.errors}
                     role="alert"
+                    id="email-error"
                   />
                 </section>
 

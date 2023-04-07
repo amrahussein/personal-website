@@ -20,21 +20,14 @@ export default function DesktopLandingViewHero() {
             <Amrologo />
 
             <div className='pt-8 lg:pl-5 '>
-              {/* <p className='pt-3'>
-                Currently I&apos;m open for <em>opportunities</em> as a
-                front-end developer.{' '}
-                <span className='text-important italic font-mono tracking-wide pl-2'>
-                  !important
-                </span>
-              </p> */}
               <Line />
 
               <AboutLandingInfo />
 
               {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
               <Link href='/about'>
-                <a>
-                  <ButtonBrand>more about me?</ButtonBrand>
+                <a aria-label='Learn more about me and my experience'>
+                  <ButtonBrand>More About me and Skills</ButtonBrand>
                 </a>
               </Link>
             </div>
@@ -45,7 +38,6 @@ export default function DesktopLandingViewHero() {
       <Line />
 
       <section className='space-y-14 pt-6 '>
-
         <article className='flex flex-col items-center'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!

@@ -40,17 +40,13 @@ export default function MobileLandingViewHero() {
             <AboutLandingInfo />
           </div>
 
-          {/* <p className='pt-5 text-lg'>
-            Currently I&apos;m seeking opportunities as an entry position web
-            developer.{' '}
-          </p> */}
         </article>
 
         <article>
           <h2 className='pl-2 pt-7 text-3xl text-primary'>more about me?</h2>
           <Link href='/about'>
             <a>
-              <ButtonBrand>take me to about page</ButtonBrand>
+              <ButtonBrand>more About me and Skills</ButtonBrand>
             </a>
           </Link>
         </article>
