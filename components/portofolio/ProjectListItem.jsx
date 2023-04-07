@@ -1,72 +1,88 @@
+import { useEffect, useState } from 'react';
 import AppHeading from '../micros/typography/AppHeading';
 import AppLink from '../micros/typography/AppLink';
+import StatusIndicators from './StatusIndicators';
 
-export default function ProjectListItem({ projectData: data }) {
-  // create a styling effect
-  const isEven = data.id % 2 === 0 ? true : false;
+export default function ProjectListItem({ projectData: project, highlighted }) {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, [project]);
 
   return (
-    <article className='mt-5 lg:mt-16'>
-      <AppHeading styles='text-2xl ... pl-2  text-secondary underline italic'>
-        {data.name}
-      </AppHeading>
-      <section
-        className={`h-full mt-4 bg-gradient-to-t from-accent pb-3 ${
-          isEven ? 'pl-3 rounded-bl' : 'pr-3 rounded-br'
-        }`}
+    <>
+      <article
+        className={`mt-5 transition-transform lg:mt-16 ${
+          animate
+            ? 'translate-y-0 transform delay-300'
+            : 'translate-y-1 transform'
+        } duration-250 ease-out`}
       >
-        <section className='bg-white h-full px-4 py-4 space-y-4'>
-          {/* <h2 className='text-2xl italic font-mono'>Description: </h2> */}
-          {data.description ? (
-            <p className='text-secondary'>{data.description}</p>
-          ) : null}
-          {data.url_live ? (
+        <AppHeading styles='text-2xl pl-2 text-secondary underline italic'>
+          {project.name}
+        </AppHeading>
+        <section className='mt-4 h-full rounded-bl bg-gradient-to-t from-accent pb-3 pl-3'>
+          <section className='h-full space-y-4 bg-white px-4 py-4'>
+            {project.description ? (
+              <p className='text-secondary'>{project.description}</p>
+            ) : null}
+            {project.url_live ? (
+              <h2 className=''>
+                Preview:{' '}
+                <span className='italic'>
+                  <AppLink href={project.url_live}>{project.url_live}</AppLink>
+                </span>
+              </h2>
+            ) : null}
             <h2 className=''>
-              Preview:{' '}
+              Project repo:{' '}
               <span className='italic'>
-                <AppLink href={data.url_live}>{data.url_live}</AppLink>
+                <AppLink href={project.url_repo}>{project.name}</AppLink>
               </span>
             </h2>
-          ) : null}
-          <h2 className=''>
-            Project repo:{' '}
-            <span className='italic'>
-              <AppLink href={data.url_repo}>{data.name}</AppLink>
-            </span>
-          </h2>
 
-          {data.features ? (
-            <div>
-              <h2 className=''>Features: </h2>
-              <ul className='pl-10 text-secondary'>
-                {data.features.map((li, idx) => (
-                  <li key={idx} className='list-disc text-secondary'>
-                    {li}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
+            {project.features ? (
+              <div>
+                <h2 className=''>Features: </h2>
+                <ul className='pl-10 text-secondary'>
+                  {project.features.map((li, idx) => (
+                    <li key={idx} className='list-disc text-secondary'>
+                      {li}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
 
-          {data.technologies ? (
-            <div>
-              <h2 className=''>Technologies: </h2>
-              <ul className='pl-10 text-secondary'>
-                {data.technologies.map((tech, idx) => (
-                  <li key={idx} className='list-disc'>
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-          {data.notes && (
-            <h2 className='italic font-mono py-5'>
-              Notes: <span className='text-gray-500 '>{data.notes}</span>
-            </h2>
-          )}
+            {project.technologies ? (
+              <div>
+                <h2 className=''>Technologies: </h2>
+                <ul className='pl-10 text-secondary'>
+                  {project.technologies.map((tech, idx) => (
+                    <li
+                      key={idx}
+                      className={`list-disc ${
+                        highlighted === tech.toLowerCase() ? 'underline' : ''
+                      }`}
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {project.notes && (
+              <h2 className='py-5 font-mono italic'>
+                Notes: <span className='text-gray-500 '>{project.notes}</span>
+              </h2>
+            )}
+          </section>
+          <section>
+            <StatusIndicators hasCoreFeatDone={project.hasCoreFeatDone} />
+          </section>
         </section>
-      </section>
-    </article>
+      </article>
+    </>
   );
 }
