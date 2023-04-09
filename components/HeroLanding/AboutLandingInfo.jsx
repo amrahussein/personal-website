@@ -34,7 +34,7 @@ export default function AboutLandingInfo() {
         </li>
 
         <li>
-          Various Dev communities that focus on the quality of the software
+          Various DEV communities that focus on the quality of the software
         </li>
 
         <li>

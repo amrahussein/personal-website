@@ -1,11 +1,9 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import FlexCenter from '../micros/FlexCenter';
 import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
 import { tags, technologies } from './tech-stack-skills';
 
-export default function SkillsVisualized() {
-  const [open, setOpen] = useState(false);
-
+export default function SkillsVisualized({ open, setOpen }) {
   return (
     <>
       {!open && (

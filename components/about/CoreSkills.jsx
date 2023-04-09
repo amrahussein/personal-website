@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import AppHeading from '../micros/typography/AppHeading';
 import AppLink from '../micros/typography/AppLink';
 import SkillsVisualized from './SkillsVisualized';
 
 export default function CoreSkills() {
+  const [visualizedSkillsExpanded, setVisualizedSkillsExpanded] =
+    useState(false);
+
   return (
     <section className='space-y-4'>
       <AppHeading>My Core Skills...</AppHeading>
 
-      <SkillsVisualized />
+      <SkillsVisualized
+        open={visualizedSkillsExpanded}
+        setOpen={setVisualizedSkillsExpanded}
+      />
 
       <p className='pt-4 text-secondary'>
         <em>
