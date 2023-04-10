@@ -1,8 +1,11 @@
 import { useForm, ValidationError } from '@formspree/react';
+import { useId } from 'react';
 import AppLink from './typography/AppLink';
 
 export default function ContactMe() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_CODE);
+
+  const emailErrorId = useId();
 
   return (
     <>
@@ -21,7 +24,7 @@ export default function ContactMe() {
             <form
               onSubmit={handleSubmit}
               className='bg-white px-4 sm:pl-8 sm:pr-16 md:px-8'
-              aria-label="Contact form"
+              aria-label='Contact form'
             >
               <div className='space-y-6 py-6'>
                 <section className='flex flex-col space-y-2'>
@@ -30,11 +33,11 @@ export default function ContactMe() {
                   </label>
                   <textarea
                     name='message'
-                    id="message"
+                    id='message'
                     className='input pt-2'
                     rows={6}
                     required
-                    aria-required="true"
+                    aria-required='true'
                   />
                 </section>
 
@@ -44,11 +47,11 @@ export default function ContactMe() {
                   </label>
                   <input
                     name='name'
-                    id="name"
+                    id='name'
                     required
                     type='text'
                     className='input h-10'
-                    aria-required="true"
+                    aria-required='true'
                   />
                 </section>
 
@@ -58,19 +61,19 @@ export default function ContactMe() {
                   </label>
                   <input
                     name='email'
-                    id="email"
+                    id='email'
                     type='email'
                     className='input h-10'
                     required
-                    aria-required="true"
-                    aria-describedby="email-error"
+                    aria-required='true'
+                    aria-describedby={emailErrorId}
                   />
                   <ValidationError
                     prefix='Email'
                     field='email'
                     errors={state.errors}
-                    role="alert"
-                    id="email-error"
+                    role='alert'
+                    id={emailErrorId}
                   />
                 </section>
 
