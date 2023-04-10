@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Layout from '../components/app-layout/TheLayout';
-import AppLink from '../components/micros/typography/AppLink';
-import ProjectList from '../components/portofolio/ProjectList';
+import ProjectManager from '../components/portofolio/ProjectManager';
 
 export default function Projects() {
   const { pathname } = useRouter();
@@ -24,18 +23,15 @@ export default function Projects() {
       </Head>
 
       <Layout>
-        {/* <h2 className='text-bg-secondary mx-11 my-14 text-right text-5xl italic  lg:mr-[-16rem]'>
-          Portofolio
-        </h2> */}
-        <h3 className='italic'>my portofolio is under development...</h3>
+        {/* <h3 className='italic'>my portofolio is under development...</h3>
         <h4 className='pb-5'>
           you can check my latest work on{' '}
           <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
             Github repo
           </AppLink>
-        </h4>
+        </h4> */}
 
-        <ProjectList />
+        <ProjectManager />
       </Layout>
     </>
   );

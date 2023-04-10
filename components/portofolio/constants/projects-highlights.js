@@ -43,8 +43,12 @@ export const highlights = {
     name: 'NestJs',
     icon: 'ux-wing-icons/nest-js-icon.svg',
   },
+  NEXT: {
+    name: 'NextJs',
+    icon: 'ux-wing-icons/nextjs-icon.svg',
+  },
   CSHARP: {
-    name: 'CSharp',
+    name: 'C#',
     icon: 'ux-wing-icons/c-sharp-programming-language-icon.svg',
   },
   TAILWIND: {

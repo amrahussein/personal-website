@@ -142,13 +142,7 @@ export const projects = [
     name: 'My Starter',
     description:
       "ITI Team Project; a SPA app using JavaScript meant for a simple applet targetting those who want a quick starter on his/her day. It's a type of app that can be converted into a future web extension with possible reprioritization of these features. My Starter is a web app that provides a collection of useful tools and features for everyday use.",
-    features: [
-      'Weather applet',
-      'Unit converter',
-      'Todo list',
-      'Password generator',
-      'Calculator',
-    ],
+    features: null,
     technologies: ['JavaScript'],
     notes:
       'Main Contribution: Implemented SPA structure using vite, developed simple weather app, integrated team members code into the website',
@@ -223,7 +217,13 @@ export const projects = [
     description:
       'ITI graduation project; a bookstore app where users to discover/shop their favorite books with a heavy focus on user experience & reactive UI',
     features: null,
-    technologies: ['C#', '.NET API', 'Entity Framework Core', 'Angular'],
+    technologies: [
+      'C#',
+      '.NET API',
+      'Entity Framework Core',
+      'Angular',
+      'TypeScript',
+    ],
     notes:
       'Main Contribuations: Developed responsive cart feature from back to front meant for user experience, Implemented related features such as adding, removing, updating products in the cart',
     isFeatured: true,
@@ -283,6 +283,7 @@ export const projects = [
       '.NET API',
       'Entity Framework Core',
       'React',
+      'TypeScript',
       'TailwindCSS',
     ],
     notes: 'more details soon',
@@ -304,30 +305,6 @@ export const projects = [
   },
 
   {
-    id: 15,
-    url_live: '',
-    url_repo: 'https://github.com/amromoorie/SimpleSchoolSystemApp',
-    name: 'practice-english-quizly',
-    description: '',
-    features: null,
-    technologies: [
-      'C#',
-      '.NET MVC',
-      'Entity Framework Core',
-      'React',
-      'TailwindCSS',
-    ],
-    notes: 'more details soon',
-    isFeatured: true,
-    hasCoreFeatDone: false,
-    highlights: {
-      names: [highlights.CSHARP.name, highlights.DOTNET.name],
-      icons: [highlights.CSHARP.icon, highlights.DOTNET.icon],
-    },
-    priority: priorities.NORMAL,
-  },
-
-  {
     id: 16,
     url_live: '',
     url_repo: 'https://github.com/amromoorie/webstore-api',
@@ -338,7 +315,8 @@ export const projects = [
       'C#',
       '.NET MVC',
       'Entity Framework Core',
-      'React',
+      'Angular',
+      'TypeScript',
       'TailwindCSS',
     ],
     notes: 'more details soon',
@@ -356,6 +334,34 @@ export const projects = [
         highlights.DOTNET.icon,
         highlights.ANGULAR.icon,
         highlights.TYPESCRIPT.icon,
+      ],
+    },
+    priority: priorities.HIGH,
+  },
+
+  {
+    id: 17,
+    url_live: '',
+    url_repo: 'https://github.com/amromoorie/personal-website',
+    name: 'Portfolio Site',
+    description: 'As it may already be shown; a simple portfolio site, meant for self-expression & motivation towards DEV world. It\'s built with NextJs due to its dynamic capabilities; with potential scalability and strong SEO qualities',
+    features: null,
+    technologies: ['JavaScript', 'React', 'NextJs', 'TailwindCSS'],
+    notes: '',
+    isFeatured: false,
+    hasCoreFeatDone: true,
+    highlights: {
+      names: [
+        highlights.JAVASCRIPT.name,
+        highlights.REACT.name,
+        highlights.NEXT.name,
+        highlights.TAILWIND.name,
+      ],
+      icons: [
+        highlights.JAVASCRIPT.icon,
+        highlights.REACT.icon,
+        highlights.NEXT.icon,
+        highlights.TAILWIND.icon,
       ],
     },
     priority: priorities.HIGH,

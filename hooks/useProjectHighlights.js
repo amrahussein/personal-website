@@ -4,7 +4,7 @@ export default function useProjectHighlights(projects) {
     ?.flatMap((project) => project.highlights);
 
   // returns an projects array containing unique highlight names with their corresponding icons
-  const uniqueHighlights = highlights.reduce((acc, { names, icons }) => {
+  const uniqueHighlights = highlights?.reduce((acc, { names, icons }) => {
     names.map((name, i) => {
       if (!acc.find(({ name: hName }) => hName === name)) {
         acc.push({ name, icon: icons[i] });
