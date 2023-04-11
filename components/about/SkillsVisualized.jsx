@@ -12,18 +12,24 @@ export default function SkillsVisualized({ open, setOpen }) {
         </FlexCenter>
       )}
 
-      {open && (
-        <div className='duration-400 transition-all ease-out'>
-          <ul className='grid list-disc items-center space-y-3 py-3 pl-8 sm:grid-cols-6 sm:space-y-0 sm:pl-10'>
-            {Array.isArray(technologies) &&
-              technologies.map((item, idx) => (
+      <div
+        className={` ${
+          !open && 'opacity-0'
+        } transition-opacity duration-200 ease-out`}
+      >
+        {open && (
+          <div>
+            <ul className='md:mdr-48 sm:pl-auto grid list-disc items-center space-y-3 py-3 pl-4 sm:grid-cols-6 sm:space-y-0 sm:pl-10'>
+              {technologies?.map((item, idx) => (
                 <Fragment key={idx}>
                   <li className='pt-3 text-primary'>
-                    <h2 className='text-secondary'>{item.tech}</h2>
+                    <h2 className='font-mono font-semibold text-gray-700'>
+                      {item.tech}
+                    </h2>
                   </li>
-                  <div className='relative top-[16.7%] block h-2 rounded-full bg-secondary opacity-60 sm:col-span-5'>
+                  <div className='relative top-[16.7%] block h-3 rounded-full border-2 bg-secondary opacity-70 sm:col-span-5'>
                     <span
-                      className={`${item.width} absolute inset-0 rounded-full bg-primary `}
+                      className={`${item.width} absolute inset-0 rounded-full bg-primary`}
                       role='progressbar'
                       aria-valuenow={item.level}
                       aria-valuemin='0'
@@ -32,21 +38,22 @@ export default function SkillsVisualized({ open, setOpen }) {
                   </div>
                 </Fragment>
               ))}
-          </ul>
+            </ul>
 
-          <ul className='space-x-2 space-y-2 pt-4'>
-            {Array.isArray(tags) &&
-              tags.map((tag, idx) => (
-                <li
-                  key={idx}
-                  className='inline-block list-none rounded-full bg-accent px-4 py-1'
-                >
-                  {tag}
-                </li>
-              ))}
-          </ul>
-        </div>
-      )}
+            <ul className='space-x-2 space-y-2 pt-4'>
+              {Array.isArray(tags) &&
+                tags.map((tag, idx) => (
+                  <li
+                    key={idx}
+                    className='inline-block list-none rounded-full bg-accent px-4 py-1'
+                  >
+                    {tag}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </>
   );
 }

@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>amromoorie | Portofolio</title>
+        <title>amromoorie | JS/TS|C#</title>
         <link rel='canonical' href={canonicalURL} />
 
         <meta
