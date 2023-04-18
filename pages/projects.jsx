@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Layout from '../components/app-layout/TheLayout';
-import ProjectManager from '../components/portofolio/ProjectManager';
+import ProjectManager from '../components/projects/ProjectManager';
 
 export default function Projects() {
   const { pathname } = useRouter();
