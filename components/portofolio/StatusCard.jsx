@@ -1,14 +1,10 @@
-import { useState } from 'react';
-
-export default function StatusCard() {
-  const [close, setClose] = useState(false);
-
+export default function StatusCard({ close, setClose }) {
   return (
     <>
       {!close && (
         // Core Feat.
-        <div className='mt-4 rounded-lg border-2 border-solid border-accent pl-2 text-sm sm:w-[14.3rem]'>
-          <div className='flex items-center space-x-2 sm:inline-flex'>
+        <div className='mt-4 rounded-lg border-2 border-solid border-accent pl-2 text-sm sm:w-[14.5rem]'>
+          <div className='inline-flex items-center space-x-2'>
             <span
               title='Project Core Functionalities has Done'
               className='inline-block h-4 w-4 rounded-full bg-green-500'

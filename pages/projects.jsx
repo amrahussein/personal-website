@@ -11,13 +11,13 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>amromoorie | JS/TS|C#</title>
+        <title>amromoorie | JS/TS | C#</title>
         <link rel='canonical' href={canonicalURL} />
 
         <meta
           name='description'
           property='og:description'
-          content="Here's a my portofolio. Hope you find it interesting!"
+          content="a showcase of curated web apps developed using various technologies solving problems with clean code in mind: React, ASP.NET Core, Angular, Node.js, etc. Let's build something!"
           key='description'
         />
       </Head>

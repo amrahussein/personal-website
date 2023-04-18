@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import FlexCenter from '../micros/FlexCenter';
 import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
-import { tags, technologies } from './tech-stack-skills';
+import { tags, technologies } from '../../data/about/tech-stack-skills';
 
 export default function SkillsVisualized({ open, setOpen }) {
   return (
@@ -19,17 +19,17 @@ export default function SkillsVisualized({ open, setOpen }) {
       >
         {open && (
           <div>
-            <ul className='md:mdr-48 sm:pl-auto grid list-disc items-center space-y-3 py-3 pl-4 sm:grid-cols-6 sm:space-y-0 sm:pl-10'>
+            <ul className='sm:pl-auto grid list-disc items-center pl-4 sm:grid-cols-6 sm:pl-10'>
               {technologies?.map((item, idx) => (
                 <Fragment key={idx}>
-                  <li className='pt-3 text-primary'>
+                  <li className='mt-4 text-primary'>
                     <h2 className='font-mono font-semibold text-gray-700'>
                       {item.tech}
                     </h2>
                   </li>
                   <div className='relative top-[16.7%] block h-3 rounded-full border-2 bg-secondary opacity-70 sm:col-span-5'>
                     <span
-                      className={`${item.width} absolute inset-0 rounded-full bg-primary`}
+                      className={`w-[${item.level}%] absolute inset-0 rounded-full bg-primary`}
                       role='progressbar'
                       aria-valuenow={item.level}
                       aria-valuemin='0'
@@ -40,7 +40,7 @@ export default function SkillsVisualized({ open, setOpen }) {
               ))}
             </ul>
 
-            <ul className='space-x-2 space-y-2 pt-4'>
+            <ul className='mt-8 space-x-2 space-y-2'>
               {Array.isArray(tags) &&
                 tags.map((tag, idx) => (
                   <li

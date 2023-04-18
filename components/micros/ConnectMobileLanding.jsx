@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { socials } from './Social.links';
+import { socials } from '../../data/socials/social.meta-data';
 
 export default function ConnectMobileLanding() {
   return (

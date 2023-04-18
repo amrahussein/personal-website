@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { links } from '../Nav.links.js';
+import { navLinks } from '../../../data/socials/nav.links';
 
 export default function SidePaneNavItems() {
   const router = useRouter();
@@ -8,7 +8,7 @@ export default function SidePaneNavItems() {
     <>
       <nav className='flex flex-col items-center pt-[10rem] text-2xl text-accent'>
         <ul className='space-y-10'>
-          {links.map((item) => (
+          {navLinks.map((item) => (
             <li
               key={item.key}
               className={`underline-offset-3 hover:underline ${
