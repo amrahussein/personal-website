@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Layout from '../components/app-layout/TheLayout';
-import AppLink from '../components/micros/typography/AppLink';
+import Layout from '../../components/app-layout/TheLayout';
+import AppLink from '../../components/micros/typography/AppLink';
 
 export default function Blog() {
   const { pathname } = useRouter();
@@ -34,7 +34,7 @@ export default function Blog() {
             </article>
 
             <h2 className='mx-11 mt-11 pt-20 text-center text-3xl text-primary'>
-              you can react me at twitter:
+              you can reach me at twitter:
               <AppLink rel='twitter' href='https://twitter.com/amromoorie'>
                 {' '}
                 <span>@amromoorie</span>

@@ -106,7 +106,7 @@ export const projects = [
     description:
       'project orginally developed for exploring strapi as a content first class model',
     features: null,
-    technologies: ['React', 'NextJS', 'Strapi', 'Groq', 'TailwindCSS'],
+    technologies: ['React', 'Next.js', 'Strapi', 'Groq', 'TailwindCSS'],
     notes: '',
     hasCoreFeatDone: true,
     isFeatured: false,
@@ -344,9 +344,10 @@ export const projects = [
     url_live: '',
     url_repo: 'https://github.com/amromoorie/personal-website',
     name: 'Portfolio Site',
-    description: 'As it may already be shown; a simple portfolio site, meant for self-expression & motivation towards DEV world. It\'s built with NextJs due to its dynamic capabilities; with potential scalability and strong SEO qualities',
+    description:
+      "As it may already be shown; a simple portfolio site, meant for self-expression & motivation towards DEV world. It's built with Next.js due to its dynamic capabilities; with potential scalability and strong SEO qualities",
     features: null,
-    technologies: ['JavaScript', 'React', 'NextJs', 'TailwindCSS'],
+    technologies: ['JavaScript', 'React', 'Next.js', 'TailwindCSS'],
     notes: '',
     isFeatured: false,
     hasCoreFeatDone: true,

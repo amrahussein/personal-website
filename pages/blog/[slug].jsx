@@ -4,21 +4,26 @@ import Head from 'next/head';
 import Layout from '../../components/app-layout/TheLayout';
 import AppHeading from '../../components/micros/typography/AppHeading';
 import fetchBlogContent from '../../lib/fetchBlogContent';
-// // blog template
+
 export default function BlogPost({ content, data }) {
-  // console.log('data: ', data);
-  // console.log('fetchBlogContent: ', fetchBlogContent())
   return (
     <>
       <Head>
-        {/* <title>{data.title}</title> */}
-        {/* description */}
+        <title>amromoorie | {data.title}</title>
+        <meta
+          name='description'
+          property='og:description'
+          content={data.description}
+          key='description'
+        />
       </Head>
+      
       <Layout>
         <main className='mb-16'>
           <AppHeading>{data.title}</AppHeading>
           <section className='pt-8'>
-            <article dangerouslySetInnerHTML={{ __html: content }}></article>
+            {/* TODO: use custom class for blog paragraphs */}
+            <article className='space-y-6' dangerouslySetInnerHTML={{ __html: content }}></article>
           </section>
         </main>
       </Layout>
@@ -29,7 +34,6 @@ export default function BlogPost({ content, data }) {
 // prepare posts paths beforehand
 export const getStaticPaths = async () => {
   const blogContent = fetchBlogContent();
-  // console.log('fetchBlogContent: ', fetchBlogContent())
 
   try {
     const paths = blogContent.map((article) => ({
@@ -53,24 +57,10 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug } }) => {
   const blogContent = fetchBlogContent();
 
-  console.log('params:::::::::::: ', slug);
   try {
     const { data, content } = blogContent.find((post) => post.slug === slug);
-    // console.log('data: ', data);
-
-    // reading markdowned posts
-    // const markdownWithMetaInfo = fs.readFileSync(
-    //   path.join('pages/blog/posts', slug + '.md')
-    // )
-    // ;('utf-8')
-
-    //     const markdownParsed = matter(markdownWithMetaInfo)
 
     const blogPostHTML = marked(content);
-    //     // console.log('blogPostHTML: ', markdownParsed);
-
-    // // Blog body with no meta info parsed into HTML elements
-    // const blogPostHTML = marked(markdownParsed.content)
 
     return {
       props: {
