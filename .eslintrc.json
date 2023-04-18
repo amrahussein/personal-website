@@ -4,5 +4,9 @@
     "eslint:recommended",
     "prettier",
     "eslint-config-prettier"
-  ]
+  ],
+  "rules": {
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-img-element": "off"
+  }
 }
