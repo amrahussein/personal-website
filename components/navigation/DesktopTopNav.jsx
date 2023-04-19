@@ -7,22 +7,22 @@ export default function DesktopTopNav() {
 
   return (
     <nav>
-      <ul className='flex flex-row space-x-5 lg:space-x-12'>
+      <div className='flex flex-row space-x-5 lg:space-x-12'>
         {navLinks.map((item) => (
           <Link key={item.key} href={item.link} passHref>
             <a aria-label={item.name}>
-              <li
+              <p
                 className={`px-5 py-2 text-2xl text-secondary hover:cursor-pointer hover:rounded-lg hover:bg-accent ${
                   pathname === item.link &&
                   'rounded-lg bg-accent text-important'
                 }`}
               >
                 {item.name}
-              </li>
+              </p>
             </a>
           </Link>
         ))}
-      </ul>
+      </div>
     </nav>
   );
 }

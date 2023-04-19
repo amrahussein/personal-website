@@ -3,18 +3,18 @@ import { useContext, useState } from 'react';
 import { AppContext } from '../App.context';
 
 export default function Amrologo({ w = 300, h = 300 }) {
-  const mobile = useContext(AppContext);
+  const isMobile = useContext(AppContext);
   const [mainLogo, setMainLogo] = useState(true);
 
   return (
     <figure>
       <div className='inline-block w-[8rem] rounded-full border-2 border-accent'>
-        {mobile ? (
+        {isMobile ? (
           <img
             className='rounded-full'
             src={
               mainLogo
-                ? '/img/hero-landing/amrologo.jpg'
+                ? '/img/hero-landing/amrologo-mobile.jpg'
                 : '/img/hero-landing/catlogo.jpg'
             }
             alt={
