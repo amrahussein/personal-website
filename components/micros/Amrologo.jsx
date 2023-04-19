@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { AppContext } from '../App.context';
+import { AppContext } from '../../context/App.context';
 
 export default function Amrologo({ w = 300, h = 300 }) {
   const isMobile = useContext(AppContext);

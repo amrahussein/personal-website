@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AppContext } from '../../App.context';
+import { AppContext } from '../../../context/App.context';
 
 export default function ButtonBrand({ children }) {
   const isMobile = useContext(AppContext);

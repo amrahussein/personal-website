@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../App.context';
+import { AppContext } from '../../context/App.context';
 import LoadingSpinner from '../micros/LoadingSpinner';
 import MobileBottomNav from '../navigation/MobileBottomNav';
 import SidePaneNav from '../navigation/mobile-side-pane/SidePaneNav';

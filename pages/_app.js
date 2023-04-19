@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import { AppContext } from '../components/App.context';
+import { AppContext } from '../context/App.context';
 import '../styles/globals.css';
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
+import { AppContext } from '../../context/App.context';
 import { navLinks } from '../../data/socials/nav.links';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
-import { AppContext } from '../App.context';
 
 export default function MobileBottomNav() {
   const mobile = useContext(AppContext);

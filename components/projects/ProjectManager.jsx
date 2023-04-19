@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { chips } from '../../data/projects/constants/projects-all-featured';
-import { projects } from '../../data/projects/projects';
+import { getSortedProjectsByPriority } from '../../data/projects/projects';
 import useProjectHighlights from '../../hooks/useProjectHighlights';
 import useProjectFilter from '../../hooks/useSelectedProjectsFilter';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
@@ -12,29 +12,25 @@ import ProjectItem from './ProjectItem';
 import StatusCard from './StatusCard';
 
 export default function ProjectManager() {
-  const [allProjectsSorted, setAllProjectsSorted] = useState(null);
   const [statusCardClosed, setStatusCardClosed] = useState(false);
 
-  useEffect(() => {
-    // sort according to priority value
-    setAllProjectsSorted(projects?.sort((a, b) => b.priority - a.priority));
-  }, []);
-
   // get buttons - chips meta data from projects info
-  const { uniqueHighlights: projectHighlightsChips } =
-    useProjectHighlights(allProjectsSorted);
+  const { uniqueHighlights: projectHighlightsChips } = useProjectHighlights(
+    getSortedProjectsByPriority(),
+  );
 
   // get filtered projects according to user selection
-  const { userSelection, handleSelected, filteredProjects } =
-    useProjectFilter(allProjectsSorted);
+  const { userSelection, handleSelected, filteredProjects } = useProjectFilter(
+    getSortedProjectsByPriority(),
+  );
 
   const { userScrollDown } = useUserScrolledDown();
 
   return (
     <>
-      {/* CHIPS - buttons */}
       <section className='flex flex-col sm:mb-12 sm:h-24 sm:flex-row'>
-        <div className='flex w-[14.5rem] shrink-0 flex-col space-y-2'>
+        {/* CHIPS - buttons */}
+        <div className='flex w-[14.5rem] flex-col space-y-2'>
           <button
             className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
               userSelection.showAll && 'text-secondafry bg-accent'

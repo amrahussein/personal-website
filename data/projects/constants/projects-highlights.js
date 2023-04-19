@@ -1,3 +1,12 @@
+/**
+ * highlights:
+ * An object containing their respective names and icons - for the project highlights' section.
+ *
+ * @typedef {Object} Highlight
+ * @property {string} name - Name of the highlight
+ * @property {string} icon - Icon of the highlight
+ */
+
 export const highlights = Object.freeze({
   REACT: {
     name: 'React',

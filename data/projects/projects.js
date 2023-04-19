@@ -1,7 +1,28 @@
 import { highlights } from './constants/projects-highlights';
 import { priorities } from './constants/projects-priorities';
 
-export const projects = [
+/**
+ * projects:
+ * An array of projects
+ *
+ * @typedef {Object} Project
+ * @property {number} id - unique identifier for the project
+ * @property {string} url_live - live URL of the project
+ * @property {string} url_repo - repository URL of the project
+ * @property {string} name - name of the project
+ * @property {string} description - Description of the project
+ * @property {Array<string>?} features - List of features for the project
+ * @property {Array<string>?} technologies - List of technologies used in the project
+ * @property {string} notes - Additional notes related to the project
+ * @property {boolean} isFeatured - Whether the project is featured or not
+ * @property {boolean} hasCoreFeatDone - Whether the core features of the project are completed or not
+ * @property {Object} highlights - Object containing their respective names and icons for the project highlights' section.
+ * @property {Array<string>} highlights.names - Names of the highlights
+ * @property {Array<string>} highlights.icons - Icons of the highlights
+ * @property {Object} priority - Object containing priority information of the project - for sorting
+ */
+
+const projects = [
   {
     id: 1,
     url_live: 'https://amromoorie.github.io/apple-varieties/',
@@ -368,3 +389,7 @@ export const projects = [
     priority: priorities.HIGH,
   },
 ];
+
+// sort projects data according to priority value
+export const getSortedProjectsByPriority = () =>
+  projects.sort((a, b) => b.priority - a.priority);
