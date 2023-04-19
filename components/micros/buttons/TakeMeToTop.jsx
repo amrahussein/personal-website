@@ -2,7 +2,7 @@ export default function TakeMeToTop() {
   // ensure running on a browser context
   const isBrowser = () => typeof window !== 'undefined';
   return (
-    <div className='sticky bottom-6 float-right h-10 w-10 cursor-pointer rounded-full border-2 border-accent text-secondary sm:hidden '>
+    <div className='sticky bottom-6 float-right mt-4 h-8 w-8 cursor-pointer rounded-full border-2 border-accent text-secondary sm:hidden '>
       <a
         onClick={(evt) => {
           // scroll to top

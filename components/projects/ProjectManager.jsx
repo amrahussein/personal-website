@@ -4,8 +4,6 @@ import { chips } from '../../data/projects/constants/projects-all-featured';
 import { getSortedProjectsByPriority } from '../../data/projects/projects';
 import useProjectHighlights from '../../hooks/useProjectHighlights';
 import useProjectFilter from '../../hooks/useSelectedProjectsFilter';
-import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
-import TakeMeToTop from '../micros/buttons/TakeMeToTop';
 import AppLink from '../micros/typography/AppLink';
 import ProjectHighlights from './ProjectHighlights';
 import ProjectItem from './ProjectItem';
@@ -14,7 +12,6 @@ import StatusCard from './StatusCard';
 export default function ProjectManager() {
   const [statusCardClosed, setStatusCardClosed] = useState(false);
 
-  // get buttons - chips meta data from projects info
   const { uniqueHighlights: projectHighlightsChips } = useProjectHighlights(
     getSortedProjectsByPriority(),
   );
@@ -23,8 +20,6 @@ export default function ProjectManager() {
   const { userSelection, handleSelected, filteredProjects } = useProjectFilter(
     getSortedProjectsByPriority(),
   );
-
-  const { userScrollDown } = useUserScrolledDown();
 
   return (
     <>
@@ -78,7 +73,7 @@ export default function ProjectManager() {
       {/* render user selected projects */}
       {/* add extra margins bottom: ensure scroll visibilty */}
       {/* for style consistency & maintaining the page margin width - desktop view */}
-      <section className='ml-[-0.5rem] mb-4 sm:mb-[25rem]'>
+      <section className='ml-[-0.5rem] mt-28 sm:mb-[25rem]'>
         {filteredProjects?.map((data) => (
           <ProjectItem
             key={nanoid()} // ensure animation action on edge cases accross user selections
@@ -87,9 +82,6 @@ export default function ProjectManager() {
           />
         ))}
       </section>
-
-      {/* show take me to top button when user scrolls down */}
-      {userScrollDown && <TakeMeToTop />}
     </>
   );
 }

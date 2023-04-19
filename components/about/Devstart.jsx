@@ -42,7 +42,7 @@ export default function Devstart() {
       </p>
 
       <p>
-        I&apos;ve also expanded my <strong>backend knowledge</strong> as an ITI
+        I&apos;ve also expanded my <strong>backend knowledge</strong>. As an ITI
         graduate, I gained much professional experience in{' '}
         <strong>backend development</strong> with real-world projects.
       </p>

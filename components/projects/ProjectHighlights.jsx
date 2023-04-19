@@ -4,7 +4,7 @@ export default function ProjectHighlights({
   handleSelected,
 }) {
   return (
-    <ul className='self-center h-[6.5rem] space-x-4 space-y-2 overflow-auto sm:ml-12 sm:-mb-10'>
+    <ul className='h-[6.5rem] space-x-4 space-y-2 self-center overflow-auto pb-2 sm:ml-12 sm:-mb-10'>
       {projectHighlights?.map((highlight, idx) => (
         <li
           key={idx}
