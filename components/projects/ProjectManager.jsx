@@ -1,21 +1,18 @@
 import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
-import { projects } from '../../data/projects/projects';
 import { chips } from '../../data/projects/constants/projects-all-featured';
+import { projects } from '../../data/projects/projects';
 import useProjectHighlights from '../../hooks/useProjectHighlights';
 import useProjectFilter from '../../hooks/useSelectedProjectsFilter';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
+import TakeMeToTop from '../micros/buttons/TakeMeToTop';
 import AppLink from '../micros/typography/AppLink';
 import ProjectHighlights from './ProjectHighlights';
 import ProjectItem from './ProjectItem';
 import StatusCard from './StatusCard';
 
 export default function ProjectManager() {
-  // needed for scrolling to top - mobile view - ensure running on a browser context
-  const isBrowser = () => typeof window !== 'undefined';
-
   const [allProjectsSorted, setAllProjectsSorted] = useState(null);
-
   const [statusCardClosed, setStatusCardClosed] = useState(false);
 
   useEffect(() => {
@@ -37,9 +34,9 @@ export default function ProjectManager() {
     <>
       {/* CHIPS - buttons */}
       <section className='flex flex-col sm:mb-12 sm:h-24 sm:flex-row'>
-        <div className='space-y-2 flex w-[14.5rem] shrink-0 flex-col'>
+        <div className='flex w-[14.5rem] shrink-0 flex-col space-y-2'>
           <button
-            className={`border-2 border-accent inline-block max-w-[10rem] cursor-pointer rounded-lg px-3 py-1 font-mono font-semibold text-gray-600 ${
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
               userSelection.showAll && 'text-secondafry bg-accent'
             }`}
             onClick={() => handleSelected(chips.ALL)}
@@ -47,7 +44,7 @@ export default function ProjectManager() {
             Show All
           </button>
           <button
-            className={`border-2 border-accent inline-block max-w-[10rem] cursor-pointer rounded-lg px-3 py-1 font-mono font-semibold text-gray-600 ${
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
               userSelection.isFeatured && 'text-secondafry bg-accent'
             }`}
             onClick={() => handleSelected(chips.FEATURED)}
@@ -96,32 +93,7 @@ export default function ProjectManager() {
       </section>
 
       {/* show take me to top button when user scrolls down */}
-      {userScrollDown && (
-        <div className='sticky bottom-4 float-right h-8 w-8 cursor-pointer rounded-full border-2 border-accent text-secondary sm:hidden '>
-          <a
-            onClick={(evt) => {
-              // scroll to top - mobile view
-              if (!isBrowser()) return;
-              evt.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={2}
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18'
-              />
-            </svg>
-          </a>
-        </div>
-      )}
+      {userScrollDown && <TakeMeToTop />}
     </>
   );
 }
