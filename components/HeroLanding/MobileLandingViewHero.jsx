@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Amrologo from '../micros/Amrologo';
 import ConnectMobileLanding from '../micros/ConnectMobileLanding';
 import ContactMe from '../micros/ContactMe';
-import FlexCenter from '../micros/FlexCenter';
 import GoSocials from '../micros/GoSocials';
 import Line from '../micros/Line';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
@@ -39,7 +38,6 @@ export default function MobileLandingViewHero() {
           <div className='pl-4'>
             <AboutLandingInfo />
           </div>
-
         </article>
 
         <article>
@@ -61,9 +59,9 @@ export default function MobileLandingViewHero() {
         </article>
       </section>
 
-      <FlexCenter>
+      <div className='flex flex-col items-center'>
         <GoSocials />
-      </FlexCenter>
+      </div>
 
       <Line />
 

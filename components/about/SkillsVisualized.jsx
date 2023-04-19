@@ -1,15 +1,14 @@
 import { Fragment } from 'react';
-import FlexCenter from '../micros/FlexCenter';
 import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
-import { tags, technologies } from '../../data/about/tech-stack-skills';
+import { tags, technologies } from './tech-skills.data';
 
 export default function SkillsVisualized({ open, setOpen }) {
   return (
     <>
       {!open && (
-        <FlexCenter>
+        <div className='flex flex-col items-center'>
           <ButtonCoolBlue setOpen={setOpen}>Visualize Skills</ButtonCoolBlue>
-        </FlexCenter>
+        </div>
       )}
 
       <div
@@ -29,7 +28,7 @@ export default function SkillsVisualized({ open, setOpen }) {
                   </li>
                   <div className='relative top-[16.7%] block h-3 rounded-full border-2 bg-secondary opacity-70 sm:col-span-5'>
                     <span
-                      className={`w-[${item.level}%] absolute inset-0 rounded-full bg-primary`}
+                      className={`${item.width} absolute inset-0 rounded-full bg-primary`}
                       role='progressbar'
                       aria-valuenow={item.level}
                       aria-valuemin='0'
@@ -41,15 +40,14 @@ export default function SkillsVisualized({ open, setOpen }) {
             </ul>
 
             <ul className='mt-8 space-x-2 space-y-2'>
-              {Array.isArray(tags) &&
-                tags.map((tag, idx) => (
-                  <li
-                    key={idx}
-                    className='inline-block list-none rounded-full bg-accent px-4 py-1'
-                  >
-                    {tag}
-                  </li>
-                ))}
+              {tags?.map((tag, idx) => (
+                <li
+                  key={idx}
+                  className='inline-block list-none rounded-full bg-accent px-4 py-1 text-gray-700'
+                >
+                  {tag}
+                </li>
+              ))}
             </ul>
           </div>
         )}

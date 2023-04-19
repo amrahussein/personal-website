@@ -10,7 +10,6 @@ import Intro from '../components/about/Intro';
 import Postgraduation from '../components/about/Postgraduation';
 import SkillsVisualized from '../components/about/SkillsVisualized';
 import Layout from '../components/app-layout/TheLayout';
-import FlexCenter from '../components/micros/FlexCenter';
 
 export default function About() {
   const { pathname } = useRouter();
@@ -42,7 +41,7 @@ export default function About() {
             setOpen={setVisualizedSkillsExpanded}
           />
 
-          <FlexCenter>
+          <div className='flex flex-col items-center'>
             <Link href='/projects' passHref>
               <button
                 className={`flex items-center rounded-full px-8 py-2 tracking-widest ${
@@ -54,7 +53,7 @@ export default function About() {
                 Go to Portofolio Page | See Projects
               </button>
             </Link>
-          </FlexCenter>
+          </div>
 
           <Intro />
           <Childhood />

@@ -1,4 +1,4 @@
-import { aboutLandingInfo } from '../../data/about/about-landing-info';
+import { aboutLandingInfo } from '../../data/hero-landing/about-landing.data';
 
 export default function AboutLandingInfo() {
   return (
