@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
-import { AppContext } from '../components/App.context';
 import DesktopLandingViewHero from '../components/HeroLanding/DesktopLandingViewHero';
 import MobileLandingViewHero from '../components/HeroLanding/MobileLandingViewHero';
 import Layout from '../components/app-layout/TheLayout';
+import { AppContext } from '../context/App.context';
 
 export default function Home() {
   // const [canonicalURL, setCanonicalURL] = useState( typeof window === 'undefined' ?
