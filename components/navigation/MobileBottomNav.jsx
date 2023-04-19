@@ -19,21 +19,21 @@ export default function MobileBottomNav() {
           } `}
         >
           <nav className='py-2 font-mono text-xl font-extrabold text-secondary'>
-            <ul className='flex flex-row justify-around space-x-3 px-3'>
+            <div className='flex flex-row justify-around space-x-3 px-3'>
               {navLinks.map((item) => (
                 <Link key={item.key} href={item.link} passHref>
                   <a
                     aria-label={item.name}
                     rel='internal'
-                    className={`w-full rounded-full bg-accent py-[0.3rem] px-4 text-center text-xs hover:text-important ${
+                    className={`w-full rounded-full bg-accent py-[0.1rem] px-4 text-center text-[.84rem] hover:text-important ${
                       pathname === item.link && 'text-important'
                     }`}
                   >
-                    <li>{item.name}</li>
+                    <p>{item.name}</p>
                   </a>
                 </Link>
               ))}
-            </ul>
+            </div>
           </nav>
         </section>
       )}

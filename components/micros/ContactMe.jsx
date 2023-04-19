@@ -16,7 +16,7 @@ export default function ContactMe() {
       ) : (
         <>
           <section className='pt-4 md:pt-10'>
-            <h3 className='pl-5 pt-5 pb-2 font-mono text-xl font-bold italic text-gray-500 md:text-3xl md:font-normal md:tracking-wider'>
+            <h3 className='pl-5 pt-5 font-mono text-xl font-bold italic text-gray-500 md:text-3xl md:font-normal md:tracking-wider'>
               send me a quick message
             </h3>
           </section>
@@ -91,17 +91,23 @@ export default function ContactMe() {
       <section className='-ml-4 space-y-4 pt-4 md:ml-[-2rem]'>
         <div>
           <span className='text-serious'>prefer a casual chat? </span>
-          <AppLink href='https://telegram.me/amromoorie/' rel='telegram'>
-            <a className='pl-2'>link to telegram</a>
+          <AppLink
+            href='https://telegram.me/amromoorie/'
+            rel='telegram'
+            styles={'pl-1'}
+          >
+            link to telegram
           </AppLink>
         </div>
 
         <div>
           <span className='text-serious'>reach me directly at: </span>
-          <AppLink href='mailto:amr.abdelkamel3@outlook.com' rel='email'>
-            <a className='pl-2 text-important underline hover:text-cool'>
-              amr.abdelkamel3@outlook.com
-            </a>
+          <AppLink
+            href='mailto:amr.abdelkamel3@outlook.com'
+            rel='email'
+            styles={'pl-2'}
+          >
+            amr.abdelkamel3@outlook.com
           </AppLink>
         </div>
       </section>
