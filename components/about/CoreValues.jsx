@@ -20,7 +20,7 @@ export default function CoreValues() {
         <em className='text-secondary underline'>Integrity</em> is another
         aspect of my core values.{' '}
         <em className='text-secondary underline'>
-          Transparency and open-mindedness
+          Transparency and openness
         </em>{' '}
         are beneficial factors to any community.
       </p>

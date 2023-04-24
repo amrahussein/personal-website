@@ -17,7 +17,7 @@ export default function ContactMe() {
         <>
           <section className='pt-4 md:pt-10'>
             <h3 className='pl-5 pt-5 font-mono text-xl font-bold italic text-gray-500 md:text-3xl md:font-normal md:tracking-wider'>
-              send me a quick message
+              Ask me a question..
             </h3>
           </section>
           <div className='decorate-form ml-[-1rem] font-semibold leading-tight text-gray-600 md:ml-[-2rem]'>

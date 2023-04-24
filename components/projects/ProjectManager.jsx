@@ -25,7 +25,7 @@ export default function ProjectManager() {
     <>
       <section className='flex flex-col sm:mb-12 sm:h-24 sm:flex-row'>
         {/* CHIPS - buttons */}
-        <div className='flex w-[14.5rem] flex-col space-y-2'>
+        <div className='flex w-[14.5rem] shrink-0 flex-col space-y-2'>
           <button
             className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
               userSelection.showAll && 'text-secondafry bg-accent'
@@ -49,12 +49,14 @@ export default function ProjectManager() {
                 setClose={setStatusCardClosed}
               />
             ) : (
-              <p className='pt-4'>
-                check github account at:{' '}
+              <>
+                <p className='-mb-1 pt-4 sm:mb-auto'>
+                  check github account at:{' '}
+                </p>
                 <AppLink href='https://github.com/amromoorie' rel='github'>
                   github.com/amromoorie
                 </AppLink>
-              </p>
+              </>
             )}
           </div>
         </div>

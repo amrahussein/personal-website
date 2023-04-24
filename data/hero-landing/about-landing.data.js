@@ -1,7 +1,7 @@
 export const aboutLandingInfo = {
   selfIntro: [
     'Full-Stack Developer with 3+ in frontend development with a solid experience in JavaScript ecosystem',
-    'Transparency and open-mindedness are the two main principles I live by',
+    'Transparency and openness are the two main principles I live by',
     'Clean code and simplicity are the two pillars I aim to achieve in my projects',
   ],
   inspiringThings: [
