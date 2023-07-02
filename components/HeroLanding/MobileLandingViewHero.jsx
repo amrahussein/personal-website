@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import ShowTechnicalSkills from '../about/ShowTechnicalSkills';
 import Amrologo from '../micros/Amrologo';
 import ConnectMobileLanding from '../micros/ConnectMobileLanding';
 import ContactMe from '../micros/ContactMe';
@@ -7,8 +9,11 @@ import Line from '../micros/Line';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
+import ProjectsIamInto from '../micros/projectsIamInto';
 
 export default function MobileLandingViewHero() {
+  const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
+
   return (
     <main>
       <section className='flex'>
@@ -41,13 +46,23 @@ export default function MobileLandingViewHero() {
         </article>
 
         <article>
-          <h2 className='pl-2 pt-7 text-3xl text-primary'>more about me?</h2>
+          <h2 className='pl-2 pt-7 text-3xl text-primary'>More about?</h2>
           <Link href='/about'>
             <a>
-              <ButtonBrand>more About me and Skills</ButtonBrand>
+              <ButtonBrand>take me to About page</ButtonBrand>
             </a>
           </Link>
         </article>
+
+        <section className='pt-8'>
+        <ShowTechnicalSkills
+          open={technicalSkillsExpanded}
+          setOpen={setTechnicalSkillsExpanded}
+        />
+        </section>
+
+      <ProjectsIamInto />
+
 
         <article className='pt-7'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>

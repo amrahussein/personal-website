@@ -49,7 +49,7 @@ export const highlights = Object.freeze({
     icon: 'ux-wing-icons/project-highlights-icons/webpack-icon.svg',
   },
   NEST: {
-    name: 'NestJs',
+    name: 'NestJS',
     icon: 'ux-wing-icons/project-highlights-icons/nest-js-icon.svg',
   },
   NEXT: {

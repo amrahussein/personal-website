@@ -8,7 +8,7 @@ import CoreValues from '../components/about/CoreValues';
 import Devstart from '../components/about/Devstart';
 import Intro from '../components/about/Intro';
 import Postgraduation from '../components/about/Postgraduation';
-import SkillsVisualized from '../components/about/SkillsVisualized';
+import ShowTechnicalSkills from '../components/about/ShowTechnicalSkills';
 import Layout from '../components/app-layout/TheLayout';
 
 export default function About() {
@@ -16,8 +16,7 @@ export default function About() {
   const siteName = 'https://amromoorie.com';
   const canonicalURL = siteName + pathname;
 
-  const [visualizedSkillsExpanded, setVisualizedSkillsExpanded] =
-    useState(false);
+  const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
 
   return (
     <>
@@ -36,16 +35,16 @@ export default function About() {
       </Head>
       <Layout>
         <article className='mb-16 space-y-10 text-gray-500 sm:text-lg'>
-          <SkillsVisualized
-            open={visualizedSkillsExpanded}
-            setOpen={setVisualizedSkillsExpanded}
+          <ShowTechnicalSkills
+            open={technicalSkillsExpanded}
+            setOpen={setTechnicalSkillsExpanded}
           />
 
           <div className='flex flex-col items-center'>
             <Link href='/projects' passHref>
               <button
                 className={`flex items-center rounded-full px-8 py-2 tracking-widest ${
-                  visualizedSkillsExpanded
+                  technicalSkillsExpanded
                     ? 'border-2 border-primary bg-primary text-white hover:bg-accent hover:text-primary'
                     : 'bg-accent text-secondary hover:bg-primary hover:text-white'
                 }`}

@@ -1,26 +1,22 @@
 import { useState } from 'react';
-import AppHeading from '../micros/typography/AppHeading';
 import AppLink from '../micros/typography/AppLink';
-import SkillsVisualized from './SkillsVisualized';
+import ShowTechnicalSkills from './ShowTechnicalSkills';
 
 export default function CoreSkills() {
-  const [visualizedSkillsExpanded, setVisualizedSkillsExpanded] =
-    useState(false);
+  const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
 
   return (
-    <section className='space-y-4'>
-      <AppHeading>My Core Skills...</AppHeading>
-
-      <SkillsVisualized
-        open={visualizedSkillsExpanded}
-        setOpen={setVisualizedSkillsExpanded}
+    <section className='space-y-4 pt-4'>
+      <ShowTechnicalSkills
+        open={technicalSkillsExpanded}
+        setOpen={setTechnicalSkillsExpanded}
       />
 
       <p className='pt-4 text-secondary'>
         <em>
           my latest projects at my{' '}
           <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
-            GitHub account
+            Github account
           </AppLink>
         </em>
       </p>

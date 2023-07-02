@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import ShowTechnicalSkills from '../about/ShowTechnicalSkills';
 import Amrologo from '../micros/Amrologo';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
 import Line from '../micros/Line';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
+import ProjectsIamInto from '../micros/projectsIamInto';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
 
 export default function DesktopLandingViewHero() {
+  const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
+
   return (
     <main className=''>
       <section>
@@ -27,7 +32,7 @@ export default function DesktopLandingViewHero() {
               {/* <h2 className='pl-2 pt-2 text-3xl italic text-primary inline-block'>more about me?: </h2> */}
               <Link href='/about'>
                 <a aria-label='Learn more about me and my experience'>
-                  <ButtonBrand>More About me and Skills</ButtonBrand>
+                  <ButtonBrand>More About</ButtonBrand>
                 </a>
               </Link>
             </div>
@@ -36,6 +41,15 @@ export default function DesktopLandingViewHero() {
       </section>
 
       <Line />
+
+      <ProjectsIamInto />
+      
+      <section className='pt-6'>
+        <ShowTechnicalSkills
+          open={technicalSkillsExpanded}
+          setOpen={setTechnicalSkillsExpanded}
+        />
+      </section>
 
       <section className='space-y-14 pt-6 '>
         <article className='flex flex-col items-center'>
