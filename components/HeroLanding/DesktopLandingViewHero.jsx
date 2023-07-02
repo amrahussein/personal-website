@@ -5,8 +5,8 @@ import Amrologo from '../micros/Amrologo';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
 import Line from '../micros/Line';
+import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
-import ProjectsIamInto from '../micros/projectsIamInto';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
 
@@ -42,8 +42,8 @@ export default function DesktopLandingViewHero() {
 
       <Line />
 
-      <ProjectsIamInto />
-      
+      <OpenForWork />
+
       <section className='pt-6'>
         <ShowTechnicalSkills
           open={technicalSkillsExpanded}

@@ -42,7 +42,7 @@ export default function TechnicalSkills() {
       <h3 className='mt-8 inline-block rounded-full border-2 border-primary px-4 py-1 font-bold text-gray-700'>
         Related Skills
       </h3>
-      <h4 className='pt-2 font-mono'>Have great knowlodge of the following:</h4>
+      <h4 className='pt-2 font-mono'>Have great knowledge of the following:</h4>
       <ul className='flex flex-wrap pt-2 pl-5'>
         {technicalSkills?.general.map((li, idx) => (
           <li className='list-disc pr-10' key={idx}>

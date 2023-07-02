@@ -1,6 +1,6 @@
 import { aboutLandingInfo } from '../../data/hero-landing/about-landing.data';
 
-export default function ProjectsIamInto() {
+export default function OpenForWork() {
   return (
     <>
       <h2 className='pt-8 text-2xl text-gray-700'>

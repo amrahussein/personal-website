@@ -6,10 +6,10 @@ import ConnectMobileLanding from '../micros/ConnectMobileLanding';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
 import Line from '../micros/Line';
+import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
-import ProjectsIamInto from '../micros/projectsIamInto';
 
 export default function MobileLandingViewHero() {
   const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
@@ -55,14 +55,13 @@ export default function MobileLandingViewHero() {
         </article>
 
         <section className='pt-8'>
-        <ShowTechnicalSkills
-          open={technicalSkillsExpanded}
-          setOpen={setTechnicalSkillsExpanded}
-        />
+          <ShowTechnicalSkills
+            open={technicalSkillsExpanded}
+            setOpen={setTechnicalSkillsExpanded}
+          />
         </section>
 
-      <ProjectsIamInto />
-
+        <OpenForWork />
 
         <article className='pt-7'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
