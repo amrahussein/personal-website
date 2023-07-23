@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { navLinks } from '../../data/socials/nav.links';
-import DesktopNavBrand from '../navigation/DesktopNavBrand';
 import ToggleDarkMode from '../micros/buttons/ToggleDarkMode';
+import DesktopNavBrand from '../navigation/DesktopNavBrand';
 
 export default function DesktopTopNavBar() {
   const { pathname } = useRouter();

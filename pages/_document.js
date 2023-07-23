@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-        <script src="/scripts/dark-mode.js" strategy="beforeInteractive" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
