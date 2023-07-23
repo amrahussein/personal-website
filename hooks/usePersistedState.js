@@ -1,11 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 
 export default function usePersistedState(key, initialState) {
-  const [state, setState] = useState(initialState);
+  const isBrowser = typeof window !== 'undefined';
+  const [state, setState] = useState(() => {
+    if (isBrowser) {
+      const storedState = localStorage.getItem(key);
+      if (storedState !== null) {
+        return storedState;
+      }
+    }
+    return initialState;
+  });
   const keyRef = useRef(key);
 
   useEffect(() => {
     const storedState = localStorage.getItem(key);
+    console.log('storedState:xx ', storedState);
+    if (storedState === 'undefined') return;
     if (storedState !== null) {
       setState(storedState);
       return;
