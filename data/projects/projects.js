@@ -181,10 +181,11 @@ const projects = [
     url_live: '',
     url_repo: 'https://github.com/amromoorie/landing_page--nanodegree',
     name: 'landing page',
-    description: 'flexible web page with dynamic navigation lists using the Intersection Observer Api',
+    description:
+      'flexible web page with dynamic navigation lists using the Intersection Observer Api',
     features: null,
     technologies: ['JavaScript'],
-    notes:null,
+    notes: null,
     isFeatured: false,
     hasCoreFeatDone: false,
     highlights: {
@@ -211,25 +212,23 @@ const projects = [
     },
     priority: priorities.NORMAL,
   },
-
   {
     id: 11,
     url_live: '',
-    url_repo: 'https://github.com/amromoorie/practice-english-quizly',
-    name: 'practice-english-quizly',
-    description: 'Interactive quiz app built with Nodo.js & React',
+    url_repo: 'https://github.com/amromoorie/elevate-dental-care',
+    name: 'Elevate dental care',
+    description: 'Dynamic landing page',
     features: null,
-    technologies: ['Node.js', 'React', 'TailwindCSS'],
+    technologies: ['Sass', 'JavaScript'],
     notes: '',
     isFeatured: true,
     hasCoreFeatDone: false,
     highlights: {
-      names: [highlights.NODE.name, highlights.REACT.name],
-      icons: [highlights.NODE.icon, highlights.REACT.icon],
+      names: [highlights.SASS.name, highlights.JAVASCRIPT.name],
+      icons: [highlights.SASS.icon, highlights.JAVASCRIPT.icon],
     },
     priority: priorities.HIGH,
   },
-
   {
     id: 12,
     url_live: '',
@@ -298,25 +297,17 @@ const projects = [
     url_repo: 'https://github.com/amromoorie/explore-NET-MVC',
     name: 'explore-NET-MVC',
     description: '',
-    features: ['Authentication & Authorization of users', 'Managing User Access/Roles', ],
-    technologies: [
-      'C#',
-      '.NET MVC',
-      'Entity Framework Core',
-      'Bootstrap',
+    features: [
+      'Authentication & Authorization of users',
+      'Managing User Access/Roles',
     ],
+    technologies: ['C#', '.NET MVC', 'Entity Framework Core', 'Bootstrap'],
     notes: null,
     isFeatured: false,
     hasCoreFeatDone: true,
     highlights: {
-      names: [
-        highlights.CSHARP.name,
-        highlights.DOTNET.name,
-      ],
-      icons: [
-        highlights.CSHARP.icon,
-        highlights.DOTNET.icon,
-      ],
+      names: [highlights.CSHARP.name, highlights.DOTNET.name],
+      icons: [highlights.CSHARP.icon, highlights.DOTNET.icon],
     },
     priority: priorities.NORMAL,
   },
@@ -415,6 +406,23 @@ const projects = [
       ],
     },
     priority: priorities.IMPORTANT,
+  },
+  {
+    id: 15,
+    url_live: '',
+    url_repo: 'https://github.com/amromoorie/word-wiz',
+    name: 'Wordwiz',
+    description: 'Interactive quiz app built with Nodo.js & React',
+    features: null,
+    technologies: ['Node.js', 'React', 'TailwindCSS'],
+    notes: '',
+    isFeatured: true,
+    hasCoreFeatDone: false,
+    highlights: {
+      names: [highlights.NODE.name, highlights.REACT.name],
+      icons: [highlights.NODE.icon, highlights.REACT.icon],
+    },
+    priority: priorities.HIGH,
   },
 ];
 

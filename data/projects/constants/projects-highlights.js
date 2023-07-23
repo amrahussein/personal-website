@@ -64,4 +64,8 @@ export const highlights = Object.freeze({
     name: 'TailwindCSS',
     icon: 'ux-wing-icons/project-highlights-icons/tailwind-css-icon.svg',
   },
+  SASS: {
+    name: 'Sass',
+    icon: 'ux-wing-icons/project-highlights-icons/sass-icon.svg',
+  },
 });
