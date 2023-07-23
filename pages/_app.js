@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import { AppContext } from '../context/App.context';
+import { IsMobileContext } from '../context/Mobile.context';
 import '../styles/globals.css';
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -66,9 +66,9 @@ function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#ffffff' />
       </Head>
 
-      <AppContext.Provider value={isMobile}>
+      <IsMobileContext.Provider value={isMobile}>
         <Component {...pageProps} />
-      </AppContext.Provider>
+      </IsMobileContext.Provider>
     </>
   );
 }

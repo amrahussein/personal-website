@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import DesktopLandingViewHero from '../components/HeroLanding/DesktopLandingViewHero';
 import MobileLandingViewHero from '../components/HeroLanding/MobileLandingViewHero';
 import Layout from '../components/app-layout/TheLayout';
-import { AppContext } from '../context/App.context';
+import { IsMobileContext } from '../context/Mobile.context';
 
 export default function Home() {
   // const [canonicalURL, setCanonicalURL] = useState( typeof window === 'undefined' ?
@@ -14,7 +14,7 @@ export default function Home() {
   const siteName = 'https://amromoorie.com';
   const canonicalURL = siteName + pathname;
 
-  const isMobile = useContext(AppContext);
+  const isMobile = useContext(IsMobileContext);
 
   return (
     <>
