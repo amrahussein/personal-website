@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { IsMobileContext } from '../context/Mobile.context';
 import '../styles/globals.css';
+import { ThemeProvider } from '../providers/ThemingMode.provider';
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // config.autoAddCss = false
@@ -67,7 +68,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <IsMobileContext.Provider value={isMobile}>
-        <Component {...pageProps} />
+        <ThemeProvider>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </IsMobileContext.Provider>
     </>
   );

@@ -4,6 +4,7 @@ import Copyright from '../../micros/Copyright';
 import GoSocials from '../../micros/GoSocials';
 import Line from '../../micros/Line';
 import ToggleMenu from '../../micros/ToggleMenu';
+import ToggleDarkMode from '../../micros/buttons/ToggleDarkMode';
 import SidePaneNavItems from './SidePaneNavItems';
 
 export default function SidePaneNav() {
@@ -22,7 +23,14 @@ export default function SidePaneNav() {
         } `}
       >
         <MobileTopBar paneOpened={true} />
-        <SidePaneNavItems />
+
+        <div className='flex flex-col justify-between'>
+          <SidePaneNavItems />
+          <div className='mr-14 mt-10 place-self-center text-primary text-gray-50 dark:text-slate-50'>
+            <ToggleDarkMode />
+          </div>
+        </div>
+
         <Line color='border-accent' mt='10' />
         <section className='flex justify-center'>
           <GoSocials
