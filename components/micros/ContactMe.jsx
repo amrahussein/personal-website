@@ -16,14 +16,14 @@ export default function ContactMe() {
       ) : (
         <>
           <section className='pt-4 md:pt-10'>
-            <h3 className='pl-5 pt-5 font-mono text-xl font-bold italic text-gray-500 md:text-3xl md:font-normal md:tracking-wider'>
+            <h3 className='pl-5 pt-5 font-mono text-xl font-bold italic text-gray-500 dark:text-slate-300 md:text-3xl md:font-normal md:tracking-wider'>
               Ask me a question..
             </h3>
           </section>
-          <div className='decorate-form ml-[-1rem] font-semibold leading-tight text-gray-600 md:ml-[-2rem]'>
+          <div className='decorate-form ml-[-1rem] font-semibold leading-tight text-slate-600 dark:text-slate-400 md:ml-[-2rem]'>
             <form
               onSubmit={handleSubmit}
-              className='bg-white px-4 sm:pl-8 sm:pr-16 md:px-8'
+              className='bg-white px-4 dark:bg-slate-900 sm:pl-8 sm:pr-16 md:px-8'
               aria-label='Contact form'
             >
               <div className='space-y-6 py-6'>
@@ -34,7 +34,7 @@ export default function ContactMe() {
                   <textarea
                     name='message'
                     id='message'
-                    className='input pt-2'
+                    className='input pt-2 dark:bg-slate-700'
                     rows={6}
                     required
                     aria-required='true'
@@ -50,7 +50,7 @@ export default function ContactMe() {
                     id='name'
                     required
                     type='text'
-                    className='input h-10'
+                    className='input h-10 dark:bg-slate-700'
                     aria-required='true'
                   />
                 </section>
@@ -63,7 +63,7 @@ export default function ContactMe() {
                     name='email'
                     id='email'
                     type='email'
-                    className='input h-10'
+                    className='input h-10 dark:bg-slate-700'
                     required
                     aria-required='true'
                     aria-describedby={emailErrorId}
@@ -90,7 +90,9 @@ export default function ContactMe() {
 
       <section className='-ml-4 space-y-4 pt-4 md:ml-[-2rem]'>
         <div>
-          <span className='text-serious'>prefer a casual chat? </span>
+          <span className='text-serious dark:text-slate-300'>
+            prefer a casual chat?{' '}
+          </span>
           <AppLink
             href='https://telegram.me/amromoorie/'
             rel='telegram'
@@ -101,7 +103,9 @@ export default function ContactMe() {
         </div>
 
         <div>
-          <span className='text-serious'>reach me directly at: </span>
+          <span className='text-serious dark:text-slate-300'>
+            reach me directly at:{' '}
+          </span>
           <AppLink
             href='mailto:amr.abdelkamel3@outlook.com'
             rel='email'

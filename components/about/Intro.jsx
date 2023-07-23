@@ -6,9 +6,11 @@ export default function Intro() {
       <AppHeading>Intro</AppHeading>
       <p>
         I&apos;ve been grateful to have a{' '}
-        <em className='text-secondary'>multidisciplinary education:</em> English
-        Literature and Linguistics along with a wide range of topics. This
-        opened my eyes to different perspectives and inspirations with the
+        <em className='text-secondary dark:text-primary'>
+          multidisciplinary education:
+        </em>{' '}
+        English Literature and Linguistics along with a wide range of topics.
+        This opened my eyes to different perspectives and inspirations with the
         flexibility that allowed me to adapt to various contexts.
       </p>
       <p>

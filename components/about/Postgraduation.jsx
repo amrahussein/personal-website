@@ -11,7 +11,7 @@ export default function Postgraduation() {
         activity that would introduce me to the community and the people.
       </p>
       <p>
-        I joined <em className='text-secondary'>GCP scholarship</em> by google
+        I joined <em className='text-secondary dark:text-primary'>GCP scholarship</em> by google
         partnered with Pluralsight, I had a great introduction to the cloud as
         well as a great involvement with the community. I learned a lot and
         gained a lot of perspectives.
@@ -24,7 +24,7 @@ export default function Postgraduation() {
       <p>
         {' '}
         I, then, followed{' '}
-        <em className='text-secondary underline'>volunteering activities</em> to
+        <em className='text-secondary dark:text-primary underline'>volunteering activities</em> to
         apply what I have learned. What I can say is that willing to get to know
         different peoples&apos; thoughts increase the chance of mutual matching
         of common goal and value. I see it as an integral part of any

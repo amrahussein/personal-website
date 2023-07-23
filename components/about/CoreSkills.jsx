@@ -12,7 +12,7 @@ export default function CoreSkills() {
         setOpen={setTechnicalSkillsExpanded}
       />
 
-      <p className='pt-4 text-secondary'>
+      <p className='pt-4 text-secondary dark:text-slate-300'>
         <em>
           my latest projects at my{' '}
           <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
@@ -20,7 +20,7 @@ export default function CoreSkills() {
           </AppLink>
         </em>
       </p>
-      <p className='pt-4 text-secondary'>
+      <p className='pt-4 text-secondary dark:text-slate-300'>
         <em>
           more info at my{' '}
           <AppLink

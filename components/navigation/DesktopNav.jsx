@@ -1,10 +1,7 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { navLinks } from '../../data/socials/nav.links';
 
-export default function DesktopTopNav() {
-  const { pathname } = useRouter();
-
+export default function DesktopNav({ pathname }) {
   return (
     <nav>
       <div className='flex flex-row space-x-5 lg:space-x-12'>

@@ -27,16 +27,18 @@ export default function ProjectManager() {
         {/* CHIPS - buttons */}
         <div className='flex w-[14.5rem] shrink-0 flex-col space-y-2'>
           <button
-            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
-              userSelection.showAll && 'text-secondafry bg-accent'
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 dark:text-slate-300 ${
+              userSelection.showAll &&
+              'text-secondafry bg-accent dark:bg-slate-700 dark:text-slate-300'
             }`}
             onClick={() => handleSelected(chips.ALL)}
           >
             Show All
           </button>
           <button
-            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 ${
-              userSelection.isFeatured && 'text-secondafry bg-accent'
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 dark:text-slate-300 ${
+              userSelection.isFeatured &&
+              'text-secondafry bg-accent dark:bg-slate-700 dark:text-slate-300'
             }`}
             onClick={() => handleSelected(chips.FEATURED)}
           >
@@ -69,7 +71,7 @@ export default function ProjectManager() {
           highlighted={userSelection.highlighted}
           handleSelected={handleSelected}
         />
-        <hr className='w-full border-2 border-accent sm:hidden' />
+        <hr className='w-full border-2 border-accent  sm:hidden' />
       </section>
 
       {/* render user selected projects */}

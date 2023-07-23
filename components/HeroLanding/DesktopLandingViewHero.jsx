@@ -4,6 +4,7 @@ import ShowTechnicalSkills from '../about/ShowTechnicalSkills';
 import Amrologo from '../micros/Amrologo';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
+import HeroMessage from '../micros/HeroMessage';
 import Line from '../micros/Line';
 import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
@@ -17,14 +18,16 @@ export default function DesktopLandingViewHero() {
     <main className=''>
       <section>
         <article className=''>
-          <aside className='py-5 text-right text-4xl italic text-secondary opacity-70 lg:mr-[-15rem]'>
+          <aside className='py-5 text-right text-4xl italic text-secondary opacity-70 dark:text-gray-50 lg:mr-[-15rem]'>
             Nice to meet you!
           </aside>
 
-          <div className='md:flex-fcol flex items-center sm:space-x-12 md:pl-12 lg:flex-row lg:space-x-20 lg:pl-28'>
+          <div className='flex items-center sm:space-x-12 md:pl-12 lg:flex-row lg:space-x-20 lg:pl-28'>
             <Amrologo />
 
             <div className='pt-8 lg:pl-5 '>
+              <HeroMessage />
+
               <Line />
 
               <AboutLandingInfo />
@@ -56,13 +59,13 @@ export default function DesktopLandingViewHero() {
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
             It starts with a connection!
           </AppHeading>
-          <h3 className='pl-5 pt-8 pb-2 font-mono text-3xl italic tracking-wider text-gray-500'>
+          <h3 className='pl-5 pt-8 pb-2 font-mono text-3xl italic tracking-wider text-gray-500 dark:text-slate-100'>
             reach me out on:
           </h3>
           <div className='mb-32 flex max-w-4xl flex-col justify-around space-y-6 pl-4 pt-5'>
             <GoSocials
               styleSocialItems='flex space-x-6'
-              linkStyle='flex flex-col p-2 mb-8 w-24 h-24 space-y-4 rounded-3xl bg-accent hover:scale-125 hover:text-important hover:rotate-[5deg]'
+              linkStyle='flex flex-col p-2 mb-8 w-24 h-24 space-y-4 rounded-3xl bg-accent hover:scale-125 dark:hover:bg-primary dark:bg-secondary hover:rotate-[5deg]'
             />
             {/* <ContactMe /> */}
             <Line />

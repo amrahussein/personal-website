@@ -14,7 +14,7 @@ export default function Childhood() {
       <p>
         One of the things about myself, that came obvious to me early on, was
         that{' '}
-        <em className='text-secondary underline'>
+        <em className='text-secondary dark:text-primary underline'>
           I liked to explore the world, in addition to, learning from different
           people.
         </em>

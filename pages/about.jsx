@@ -46,7 +46,7 @@ export default function About() {
                 className={`flex items-center rounded-full px-8 py-2 tracking-widest ${
                   technicalSkillsExpanded
                     ? 'border-2 border-primary bg-primary text-white hover:bg-accent hover:text-primary'
-                    : 'bg-accent text-secondary hover:bg-primary hover:text-white'
+                    : 'bg-accent text-secondary hover:bg-primary hover:text-white dark:bg-slate-700 dark:text-slate-200'
                 }`}
               >
                 Go to Portofolio Page | See Projects

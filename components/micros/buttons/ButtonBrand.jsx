@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { AppContext } from '../../../context/App.context';
+import { IsMobileContext } from '../../../context/Mobile.context';
 
 export default function ButtonBrand({ children }) {
-  const isMobile = useContext(AppContext);
+  const isMobile = useContext(IsMobileContext);
 
   return (
     <>
@@ -11,7 +11,7 @@ export default function ButtonBrand({ children }) {
           {children}
         </h2>
       ) : (
-        <h2 className='text-secodary float-right mt-2 ml-6 rounded-full border-2 border-x-0 border-t-0 border-b-primary bg-accent px-4 py-1 italic tracking-widest transition duration-200 hover:border-b-cool hover:text-cool '>
+        <h2 className='text-secodary float-right mt-2 ml-6 rounded-full border-2 border-x-0 border-t-0 border-b-primary bg-accent px-4 py-1 italic tracking-widest transition duration-150 hover:border-b-cool hover:text-cool dark:bg-primary dark:text-slate-100 dark:hover:border-b-important dark:hover:text-slate-900'>
           {children}
         </h2>
       )}

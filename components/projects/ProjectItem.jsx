@@ -19,13 +19,15 @@ export default function ProjectItem({ projectData: project, highlighted }) {
             : 'translate-y-1 transform'
         } duration-250 ease-out`}
       >
-        <AppHeading styles='text-2xl pl-2 text-secondary underline italic'>
+        <AppHeading styles='text-2xl pl-2 text-secondary dark:text-slate-300 underline italic'>
           {project.name}
         </AppHeading>
-        <section className='mt-4 h-full rounded-bl bg-gradient-to-t from-accent pb-3 pl-3'>
-          <section className='h-full space-y-4 bg-white px-4 py-4'>
+        <section className='mt-4 h-full rounded-bl bg-gradient-to-t from-accent pb-3 pl-3 dark:from-slate-800'>
+          <section className='h-full space-y-4 bg-white px-4 py-4 dark:bg-slate-900'>
             {project.description && (
-              <p className='text-secondary'>{project.description}</p>
+              <p className='text-secondary dark:text-slate-300'>
+                {project.description}
+              </p>
             )}
             {project.url_live && (
               <h2 className=''>
@@ -45,9 +47,12 @@ export default function ProjectItem({ projectData: project, highlighted }) {
             {project.features && (
               <div>
                 <h2 className=''>Features: </h2>
-                <ul className='pl-10 text-secondary'>
+                <ul className='pl-10 text-secondary dark:text-slate-300'>
                   {project.features.map((li, idx) => (
-                    <li key={idx} className='list-disc text-secondary'>
+                    <li
+                      key={idx}
+                      className='list-disc text-secondary dark:text-slate-300'
+                    >
                       {li}
                     </li>
                   ))}
@@ -58,7 +63,7 @@ export default function ProjectItem({ projectData: project, highlighted }) {
             {project.technologies && (
               <div>
                 <h2 className=''>Technologies: </h2>
-                <ul className='pl-10 text-secondary'>
+                <ul className='pl-10 text-secondary dark:text-slate-300'>
                   {project.technologies.map((tech, idx) => (
                     <li
                       key={idx}
@@ -77,7 +82,10 @@ export default function ProjectItem({ projectData: project, highlighted }) {
             )}
             {project.notes && (
               <h2 className='py-5 font-mono italic'>
-                Notes: <span className='text-gray-500'>{project.notes}</span>
+                Notes:{' '}
+                <span className='text-gray-500 dark:text-slate-400'>
+                  {project.notes}
+                </span>
               </h2>
             )}
           </section>

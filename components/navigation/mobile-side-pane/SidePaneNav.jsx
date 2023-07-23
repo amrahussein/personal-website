@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import MobileNavBrand from '../../app-layout/MobileNavBrand';
+import MobileTopBar from '../../app-layout/MobileTopBar';
 import Copyright from '../../micros/Copyright';
 import GoSocials from '../../micros/GoSocials';
 import Line from '../../micros/Line';
@@ -17,18 +17,18 @@ export default function SidePaneNav() {
   return (
     <>
       <div
-        className={`fixed top-0 right-0 z-100 h-full w-full bg-secondary duration-200 ease-out ${
+        className={`fixed top-0 right-0 z-100 h-full w-full bg-secondary duration-200 ease-out dark:bg-primaryDark ${
           paneOpened ? 'translate-x-0' : 'translate-x-full'
         } `}
       >
-        <MobileNavBrand dark={true} />
+        <MobileTopBar paneOpened={true} />
         <SidePaneNavItems />
         <Line color='border-accent' mt='10' />
         <section className='flex justify-center'>
           <GoSocials
             styleSocialItems='flex space-x-8 pt-7'
             socialNames={false}
-            linkStyle='w-8 h-8 rounded-lg hover:scale-110 p-1 bg-accent'
+            linkStyle='w-8 h-8 rounded-lg hover:scale-110 p-1 bg-accent dark:bg-primaryDark'
           />
         </section>
 

@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  ul,
-  ol {
-    list-style: revert;
+@layer base {
+  body {
+    @apply dark:bg-slate-900;
   }
-} */
+}
 
 /* google fonts */
 /* Ubuntu */
@@ -31,10 +30,10 @@
   }
 
   .contact-me-btn {
-    @apply mt-2 rounded border-2 border-primary px-12 py-2 transition duration-200 ease-out hover:bg-accent focus:shadow-none focus:outline-none;
+    @apply mt-2 rounded border-2 border-primary px-12 py-2 transition duration-200 ease-out hover:bg-accent focus:shadow-none focus:outline-none dark:bg-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200;
   }
 
   .decorate-form {
-    @apply rounded-tl bg-accent pt-3 pl-3;
+    @apply rounded-tl bg-accent pt-3 pl-3 dark:bg-slate-800;
   }
 }

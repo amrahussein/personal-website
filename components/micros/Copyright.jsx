@@ -1,10 +1,10 @@
 export default function Copyright() {
   return (
-    <section className='text-sm pl-2'>
+    <section className='pl-2 text-sm'>
       <article className=''>
         <p>
           &copy; 2023 Amr Abdelkamel - <span className=''>made with love</span>
-          <span className='inline-block h-4 w-4 ml-1 pt-1'>
+          <span className='ml-1 inline-block h-4 w-4 pt-1 text-important'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'

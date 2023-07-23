@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
-import { AppContext } from '../../context/App.context';
+import { IsMobileContext } from '../../context/Mobile.context';
 import { navLinks } from '../../data/socials/nav.links';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
 
 export default function MobileBottomNav() {
-  const mobile = useContext(AppContext);
+  const mobile = useContext(IsMobileContext);
   const { pathname } = useRouter();
   const { userScrollDown } = useUserScrolledDown();
 
@@ -14,7 +14,7 @@ export default function MobileBottomNav() {
     <>
       {mobile && (
         <section
-          className={`tranistion fixed inset-x-0 bottom-0 z-10 block border-[0.13rem] border-t-accent bg-white duration-100 ${
+          className={`tranistion fixed inset-x-0 bottom-0 z-10 block border-[0.13rem] border-t-accent bg-white duration-100 dark:border-t-slate-600 dark:border-l-primaryDark dark:border-r-primaryDark dark:border-b-primaryDark dark:bg-primaryDark ${
             userScrollDown && 'translate-y-full'
           } `}
         >
@@ -25,8 +25,9 @@ export default function MobileBottomNav() {
                   <a
                     aria-label={item.name}
                     rel='internal'
-                    className={`w-full rounded-full bg-accent py-[0.1rem] px-4 text-center text-[.84rem] hover:text-important ${
-                      pathname === item.link && 'text-important'
+                    className={`w-full rounded-full bg-accent py-[0.1rem] px-4 text-center text-[.84rem] hover:text-important dark:bg-slate-600 dark:text-slate-50 dark:hover:text-important ${
+                      pathname === item.link &&
+                      'text-important dark:bg-zinc-800'
                     }`}
                   >
                     <p>{item.name}</p>

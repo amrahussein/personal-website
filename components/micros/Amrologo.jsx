@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { AppContext } from '../../context/App.context';
+import { IsMobileContext } from '../../context/Mobile.context';
 
 export default function Amrologo({ w = 300, h = 300 }) {
-  const isMobile = useContext(AppContext);
+  const isMobile = useContext(IsMobileContext);
   const [mainLogo, setMainLogo] = useState(true);
 
   return (
@@ -50,18 +50,20 @@ export default function Amrologo({ w = 300, h = 300 }) {
         <figcaption className='hidden'>
           <h1>Amr Abdelkamel</h1>
         </figcaption>
-        <div className='flex flex-col items-center justify-center py-4 text-gray-500 lg:py-6'>
+        <div className='flex flex-col items-center justify-center py-4 text-gray-500 lg:py-6 '>
           <h1 className='md:textd-lg pb-3 font-extrabold leading-3 sm:text-base'>
             <Link href='https://twitter.com/amromoorie' rel='twitter'>
               <a aria-label='twitter' target='_blank'>
-                <span className='text-primary hover:text-secondary'>@</span>{' '}
-                <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary'>
+                <span className='text-primary hover:text-secondary dark:text-important'>
+                  @
+                </span>{' '}
+                <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary dark:text-slate-50'>
                   amromoorie
                 </strong>
               </a>
             </Link>
           </h1>
-          <p className='mb-[0.2rem] text-center text-sm text-secondary  sm:px-6 sm:leading-5'>
+          <p className='mb-[0.2rem] text-center text-sm text-secondary dark:text-slate-50 sm:px-6 sm:leading-5'>
             <em>Passionate Developer</em>
           </p>
         </div>

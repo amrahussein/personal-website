@@ -8,13 +8,13 @@ export default function StatusIndicators({ hasCoreFeatDone }) {
     >
       <div
         className={`h-4 w-4 rounded-full ${
-          hasCoreFeatDone ? 'bg-green-500' : 'bg-gray-400'
+          hasCoreFeatDone ? 'bg-green-500' : 'bg-gray-400 dark:bg-slate-600'
         }`}
       />
       <div
         title={`${!hasCoreFeatDone ? 'Project is Under Development' : ''}`}
         className={`mx-2 h-4 w-4 rounded-full ${
-          !hasCoreFeatDone ? 'animate-pulse bg-yellow-500' : 'bg-gray-400'
+          !hasCoreFeatDone ? 'animate-pulse bg-yellow-500' : 'bg-gray-400 dark:bg-slate-600'
         }`}
       />
     </div>
