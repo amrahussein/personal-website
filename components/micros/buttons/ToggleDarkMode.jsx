@@ -1,6 +1,6 @@
 import useThemingMode from '../../../context/ThemingMode.context';
-import MoonIcon from '../dark-mode/moonIcon';
-import SunIcon from '../dark-mode/sunIcon';
+import MoonIcon from '../dark-mode/MoonIcon';
+import SunIcon from '../dark-mode/SunIcon';
 
 export default function ToggleDarkMode() {
   const { themingMode, handleToggleDarkMode, prefersDarkMode } =
