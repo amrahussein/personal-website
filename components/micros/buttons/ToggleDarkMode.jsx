@@ -1,21 +1,15 @@
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import useThemingMode from '../../../context/ThemingMode.context';
-import MoonIcon from '../dark-mode/MoonIcon';
-import SunIcon from '../dark-mode/SunIcon';
 
 export default function ToggleDarkMode() {
-  const { themingMode, handleToggleDarkMode, prefersDarkMode } =
-    useThemingMode();
+  const { themingMode, handleToggleDarkMode } = useThemingMode();
 
   return (
     <button onClick={handleToggleDarkMode}>
-      {themingMode === 'dark' || (themingMode === 'auto' && prefersDarkMode) ? (
-        <span className='cursor'>
-          <SunIcon />
-        </span>
+      {themingMode === 'dark' ? (
+        <SunIcon className='h-6 w-6' />
       ) : (
-        <span className='cursor'>
-          <MoonIcon />
-        </span>
+        <MoonIcon className='h-6 w-6' />
       )}
     </button>
   );

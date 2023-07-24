@@ -45,8 +45,9 @@ export default function Layout({ children }) {
         <>
           <DesktopTopNavBar />
 
-          {/* set container width styles to non-mobile screens */}
-          <div className='sm:max-w-4xl'>{children}</div>
+          <div className='mb-8 rounded-3xl px-10 pt-8 dark:border-2 dark:border-slate-900 dark:bg-slate-900 sm:max-w-4xl'>
+            {children}
+          </div>
 
           <DesktopFooter />
         </>

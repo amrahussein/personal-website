@@ -1,3 +1,5 @@
+import { ArrowSmallUpIcon } from '@heroicons/react/24/solid';
+
 export default function TakeMeToTop() {
   // ensure running on a browser context
   const isBrowser = () => typeof window !== 'undefined';
@@ -11,19 +13,7 @@ export default function TakeMeToTop() {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
       >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 24 24'
-          strokeWidth={1.5}
-          stroke='currentColor'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18'
-          />
-        </svg>
+        <ArrowSmallUpIcon />
       </a>
     </div>
   );

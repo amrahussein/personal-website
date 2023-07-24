@@ -34,7 +34,7 @@ export default function About() {
         />
       </Head>
       <Layout>
-        <article className='mb-16 space-y-10 text-gray-500 sm:text-lg'>
+        <article className='mb-16 space-y-10 text-gray-500 dark:text-slate-400 sm:text-lg'>
           <ShowTechnicalSkills
             open={technicalSkillsExpanded}
             setOpen={setTechnicalSkillsExpanded}

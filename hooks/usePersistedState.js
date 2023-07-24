@@ -13,17 +13,6 @@ export default function usePersistedState(key, initialState) {
   });
   const keyRef = useRef(key);
 
-  useEffect(() => {
-    const storedState = localStorage.getItem(key);
-    console.log('storedState:xx ', storedState);
-    if (storedState === 'undefined') return;
-    if (storedState !== null) {
-      setState(storedState);
-      return;
-    }
-    localStorage.setItem(key, initialState);
-    setState(initialState);
-  }, []);
 
   useEffect(() => {
     localStorage.setItem(keyRef.current, state);

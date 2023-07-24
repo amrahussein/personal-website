@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@heroicons/react": "^2.0.18",
     "gray-matter": "^4.0.3",
     "lodash-es": "^4.17.21",
     "marked": "^4.0.12",

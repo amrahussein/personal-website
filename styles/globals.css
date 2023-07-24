@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply dark:bg-slate-900;
+    @apply dark:md:bg-slate-800;
   }
 }
 

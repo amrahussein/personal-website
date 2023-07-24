@@ -1,5 +1,5 @@
 import TechnicalSkills from '../micros/TechnicalSkills';
-import ButtonCoolBlue from '../micros/buttons/ButtonCoolBlue';
+import ButtonCoolBlue from '../micros/buttons/ButtonCool';
 
 export default function ShowTechnicalSkills({ open, setOpen }) {
   return (

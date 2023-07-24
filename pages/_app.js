@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     const breakpoint = 768;
     window.addEventListener('resize', () => setWidth(window.innerWidth));
 
-    width <= breakpoint ? setIsMobile(true) : setIsMobile(false);
+    width < breakpoint ? setIsMobile(true) : setIsMobile(false);
     return () =>
       window.removeEventListener('resize', () => setWidth(window.innerWidth));
   }, [width]);
