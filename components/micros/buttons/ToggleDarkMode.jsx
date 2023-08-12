@@ -7,9 +7,9 @@ export default function ToggleDarkMode() {
   return (
     <button onClick={handleToggleDarkMode}>
       {themingMode === 'dark' ? (
-        <SunIcon className='h-6 w-6' />
+        <SunIcon className='h-6 w-6 hover:rotate-12' />
       ) : (
-        <MoonIcon className='h-6 w-6' />
+        <MoonIcon className='h-6 w-6 hover:rotate-12' />
       )}
     </button>
   );
