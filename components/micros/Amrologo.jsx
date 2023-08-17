@@ -54,10 +54,10 @@ export default function Amrologo({ w = 300, h = 300 }) {
           <h1 className='md:textd-lg pb-3 font-extrabold leading-3 sm:text-base'>
             <Link href='https://twitter.com/amromoorie' rel='twitter'>
               <a aria-label='twitter' target='_blank'>
-                <span className='text-primary hover:text-secondary dark:text-important'>
+                <span className='text-primary hover:text-secondary dark:text-important dark:hover:text-primary'>
                   @
                 </span>{' '}
-                <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary dark:text-slate-50'>
+                <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary dark:text-slate-50 dark:hover:text-slate-300'>
                   amromoorie
                 </strong>
               </a>
