@@ -27,7 +27,7 @@ export default function ProjectManager() {
         {/* CHIPS - buttons */}
         <div className='flex w-[14.5rem] shrink-0 flex-col space-y-2'>
           <button
-            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 dark:text-slate-300 ${
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 hover:bg-slate-200 dark:text-slate-300 dark:hover:bg-slate-800 ${
               userSelection.showAll &&
               'text-secondafry bg-accent dark:bg-slate-700 dark:text-slate-300'
             }`}
@@ -36,7 +36,7 @@ export default function ProjectManager() {
             Show All
           </button>
           <button
-            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 dark:text-slate-300 ${
+            className={`inline-block max-w-[10rem] cursor-pointer rounded-lg border-2 border-accent px-3 py-1 font-mono font-semibold text-gray-600 hover:bg-slate-200 dark:text-slate-300 dark:hover:bg-slate-800 ${
               userSelection.isFeatured &&
               'text-secondafry bg-accent dark:bg-slate-700 dark:text-slate-300'
             }`}

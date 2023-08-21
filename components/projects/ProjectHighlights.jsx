@@ -8,7 +8,7 @@ export default function ProjectHighlights({
       {projectHighlights?.map((highlight, idx) => (
         <li
           key={idx}
-          className={`inline-block max-w-[10rem] cursor-pointer rounded-lg px-3 py-1 font-mono font-semibold text-gray-600 dark:text-slate-300 ${
+          className={`inline-block max-w-[10rem] cursor-pointer rounded-lg px-3 py-2 font-mono font-semibold text-gray-600 hover:bg-slate-200 dark:text-slate-300 dark:hover:bg-slate-800 ${
             highlighted === highlight.name && 'bg-accent dark:bg-slate-700'
           }`}
           onClick={() => handleSelected(highlight.name)}
