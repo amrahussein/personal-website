@@ -55,8 +55,8 @@ export default function ProjectManager() {
                 <p className='-mb-1 pt-4 sm:mb-auto'>
                   check github account at:{' '}
                 </p>
-                <AppLink href='https://github.com/amromoorie' rel='github'>
-                  github.com/amromoorie
+                <AppLink href='https://github.com/amrakhussein' rel='github'>
+                  github.com/amrakhussein
                 </AppLink>
               </>
             )}

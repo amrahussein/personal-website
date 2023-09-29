@@ -5,13 +5,13 @@ import ProjectManager from '../components/projects/ProjectManager';
 
 export default function Projects() {
   const { pathname } = useRouter();
-  const siteName = 'https://amromoorie.com';
+  const siteName = 'https://amrakhussein.com';
   const canonicalURL = siteName + pathname;
 
   return (
     <>
       <Head>
-        <title>amromoorie | JS/TS | C#</title>
+        <title>amrakhussein | JS/TS | C#</title>
         <link rel='canonical' href={canonicalURL} />
 
         <meta
@@ -26,7 +26,7 @@ export default function Projects() {
         {/* <h3 className='italic'>my portofolio is under development...</h3>
         <h4 className='pb-5'>
           you can check my latest work on{' '}
-          <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
+          <AppLink href='https://github.com/amrakhussein' rel='github' styles=''>
             Github repo
           </AppLink>
         </h4> */}

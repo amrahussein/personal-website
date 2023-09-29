@@ -5,7 +5,7 @@ export default function Copyright() {
     <section className='pl-2 text-sm'>
       <article className=''>
         <p>
-          &copy; 2023 Amr Abdelkamel - <span className=''>made with love</span>
+          &copy; 2023 Amr A. Hussein - <span className=''>made with love</span>
           <span className='ml-1 inline-block h-4 w-4 pt-1 text-important'>
             <HeartIcon />
           </span>

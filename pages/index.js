@@ -11,7 +11,7 @@ export default function Home() {
   // '' :
   // `${window.location.origin}/${window.location.pathname}`)
   const { pathname } = useRouter();
-  const siteName = 'https://amromoorie.com';
+  const siteName = 'https://amrakhussein.com';
   const canonicalURL = siteName + pathname;
 
   const isMobile = useContext(IsMobileContext);

@@ -13,7 +13,7 @@ import Layout from '../components/app-layout/TheLayout';
 
 export default function About() {
   const { pathname } = useRouter();
-  const siteName = 'https://amromoorie.com';
+  const siteName = 'https://amrakhussein.com';
   const canonicalURL = siteName + pathname;
 
   const [technicalSkillsExpanded, setTechnicalSkillsExpanded] = useState(false);
@@ -21,7 +21,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>amromoorie | More About!</title>
+        <title>amrakhussein | More About!</title>
         <link rel='canonical' href={canonicalURL} />
       </Head>
 

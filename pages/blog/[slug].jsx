@@ -9,7 +9,7 @@ export default function BlogPost({ content, data }) {
   return (
     <>
       <Head>
-        <title>amromoorie | {data.title}</title>
+        <title>amrakhussein | {data.title}</title>
         <meta
           name='description'
           property='og:description'

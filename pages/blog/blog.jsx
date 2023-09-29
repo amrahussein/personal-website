@@ -5,7 +5,7 @@ import AppLink from '../../components/micros/typography/AppLink';
 
 export default function Blog() {
   const { pathname } = useRouter();
-  const siteName = 'https://amromoorie.com';
+  const siteName = 'https://amrakhussein.com';
   const canonicalURL = siteName + pathname;
 
   return (
@@ -35,9 +35,9 @@ export default function Blog() {
 
             <h2 className='mx-11 mt-11 pt-20 text-center text-3xl text-primary'>
               you can reach me at twitter:
-              <AppLink rel='twitter' href='https://twitter.com/amromoorie'>
+              <AppLink rel='twitter' href='https://twitter.com/amrakhussein'>
                 {' '}
-                <span>@amromoorie</span>
+                <span>@amrakhussein</span>
               </AppLink>
             </h2>
           </section>

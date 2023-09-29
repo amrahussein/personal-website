@@ -19,7 +19,7 @@ export default function Amrologo({ w = 300, h = 300 }) {
             }
             alt={
               mainLogo
-                ? 'an image logo-like of Amr Abdelkamel'
+                ? 'an image logo-like of Amr Abdelkamel Hussein'
                 : 'a cat wondering'
             }
             width={w}
@@ -37,7 +37,7 @@ export default function Amrologo({ w = 300, h = 300 }) {
             }
             alt={
               mainLogo
-                ? 'an image logo-like of Amr Abdelkamel'
+                ? 'an image logo-like of Amr Abdelkamel Hussein'
                 : 'a cat wondering'
             }
             width={w}
@@ -48,17 +48,17 @@ export default function Amrologo({ w = 300, h = 300 }) {
           />
         )}
         <figcaption className='hidden'>
-          <h1>Amr Abdelkamel</h1>
+          <h1>Amr Abdelkamel Hussein</h1>
         </figcaption>
-        <div className='flex flex-col items-center justify-center py-4 text-gray-500 lg:py-6 '>
-          <h1 className='md:textd-lg pb-3 font-extrabold leading-3 sm:text-base'>
-            <Link href='https://twitter.com/amromoorie' rel='twitter'>
+        <div className='flex flex-col items-center justify-center py-6 text-gray-500 lg:py-8 '>
+          <h1 className='md:textd-lg sm:text-md pb-3 text-sm font-extrabold leading-3'>
+            <Link href='https://twitter.com/amrakhussein' rel='twitter'>
               <a aria-label='twitter' target='_blank'>
                 <span className='text-primary hover:text-secondary dark:text-important dark:hover:text-primary'>
                   @
                 </span>{' '}
                 <strong className='font-extrabold text-secondary underline opacity-70 hover:text-primary dark:text-slate-50 dark:hover:text-slate-300'>
-                  amromoorie
+                  amrakhussein
                 </strong>
               </a>
             </Link>

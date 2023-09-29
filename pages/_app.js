@@ -28,12 +28,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>amromoorie | Let&apos;s connect!</title>
+        <title>amrakhussein | Let&apos;s connect!</title>
 
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
 
-        <meta name='author' content='Amr Abdelkamel' />
+        <meta name='author' content='Amr Abdelkamel Hussein' />
 
         <meta
           name='description'

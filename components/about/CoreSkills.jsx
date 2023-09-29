@@ -15,7 +15,7 @@ export default function CoreSkills() {
       <p className='pt-4 text-secondary dark:text-slate-300'>
         <em>
           my latest projects at my{' '}
-          <AppLink href='https://github.com/amromoorie' rel='github' styles=''>
+          <AppLink href='https://github.com/amrakhussein' rel='github' styles=''>
             Github account
           </AppLink>
         </em>
@@ -24,7 +24,7 @@ export default function CoreSkills() {
         <em>
           more info at my{' '}
           <AppLink
-            href='https://linkedin.com/in/amromoorie'
+            href='https://linkedin.com/in/amrakhussein'
             rel='linkedIn'
             styles=''
           >

@@ -94,7 +94,7 @@ export default function ContactMe() {
             prefer a casual chat?{' '}
           </span>
           <AppLink
-            href='https://telegram.me/amromoorie/'
+            href='https://telegram.me/amrakhussein/'
             rel='telegram'
             styles={'pl-1'}
           >
@@ -107,11 +107,11 @@ export default function ContactMe() {
             reach me directly at:{' '}
           </span>
           <AppLink
-            href='mailto:amr.abdelkamel3@outlook.com'
+            href='mailto:amrakhussein@outlook.com'
             rel='email'
             styles={'pl-2'}
           >
-            amr.abdelkamel3@outlook.com
+            amrakhussein@outlook.com
           </AppLink>
         </div>
       </section>
