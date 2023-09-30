@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { useContext, useState } from 'react';
-import { IsMobileContext } from '../../context/Mobile.context';
+import { useState } from 'react';
+import useIsMobile from '../../context/IsMobile.context';
 
-export default function Amrologo({ w = 300, h = 300 }) {
-  const isMobile = useContext(IsMobileContext);
-  const [mainLogo, setMainLogo] = useState(true);
+export default function MeCard({ w = 300, h = 300 }) {
+  const { isMobile } = useIsMobile();
+  const [mainImg, setMainImg] = useState(true);
 
   return (
     <figure>
@@ -13,38 +13,38 @@ export default function Amrologo({ w = 300, h = 300 }) {
           <img
             className='rounded-full'
             src={
-              mainLogo
+              mainImg
                 ? '/img/hero-landing/amrologo-mobile.jpg'
                 : '/img/hero-landing/catlogo.jpg'
             }
             alt={
-              mainLogo
+              mainImg
                 ? 'an image logo-like of Amr Abdelkamel Hussein'
                 : 'a cat wondering'
             }
             width={w}
             height={h}
             // Click for Mobile mainly
-            onClick={() => setMainLogo(!mainLogo)}
+            onClick={() => setMainImg(!mainImg)}
           />
         ) : (
           <img
             className='rounded-full'
             src={
-              mainLogo
+              mainImg
                 ? '/img/hero-landing/amrologo.jpg'
                 : '/img/hero-landing/catlogo.jpg'
             }
             alt={
-              mainLogo
+              mainImg
                 ? 'an image logo-like of Amr Abdelkamel Hussein'
                 : 'a cat wondering'
             }
             width={w}
             height={h}
             // Hover for Desktop mainly
-            onMouseOut={() => setMainLogo(true)}
-            onMouseOver={() => setMainLogo(false)}
+            onMouseOut={() => setMainImg(true)}
+            onMouseOver={() => setMainImg(false)}
           />
         )}
         <figcaption className='hidden'>

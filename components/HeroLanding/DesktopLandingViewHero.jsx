@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import ShowTechnicalSkills from '../about/ShowTechnicalSkills';
-import Amrologo from '../micros/Amrologo';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
 import HeroMessage from '../micros/HeroMessage';
 import Line from '../micros/Line';
+import MeCard from '../micros/MeCard';
 import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
@@ -23,7 +23,7 @@ export default function DesktopLandingViewHero() {
           </aside>
 
           <div className='flex items-center sm:space-x-12 md:pl-12 lg:flex-row lg:space-x-20 lg:pl-28'>
-            <Amrologo />
+            <MeCard />
 
             <div className='pt-8 lg:pl-5 '>
               <HeroMessage />

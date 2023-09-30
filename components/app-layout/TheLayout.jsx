@@ -1,5 +1,6 @@
-import { useContext, useEffect, useState } from 'react';
-import { IsMobileContext } from '../../context/Mobile.context';
+import { useEffect, useState } from 'react';
+import useIsMobile from '../../context/IsMobile.context';
+import useShouldDisplayBottomNavMode from '../../context/ShouldDisplayBottomNav.context';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
 import LoadingSpinner from '../micros/LoadingSpinner';
 import TakeMeToTop from '../micros/buttons/TakeMeToTop';
@@ -11,7 +12,8 @@ import MobileFooter from './MobileFooter';
 import MobileTopBar from './MobileTopBar';
 
 export default function Layout({ children }) {
-  const isMobile = useContext(IsMobileContext);
+  const { isMobile } = useIsMobile();
+  const { shouldDisplayBottomNav } = useShouldDisplayBottomNavMode();
 
   const [loading, setLoading] = useState(true);
 
@@ -32,7 +34,7 @@ export default function Layout({ children }) {
         <>
           <MobileTopBar />
           <SidePaneNav />
-          <MobileBottomNav />
+          {shouldDisplayBottomNav && <MobileBottomNav />}
 
           {children}
 

@@ -5,23 +5,20 @@ export default function usePersistedState(key, initialState) {
   const [state, setState] = useState(() => {
     if (isBrowser) {
       const storedState = localStorage.getItem(key);
-      if (storedState !== null) {
-        return storedState;
-      }
+      if (storedState !== null) return JSON.parse(storedState);
     }
     return initialState;
   });
   const keyRef = useRef(key);
 
-
   useEffect(() => {
-    localStorage.setItem(keyRef.current, state);
+    localStorage.setItem(keyRef.current, JSON.stringify(state));
   }, [state]);
 
   useEffect(() => {
     const lastKey = keyRef.current;
     if (key !== lastKey) {
-      localStorage.setItem(key, state);
+      localStorage.setItem(key, JSON.stringify(state));
       keyRef.current = key;
       localStorage.removeItem(lastKey);
     }

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import ShowTechnicalSkills from '../about/ShowTechnicalSkills';
-import Amrologo from '../micros/Amrologo';
 import ConnectMobileLanding from '../micros/ConnectMobileLanding';
 import ContactMe from '../micros/ContactMe';
 import GoSocials from '../micros/GoSocials';
 import HeroMessage from '../micros/HeroMessage';
 import Line from '../micros/Line';
+import MeCard from '../micros/MeCard';
 import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
@@ -18,7 +18,7 @@ export default function MobileLandingViewHero() {
   return (
     <main>
       <section className='flex'>
-        <Amrologo />
+        <MeCard />
         <ConnectMobileLanding />
       </section>
 
@@ -38,7 +38,9 @@ export default function MobileLandingViewHero() {
         </article>
 
         <article>
-          <h2 className='pl-2 pt-7 text-3xl text-primary dark:text-slate-300'>More about?</h2>
+          <h2 className='pl-2 pt-7 text-3xl text-primary dark:text-slate-300'>
+            More about?
+          </h2>
           <Link href='/about'>
             <a>
               <ButtonBrand>take me to About page</ButtonBrand>

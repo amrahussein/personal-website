@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useContext } from 'react';
-import { IsMobileContext } from '../../context/Mobile.context';
+import useIsMobile from '../../context/IsMobile.context';
 import { navLinks } from '../../data/socials/nav.links';
 import { useUserScrolledDown } from '../../hooks/useUserScrolledDown';
 
 export default function MobileBottomNav() {
-  const mobile = useContext(IsMobileContext);
+  const { isMobile } = useIsMobile();
   const { pathname } = useRouter();
   const { userScrollDown } = useUserScrolledDown();
 
   return (
     <>
-      {mobile && (
+      {isMobile && (
         <section
           className={`tranistion fixed inset-x-0 bottom-0 z-10 block border-[0.13rem] border-t-accent bg-white duration-100 dark:border-t-slate-600 dark:border-l-primaryDark dark:border-r-primaryDark dark:border-b-primaryDark dark:bg-primaryDark ${
             userScrollDown && 'translate-y-full'

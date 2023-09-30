@@ -1,29 +1,14 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import { IsMobileContext } from '../context/Mobile.context';
-import '../styles/globals.css';
+import { IsMobileProvider } from '../providers/IsMobile.provider';
+import { BottomNavProvider } from '../providers/ShouldDisplayBottomNav.provider';
 import { ThemeProvider } from '../providers/ThemingMode.provider';
+import '../styles/globals.css';
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
-  //  get window inner width on initial rendering for responsive view
-  const [width, setWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : undefined,
-  );
 
-  const [isMobile, setIsMobile] = useState(null);
-
-  useEffect(() => {
-    // match tailwind breakpoint of md screens
-    const breakpoint = 768;
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
-
-    width < breakpoint ? setIsMobile(true) : setIsMobile(false);
-    return () =>
-      window.removeEventListener('resize', () => setWidth(window.innerWidth));
-  }, [width]);
 
   return (
     <>
@@ -67,11 +52,13 @@ function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#ffffff' />
       </Head>
 
-      <IsMobileContext.Provider value={isMobile}>
+          <BottomNavProvider>
+      <IsMobileProvider>
         <ThemeProvider>
-          <Component {...pageProps} />
+            <Component {...pageProps} />
         </ThemeProvider>
-      </IsMobileContext.Provider>
+      </IsMobileProvider>
+          </BottomNavProvider>
     </>
   );
 }

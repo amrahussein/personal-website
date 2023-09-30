@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import useShouldDisplayBottomNavMode from '../../../context/ShouldDisplayBottomNav.context';
 import MobileTopBar from '../../app-layout/MobileTopBar';
+import BottomNavSwitch from '../../micros/BottomNavSwitch';
 import Copyright from '../../micros/Copyright';
 import GoSocials from '../../micros/GoSocials';
 import Line from '../../micros/Line';
@@ -9,6 +11,8 @@ import SidePaneNavItems from './SidePaneNavItems';
 
 export default function SidePaneNav() {
   const [paneOpened, setPaneOpened] = useState(false);
+  const { shouldDisplayBottomNav, handleShouldDisplayBottomNav } =
+    useShouldDisplayBottomNavMode();
 
   // stop scroll behavior while sidepane is open
   useEffect(() => {
@@ -26,23 +30,33 @@ export default function SidePaneNav() {
 
         <div className='flex flex-col justify-between'>
           <SidePaneNavItems />
-          <div className='mr-14 mt-10 place-self-center text-primary text-gray-50 dark:text-slate-50'>
+          <div className='mr-14 mt-10 place-self-center text-gray-50 dark:text-slate-50'>
             <ToggleDarkMode />
           </div>
         </div>
 
         <Line color='border-accent' mt='10' />
-        <section className='flex justify-center'>
+        <div className='flex justify-center'>
           <GoSocials
             styleSocialItems='flex space-x-8 pt-7'
             socialNames={false}
             linkStyle='w-8 h-8 rounded-lg hover:scale-110 p-1 bg-accent dark:bg-primaryDark'
           />
-        </section>
+        </div>
 
-        <section className='absolute bottom-1 left-1 text-accent'>
+        {/* Bottom Nav Switch */}
+        <div className='flex items-start pt-28 text-gray-200'>
+          <span className='px-4 font-semibold'>Bottom Nav:</span>
+          <span className='pt-[.2rem]'>
+            <BottomNavSwitch
+              checked={shouldDisplayBottomNav}
+              onChange={handleShouldDisplayBottomNav}
+            />
+          </span>
+        </div>
+        <div className='absolute bottom-1 left-1 text-accent'>
           <Copyright />
-        </section>
+        </div>
       </div>
       {!paneOpened ? (
         <button

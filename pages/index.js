@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import DesktopLandingViewHero from '../components/HeroLanding/DesktopLandingViewHero';
 import MobileLandingViewHero from '../components/HeroLanding/MobileLandingViewHero';
 import Layout from '../components/app-layout/TheLayout';
-import { IsMobileContext } from '../context/Mobile.context';
+import { IsMobileContext } from '../context/IsMobile.context';
 
 export default function Home() {
   // const [canonicalURL, setCanonicalURL] = useState( typeof window === 'undefined' ?
