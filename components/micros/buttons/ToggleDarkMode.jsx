@@ -3,7 +3,6 @@ import useThemingMode from '../../../context/ThemingMode.context';
 
 export default function ToggleDarkMode() {
   const { themingMode, handleToggleDarkMode } = useThemingMode();
-  console.log('themingMode: ', themingMode);
 
   return (
     <button onClick={handleToggleDarkMode}>
