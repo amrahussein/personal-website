@@ -29,7 +29,10 @@ export default function SidePaneNav() {
         <MobileTopBar paneOpened={true} />
 
         <div className='flex flex-col justify-between'>
-          <SidePaneNavItems />
+          <SidePaneNavItems
+            paneOpened={paneOpened}
+            setPaneOpened={setPaneOpened}
+          />
           <div className='mr-14 mt-10 place-self-center text-gray-50 dark:text-slate-50'>
             <ToggleDarkMode />
           </div>
@@ -45,7 +48,7 @@ export default function SidePaneNav() {
         </div>
 
         {/* Bottom Nav Switch */}
-        <div className='flex items-start pt-28 text-gray-200'>
+        <div className='flex items-start pt-10 text-gray-200'>
           <span className='px-4 font-semibold'>Bottom Nav:</span>
           <span className='pt-[.2rem]'>
             <BottomNavSwitch

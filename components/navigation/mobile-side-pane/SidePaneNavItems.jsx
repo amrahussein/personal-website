@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { navLinks } from '../../../data/socials/nav.links';
 
-export default function SidePaneNavItems() {
+export default function SidePaneNavItems({ paneOpened, setPaneOpened }) {
   const router = useRouter();
+
   return (
     <nav className='flex flex-col items-center pt-[8rem] text-2xl text-accent'>
-      <ul className='space-y-10'>
+      <ul className='space-y-8'>
         {navLinks.map((item) => (
           <li
             key={item.id}
@@ -14,9 +15,19 @@ export default function SidePaneNavItems() {
               router.pathname === item.link &&
               'underline-offset-3 underline decoration-cool'
             }`}
+            onClick={() => {
+              if (paneOpened && router.pathname === item.link) {
+                setPaneOpened(false);
+              }
+            }}
           >
             <Link href={item.link}>
-              <a aria-label={item.name}>{item.name}</a>
+              <a
+                aria-label={item.name}
+                onClick={() => setPaneOpened(!paneOpened)}
+              >
+                {item.name}
+              </a>
             </Link>
           </li>
         ))}
