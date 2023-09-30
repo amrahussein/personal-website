@@ -1,10 +1,12 @@
 export const technicalSkills = {
   softwareEnigeering: [
     'Agile',
-    'OOP/OOD',
+    'OOP',
     'Design Principles/SOLID',
     'Design Patterns',
-    'Familitiy with Clean Architecture',
+    'DSA',
+    'Great Familitiy with Clean Architecture',
+    'DBMS',
   ],
 
   programmingLanguages: ['JavaScript', 'C#', 'Java', 'Python'],
@@ -18,7 +20,6 @@ export const technicalSkills = {
     'React Router 6',
     'Modern Angular',
     'Rx.js',
-    'NgRx',
     'Responsive design',
     'TailwindCSS',
     'Material UI (MUI)',

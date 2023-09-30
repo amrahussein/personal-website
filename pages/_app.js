@@ -8,8 +8,6 @@ import '../styles/globals.css';
 // config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
-
-
   return (
     <>
       <Head>
@@ -52,13 +50,13 @@ function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#ffffff' />
       </Head>
 
-          <BottomNavProvider>
       <IsMobileProvider>
         <ThemeProvider>
+          <BottomNavProvider>
             <Component {...pageProps} />
+          </BottomNavProvider>
         </ThemeProvider>
       </IsMobileProvider>
-          </BottomNavProvider>
     </>
   );
 }
