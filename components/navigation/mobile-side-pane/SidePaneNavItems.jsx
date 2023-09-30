@@ -6,8 +6,8 @@ export default function SidePaneNavItems({ paneOpened, setPaneOpened }) {
   const router = useRouter();
 
   return (
-    <nav className='flex flex-col items-center pt-[8rem] text-2xl text-accent'>
-      <ul className='space-y-8'>
+    <nav className='flex flex-col items-center pt-24 text-2xl text-accent'>
+      <ul className='space-y-6'>
         {navLinks.map((item) => (
           <li
             key={item.id}

@@ -38,7 +38,7 @@ export default function SidePaneNav() {
           </div>
         </div>
 
-        <Line color='border-accent' mt='10' />
+        <Line color='border-accent' mt='8' />
         <div className='flex justify-center'>
           <GoSocials
             styleSocialItems='flex space-x-8 pt-7'
@@ -48,7 +48,7 @@ export default function SidePaneNav() {
         </div>
 
         {/* Bottom Nav Switch */}
-        <div className='flex items-start pt-10 text-gray-200'>
+        <div className='flex items-start pt-14 text-gray-200'>
           <span className='px-4 font-semibold'>Bottom Nav:</span>
           <span className='pt-[.2rem]'>
             <BottomNavSwitch
