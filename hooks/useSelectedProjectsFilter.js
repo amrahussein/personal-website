@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { chips } from '../data/projects/constants/projects-all-featured';
 

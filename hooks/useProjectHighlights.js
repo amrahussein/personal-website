@@ -1,3 +1,5 @@
+'use client';
+
 /**
  * extracts and returns unique project highlights
  * @param {Array} projects - An array of projects to extract highlights from

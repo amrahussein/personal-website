@@ -1,3 +1,5 @@
+'use client';
+
 import { ShoudDisplayBottomNavContext } from '../context/ShouldDisplayBottomNav.context';
 import usePersistedState from '../hooks/usePersistedState';
 

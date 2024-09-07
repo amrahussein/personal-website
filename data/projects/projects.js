@@ -25,8 +25,8 @@ import { priorities } from './constants/projects-priorities';
 const projects = [
   {
     id: 1,
-    url_live: 'https://amrakhussein.github.io/apple-varieties/',
-    url_repo: 'https://github.com/amrakhussein/apple-varieties',
+    url_live: 'https://amrahussein.github.io/apple-varieties/',
+    url_repo: 'https://github.com/amrahussein/apple-varieties',
     name: 'Apple Varieties',
     description:
       'fully responsive landing page up to XL screens made with Tailwind',
@@ -44,8 +44,8 @@ const projects = [
   },
   {
     id: 2,
-    url_live: 'https://amrakhussein.github.io/taskify-mantine/',
-    url_repo: 'https://github.com/amrakhussein/taskify-mantine',
+    url_live: 'https://amrahussein.github.io/taskify-mantine/',
+    url_repo: 'https://github.com/amrahussein/taskify-mantine',
     name: 'Taskify',
     description: 'a todo app to experiment with mantine styling lib',
     features: [
@@ -65,8 +65,8 @@ const projects = [
   },
   {
     id: 3,
-    url_live: 'https://amrakhussein.github.io/Fido/',
-    url_repo: 'https://github.com/amrakhussein/Fido',
+    url_live: 'https://amrahussein.github.io/Fido/',
+    url_repo: 'https://github.com/amrahussein/Fido',
     name: 'Fido',
     description:
       'fido is a collection of dogs images using the dog api; the aim for this project is to experiment with pagination & modern redux toolkitt',
@@ -87,7 +87,7 @@ const projects = [
     id: 4,
     url_live: '',
     url_repo:
-      'https://github.com/amrakhussein/average-world-temperature.VanillaJS',
+      'https://github.com/amrahussein/average-world-temperature.VanillaJS',
     name: 'Historical Zonal annual Means',
     description:
       'simple project working with chartJS tool, transforming csv data (global weather info) into tabulating data which can be visualized',
@@ -105,7 +105,7 @@ const projects = [
   {
     id: 5,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/banking-system',
+    url_repo: 'https://github.com/amrahussein/banking-system',
     name: 'Backend Banking System',
     description: 'simple banking app made with mongodb and nodeJS',
     features: null,
@@ -122,7 +122,7 @@ const projects = [
   {
     id: 6,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/blog',
+    url_repo: 'https://github.com/amrahussein/blog',
     name: 'Simple Blog With Sanity',
     description:
       'project orginally developed for exploring strapi as a content first class model',
@@ -140,7 +140,7 @@ const projects = [
   {
     id: 7,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/Article-Sentiment-Analysis',
+    url_repo: 'https://github.com/amrahussein/Article-Sentiment-Analysis',
     name: 'Article Sentiment Analysis',
     description:
       'Evaluate News Article with Natural Language Processing. It shows sentiment and analysis based on the article submitted based on meaningcloud API',
@@ -159,7 +159,7 @@ const projects = [
   {
     id: 8,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/my-starter',
+    url_repo: 'https://github.com/amrahussein/my-starter',
     name: 'My Starter',
     description:
       "ITI Team Project; a SPA app using JavaScript meant for a simple applet targetting those who want a quick starter on his/her day. It's a type of app that can be converted into a future web extension with possible reprioritization of these features. My Starter is a web app that provides a collection of useful tools and features for everyday use.",
@@ -179,7 +179,7 @@ const projects = [
   {
     id: 9,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/landing_page--nanodegree',
+    url_repo: 'https://github.com/amrahussein/landing_page--nanodegree',
     name: 'landing page',
     description:
       'flexible web page with dynamic navigation lists using the Intersection Observer Api',
@@ -198,7 +198,7 @@ const projects = [
   {
     id: 10,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/people-chat',
+    url_repo: 'https://github.com/amrahussein/people-chat',
     name: 'People Chat',
     description: 'exprimenting with Node.js Socket IO',
     features: ['Send, Recieve chats', 'Reactive UI', 'More to come'],
@@ -215,7 +215,7 @@ const projects = [
   {
     id: 11,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/elevate-dental-care',
+    url_repo: 'https://github.com/amrahussein/elevate-dental-care',
     name: 'Elevate dental care',
     description: 'Dynamic landing page',
     features: null,
@@ -294,7 +294,7 @@ const projects = [
   {
     id: 14,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/explore-NET-MVC',
+    url_repo: 'https://github.com/amrahussein/explore-NET-MVC',
     name: 'explore-NET-MVC',
     description: '',
     features: [
@@ -315,7 +315,7 @@ const projects = [
   {
     id: 16,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/webstore-api',
+    url_repo: 'https://github.com/amrahussein/webstore-api',
     name: 'Webstore (e-commerce)',
     description: '',
     features: null,
@@ -350,7 +350,7 @@ const projects = [
   {
     id: 17,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/personal-website',
+    url_repo: 'https://github.com/amrahussein/personal-website',
     name: 'Portfolio Site',
     description:
       "As it may already be shown; a simple portfolio site, meant for self-expression & motivation towards DEV world. It's built with Next.js due to its dynamic capabilities; with potential scalability and strong SEO qualities",
@@ -378,7 +378,7 @@ const projects = [
   {
     id: 14,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/ILearnSchool',
+    url_repo: 'https://github.com/amrahussein/ILearnSchool',
     name: 'ILearn School App',
     description: '',
     features: null,
@@ -410,7 +410,7 @@ const projects = [
   {
     id: 15,
     url_live: '',
-    url_repo: 'https://github.com/amrakhussein/word-wiz',
+    url_repo: 'https://github.com/amrahussein/word-wiz',
     name: 'Wordwiz',
     description: 'Interactive quiz app built with Nodo.js & React',
     features: null,

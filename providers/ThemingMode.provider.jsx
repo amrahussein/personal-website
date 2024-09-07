@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { ThemingModeContext } from '../context/ThemingMode.context';
 import usePersistedState from '../hooks/usePersistedState';

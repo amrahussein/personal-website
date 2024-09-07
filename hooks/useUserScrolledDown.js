@@ -1,3 +1,5 @@
+'use client';
+
 import { debounce } from 'lodash-es';
 import { useEffect, useState } from 'react';
 

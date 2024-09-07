@@ -26,8 +26,6 @@ jobs:
           node-version: '18'
 
       - name: Cache dependencies
-        env:
-          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
         uses: actions/cache@v2
         with:
           path: ~/.npm
