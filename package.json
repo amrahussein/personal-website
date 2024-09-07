@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next export -o build",
     "lint": "next lint",
-    "deploy": "next build && next export -o build && touch ./build/.nojekyll && touch ./build/CNAME && echo \"amrakhussein.xyz\" >> build/CNAME",
+    "deploy": "next build && next export --outdir build && touch ./build/.nojekyll && touch ./build/CNAME && echo \"amrakhussein.xyz\" >> build/CNAME",
     "format": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
