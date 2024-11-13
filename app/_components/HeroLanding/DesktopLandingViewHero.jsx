@@ -6,7 +6,6 @@ import GoSocials from '../micros/GoSocials';
 import HeroMessage from '../micros/HeroMessage';
 import Line from '../micros/Line';
 import MeCard from '../micros/MeCard';
-import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
@@ -45,8 +44,6 @@ export default function DesktopLandingViewHero() {
       </section>
 
       <Line />
-
-      {/* <OpenForWork /> */}
 
       <section className='pt-6'>
         <ShowTechnicalSkills

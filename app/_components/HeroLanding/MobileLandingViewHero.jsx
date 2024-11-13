@@ -7,7 +7,6 @@ import GoSocials from '../micros/GoSocials';
 import HeroMessage from '../micros/HeroMessage';
 import Line from '../micros/Line';
 import MeCard from '../micros/MeCard';
-import OpenForWork from '../micros/OpenForWork';
 import ButtonBrand from '../micros/buttons/ButtonBrand';
 import AppHeading from '../micros/typography/AppHeading';
 import AboutLandingInfo from './AboutLandingInfo';
@@ -52,8 +51,6 @@ export default function MobileLandingViewHero() {
             setOpen={setTechnicalSkillsExpanded}
           />
         </section>
-
-        {/* <OpenForWork /> */}
 
         <article className='pt-7'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>
