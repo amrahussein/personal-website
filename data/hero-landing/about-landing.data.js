@@ -1,14 +1,13 @@
 export const aboutLandingInfo = {
   selfIntro: [
-    'Full-Stack Developer with a great passion for building modern web apps delivering a streamlined and elevated user experience',
-    'Transparency and openness are the two main principles I live by',
-    'Clean code and simplicity are the two pillars I aim to achieve in my projects',
+    'I specialize in building end-to-end solutions that leverage .NET technologies to drive business efficiency and innovation, focusing on creating responsive and intuitive user interfaces by combining .NET with modern JavaScript frameworks for enhanced usability.',
   ],
   inspiringThings: [
-    'Software Engineering that revolve around building highly functional web apps that can scale',
-    'Latest technologies on Github that make it easier to create & maintain web apps',
-    'Various DEV communities that focus on the quality of a software product',
+    'Software Engineering principles that focus on building scalable and highly functional web applications, especially using Clean Architecture and Domain-Driven Design (DDD)',
+    'Latest technologies on GitHub that make it easier to create & maintain web apps',
+    'Various DEV communities that focus on the quality of a software product, best practices',
     'UX works through diverse channels that simplify & enhance user experience',
+    'Currently exploring microservices architecture',
   ],
   jobProfiles: [
     '.NET Web Developer',

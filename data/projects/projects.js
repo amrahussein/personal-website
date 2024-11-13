@@ -132,8 +132,8 @@ const projects = [
     hasCoreFeatDone: true,
     isFeatured: false,
     highlights: {
-      names: [highlights.STRAPI.name],
-      icons: [highlights.STRAPI.icon],
+      names: [],
+      icons: [],
     },
     priority: priorities.NORMAL,
   },
@@ -189,48 +189,14 @@ const projects = [
     isFeatured: false,
     hasCoreFeatDone: false,
     highlights: {
-      names: [highlights.NEST.name],
-      icons: [highlights.NEST.icon],
+      names: [highlights.JAVASCRIPT.name],
+      icons: [highlights.JAVASCRIPT.icon],
     },
     priority: priorities.NORMAL,
   },
 
   {
-    id: 10,
-    url_live: '',
-    url_repo: 'https://github.com/amrahussein/people-chat',
-    name: 'People Chat',
-    description: 'exprimenting with Node.js Socket IO',
-    features: ['Send, Recieve chats', 'Reactive UI', 'More to come'],
-    technologies: ['Node.js', 'React', 'TailwindCSS'],
-    notes: '',
-    isFeatured: false,
-    hasCoreFeatDone: false,
-    highlights: {
-      names: [highlights.NODE.name, highlights.REACT.name],
-      icons: [highlights.NODE.icon, highlights.REACT.icon],
-    },
-    priority: priorities.NORMAL,
-  },
-  {
     id: 11,
-    url_live: '',
-    url_repo: 'https://github.com/amrahussein/elevate-dental-care',
-    name: 'Elevate dental care',
-    description: 'Dynamic landing page',
-    features: null,
-    technologies: ['Sass', 'JavaScript'],
-    notes: '',
-    isFeatured: true,
-    hasCoreFeatDone: false,
-    highlights: {
-      names: [highlights.SASS.name, highlights.JAVASCRIPT.name],
-      icons: [highlights.SASS.icon, highlights.JAVASCRIPT.icon],
-    },
-    priority: priorities.HIGH,
-  },
-  {
-    id: 12,
     url_live: '',
     url_repo: 'https://github.com/mamin98/BookStoreApp',
     name: 'Bookstore App',
@@ -250,13 +216,13 @@ const projects = [
     hasCoreFeatDone: true,
     highlights: {
       names: [
-        highlights.CSHARP.name,
+        highlights['C#'].name,
         highlights.DOTNET.name,
         highlights.ANGULAR.name,
         highlights.TYPESCRIPT.name,
       ],
       icons: [
-        highlights.CSHARP.icon,
+        highlights['C#'].icon,
         highlights.DOTNET.icon,
         highlights.ANGULAR.icon,
         highlights.TYPESCRIPT.icon,
@@ -285,8 +251,8 @@ const projects = [
     isFeatured: true,
     hasCoreFeatDone: true,
     highlights: {
-      names: [highlights.CSHARP.name, highlights.DOTNET.name],
-      icons: [highlights.CSHARP.icon, highlights.DOTNET.icon],
+      names: [highlights['C#'].name, highlights.DOTNET.name],
+      icons: [highlights['C#'].icon, highlights.DOTNET.icon],
     },
     priority: priorities.HIGH,
   },
@@ -306,8 +272,8 @@ const projects = [
     isFeatured: false,
     hasCoreFeatDone: true,
     highlights: {
-      names: [highlights.CSHARP.name, highlights.DOTNET.name],
-      icons: [highlights.CSHARP.icon, highlights.DOTNET.icon],
+      names: [highlights['C#'].name, highlights.DOTNET.name],
+      icons: [highlights['C#'].icon, highlights.DOTNET.icon],
     },
     priority: priorities.NORMAL,
   },
@@ -332,13 +298,13 @@ const projects = [
     hasCoreFeatDone: false,
     highlights: {
       names: [
-        highlights.CSHARP.name,
+        highlights['C#'].name,
         highlights.DOTNET.name,
         highlights.ANGULAR.name,
         highlights.TYPESCRIPT.name,
       ],
       icons: [
-        highlights.CSHARP.icon,
+        highlights['C#'].icon,
         highlights.DOTNET.icon,
         highlights.ANGULAR.icon,
         highlights.TYPESCRIPT.icon,
@@ -395,12 +361,12 @@ const projects = [
     hasCoreFeatDone: false,
     highlights: {
       names: [
-        highlights.CSHARP.name,
+        highlights['C#'].name,
         highlights.DOTNET.name,
         highlights.ANGULAR.name,
       ],
       icons: [
-        highlights.CSHARP.icon,
+        highlights['C#'].icon,
         highlights.DOTNET.icon,
         highlights.ANGULAR.icon,
       ],

@@ -32,6 +32,7 @@ export const technicalSkills = {
     '.NET API',
     '.NET MVC',
     'EF Core',
+    'SignalR',
     'SQL',
     'ExpressJS',
     'NestJS',

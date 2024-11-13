@@ -8,9 +8,9 @@
 
 export default function useProjectHighlights(projects) {
   const highlights = projects
-    // flattens the projects array into a single array of all highlights
-    ?.flatMap((project) => project.highlights);
-
+  // flattens the projects array into a single array of all highlights
+  ?.flatMap((project) => project.highlights);
+  
   const uniqueHighlights = highlights?.reduce((acc, { names, icons }) => {
     names.map((name, i) => {
       if (!acc.find(({ name: hName }) => hName === name)) {

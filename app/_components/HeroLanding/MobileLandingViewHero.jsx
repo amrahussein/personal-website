@@ -53,7 +53,7 @@ export default function MobileLandingViewHero() {
           />
         </section>
 
-        <OpenForWork />
+        {/* <OpenForWork /> */}
 
         <article className='pt-7'>
           <AppHeading styles='text-[1.4rem] sm:text-3xl'>

@@ -26,5 +26,7 @@ export default function ProjectHighlights({
         </li>
       ))}
     </ul>
+
+    
   );
 }

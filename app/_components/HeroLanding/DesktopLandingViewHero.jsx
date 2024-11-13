@@ -46,7 +46,7 @@ export default function DesktopLandingViewHero() {
 
       <Line />
 
-      <OpenForWork />
+      {/* <OpenForWork /> */}
 
       <section className='pt-6'>
         <ShowTechnicalSkills

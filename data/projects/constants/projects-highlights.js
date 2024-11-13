@@ -40,10 +40,6 @@ export const highlights = Object.freeze({
     name: 'Responsive',
     icon: 'ux-wing-icons/project-highlights-icons/grid-layout-horizontal-outline-icon.svg',
   },
-  STRAPI: {
-    name: 'Strapi',
-    icon: '',
-  },
   WEBPACK: {
     name: 'Webpack',
     icon: 'ux-wing-icons/project-highlights-icons/webpack-icon.svg',
@@ -56,16 +52,12 @@ export const highlights = Object.freeze({
     name: 'Next.js',
     icon: 'ux-wing-icons/project-highlights-icons/nextjs-icon.svg',
   },
-  CSHARP: {
+  'C#': {
     name: 'C#',
     icon: 'ux-wing-icons/project-highlights-icons/c-sharp-programming-language-icon.svg',
   },
   TAILWIND: {
     name: 'TailwindCSS',
     icon: 'ux-wing-icons/project-highlights-icons/tailwind-css-icon.svg',
-  },
-  SASS: {
-    name: 'Sass',
-    icon: 'ux-wing-icons/project-highlights-icons/sass-icon.svg',
   },
 });

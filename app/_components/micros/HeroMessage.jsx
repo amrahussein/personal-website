@@ -1,3 +1,5 @@
+import { aboutLandingInfo } from "../../../data/hero-landing/about-landing.data";
+
 export default function HeroMessage() {
   return (
     <p className='pt-4 text-lg'>
@@ -5,9 +7,7 @@ export default function HeroMessage() {
       <strong className='text-secondary opacity-80 dark:text-slate-300'>
         Amr Abdelkamel Hussein
       </strong>
-      <br></br>.. and I&apos;m passionate about developing &amp; designing
-      modern web apps with{' '}
-      <em className='font-mono font-semibold underline'>usability</em> in mind.
+      <br></br>.. and {aboutLandingInfo.selfIntro}
     </p>
   );
 }
