@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch ./dist/.nojekyll && touch ./dist/CNAME && echo \"amrahussein.tech\" >> dist/CNAME",
+    "deploy": "npm run build && mkdir -p docs && rm -rf docs/* && cp -r out/* docs/",
     "format": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {

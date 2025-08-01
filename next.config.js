@@ -1,18 +1,12 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+const isGithubPages = process.env.NODE_ENV === 'production';
+const repoName = 'personal-website';
+
+module.exports = {
   output: 'export',
-  reactStrictMode: true,
-
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
-
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
-
-  // Optional: Change the output directory `out` -> `dist`
-  distDir: 'dist',
+  basePath: isGithubPages ? `/${repoName}` : '',
+  assetPrefix: isGithubPages ? `/${repoName}/` : '',
+  // images: { path: isGithubPages ? `/${repoName}/_next/image` : '/_next/image' }
 };
-
-module.exports = nextConfig;
