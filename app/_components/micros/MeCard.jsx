@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import useIsMobile from '../../../context/IsMobile.context';
+import basePath from '../../utils/basePath';
 
 export default function MeCard({ w = 300, h = 300 }) {
   const { isMobile } = useIsMobile();
@@ -12,11 +13,11 @@ export default function MeCard({ w = 300, h = 300 }) {
         {isMobile ? (
           <img
             className='rounded-full'
-            src={
+            src={`${basePath}${
               mainImg
                 ? '/img/hero-landing/amrologo-mobile.jpg'
                 : '/img/hero-landing/catlogo.jpg'
-            }
+            }`}
             alt={
               mainImg
                 ? 'an image logo-like of Amr Abdelkamel Hussein'
@@ -30,11 +31,11 @@ export default function MeCard({ w = 300, h = 300 }) {
         ) : (
           <img
             className='rounded-full'
-            src={
+            src={`${basePath}${
               mainImg
                 ? '/img/hero-landing/amrologo.jpg'
                 : '/img/hero-landing/catlogo.jpg'
-            }
+            }`}
             alt={
               mainImg
                 ? 'an image logo-like of Amr Abdelkamel Hussein'
