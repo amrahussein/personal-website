@@ -32,6 +32,8 @@ jobs:
 
       - name: Deploy static site to docs folder
         run: npm run deploy
+        env:
+          GITHUB_PAGES_CUSTOM_DOMAIN: true
 
       - name: Preserve CNAME file
         run: |
