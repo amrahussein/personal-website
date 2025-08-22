@@ -33,4 +33,12 @@ jobs:
       - name: Deploy static site to docs folder
         run: npm run deploy
 
+      - name: Preserve CNAME file
+        run: |
+          if [ -f docs/CNAME ]; then
+            echo "CNAME file preserved"
+          else
+            echo "amrahussein.xyz" > docs/CNAME
+          fi
+
     
