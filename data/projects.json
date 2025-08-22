@@ -1,0 +1,176 @@
+[
+  null,
+  {
+    "id": 446502211,
+    "url_live": "https://amromoorie.github.io/apple-varieties/",
+    "url_repo": "https://github.com/amrahussein/apple-varieties",
+    "name": "apple varieties",
+    "description": "Fully responsive site up to XL screens made with Tailwind",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h4>apple varieties</h4>\n<p><em>live preview</em>: <a href=\"https://amromoorie.github.io/apple-varieties/\">https://amromoorie.github.io/apple-varieties/</a></p>\n<p>project originally meant for experimenting with web scraping with puppeteer &amp; cheerio but ended with a nice design work! based on a real article.</p>\n<p><strong>Fully responsive</strong> site upto <em>2xl screens</em> made with Tailwind</p>\n<hr>\n<h4>Project can be run on client directory</h4>\n<p><em>i.e. under app directory</em></p>\n<pre><code class=\"language-JavaScript\">cd app\nyarn &amp;&amp; yarn start\n</code></pre>\n"
+  },
+  {
+    "id": 402956263,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/Article-Sentiment-Analysis",
+    "name": "Article Sentiment Analysis",
+    "description": "A nanodegree project using meaningcloud api for text evaluation",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h2>Evaluate News Article with Natural Language Processing</h2>\n<h3>just practicing with webpack configuration &amp; working with apis</h3>\n<p>This project aims to build a web tool like mainly focusing on web pack &amp; api. The idea of the project is that the user submit a url(article). And with <a href=\"https://www.meaningcloud.com/products/sentiment-analysis\">meaningcloud API</a> can get sentiment and analysis based on the article submitted. The meaningcloud api process the data taken from the user (the url submitted) giving interesting predicted data for example, whether the text including in the url is irony or not. </p>\n<h3>to run the project in dev mode</h3>\n<p><code> $ npm install</code></p>\n<p><code> $ npm run build-dev</code></p>\n<p><code> $ npm run start</code></p>\n<p>** can be run on <code>localhost:8080</code>**</p>\n<h3>to run the project in prod mode</h3>\n<p><code> $ npm install</code></p>\n<p><code> $ npm run build-prod</code></p>\n<p><code> $ npm run start</code></p>\n<p>** can be run on <code>localhost:8081</code> **</p>\n<p>** if you prefer to run on the dev mode and faced an issue you can insert the following code in the browser **</p>\n<p><code>navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })</code></p>\n<h4>you can run jest</h4>\n<p><code>npm test</code></p>\n"
+  },
+  {
+    "id": 446152732,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/Auth-me",
+    "name": "Auth me",
+    "description": "",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<p>Experimenting authentication with NextAuth</p>\n<p>project can be run by:</p>\n<pre><code class=\"language-js\">yarn &amp;&amp; yarn dev\n</code></pre>\n<p><em>note:</em> you may need a vendor provider credentials (auth api) like <a href=\"https://developer.twitter.com/\">twitter</a> to be able to use their authenication service</p>\n"
+  },
+  {
+    "id": 442253586,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/average-world-temperature.VanillaJS",
+    "name": "average world temperature.VanillaJS",
+    "description": "Global weather info from NASA about historical zonal annual means",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>average-world-temperature.VanillaJS</h1>\n<p>Global weather info from NASA about historical zonal annual means</p>\n"
+  },
+  null,
+  null,
+  {
+    "id": 456056420,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/blog",
+    "name": "blog",
+    "description": "experimenting with Sanity",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<p>project orginally developed for exploring strapi as a content first class model..</p>\n<hr>\n<h6>project can be run by</h6>\n<pre><code class=\"language-js\">yarn &amp;&amp; yarn dev\n</code></pre>\n<h4>Technologies</h4>\n<ul>\n<li>React</li>\n<li>NextJS</li>\n<li>Strapi</li>\n<li>Groq</li>\n<li>Tailwindcss</li>\n</ul>\n"
+  },
+  {
+    "id": 653291966,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/book-store-ITI-graduation-project",
+    "name": "book store ITI graduation project",
+    "description": "team project developed using technologies:  C#, .NET API, EF Core, Angular",
+    "isFeatured": false,
+    "priority": "NORMAL",
+    "decodedReadme": "<h2>Welcome to Book-Store app!</h2>\n<hr>\n<h3>Installation</h3>\n<p>EF Core Sql, Tools, Identity</p>\n<h3>Features</h3>\n<p>It&#39;s an app allows users to search and purchase a book online based on title, author and subject. \nUsing this Website the user can purchase a book online instead of going out to a book store and wasting time.</p>\n<p>The user can login using his account details or new customers can set up an account very quickly. </p>\n<p>They should give the details of their username, contact number and shipping address. </p>\n<p>The books are divided into many categories based on subject like Software, Database, English, Architecture etc.</p>\n<p>The Administrator will have additional functionalities when compared to the\ncommon user. \nHe can add, delete and update the book details, book categories,\nmember information and also confirm a placed order.</p>\n<h3>Technologies</h3>\n<p>This application is developed using C#, ASP.NET, Web API, Angular. </p>\n<p>The Master page, data sets, user controls are used to develop the Online Book store. </p>\n<hr>\n"
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+    "id": 439690471,
+    "url_live": "https://amromoorie.github.io/Fido/",
+    "url_repo": "https://github.com/amrahussein/Fido",
+    "name": "Fido",
+    "description": "experimenting with router pagination. React with awesome dogs photos",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>fido</h1>\n<p><em>preview</em> \n    <a href=\"https://amromoorie.github.io/Fido/\">https://amromoorie.github.io/Fido/</a></p>\n<p>fido is a collection of dogs images using the dog api; the aim  for this project is to experiment with pagination &amp; modern redux toolkit</p>\n<ul>\n<li>pagination to different pages; enables users to specify a limit per page</li>\n</ul>\n<hr>\n<h4>technologies:</h4>\n<ul>\n<li>React, Redux, TailwindCSS</li>\n</ul>\n<hr>\n<h2>project can be run by:</h2>\n<pre><code class=\"language-js\">yarn &amp;&amp; yarn dev\n</code></pre>\n<p>or</p>\n<pre><code class=\"language-js\">npm install &amp;&amp; npm dev\n</code></pre>\n"
+  },
+  null,
+  null,
+  null,
+  {
+    "id": 315127781,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/landing_page--nanodegree",
+    "name": "landing_page  nanodegree",
+    "description": "No description available",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>landing_page--nanodegree</h1>\n<p>Fulfilling first Udacity Nanodegree in Frontend (FWD scholarship). The idea of the project is to have a flexible web page with dynamic navigation lists. When adding a new section, navigation get update containing newly list item generated dynamically by the help of data-nav attribute. The dynamic navigation has been made possible by the Intersection Observer Api which is good for web performance compared to the traditional getBoundingClientRect.</p>\n"
+  },
+  {
+    "id": 328963642,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/locate-me",
+    "name": "locate me",
+    "description": "Working with APIs hands on. It's a micro project on plotting a chosen location on a map",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>pin-point-a-location</h1>\n<ul>\n<li>working with APIs hands on </li>\n<li>how the server is connected to the client &amp; routing  using express lib</li>\n</ul>\n<p><em>It&#39;s a micro project on plotting a chosen location on a map as a part of CodingTrain <a href=\"https://github.com/CodingTrain/Intro-to-Data-APIs-JS\">course</a></em></p>\n"
+  },
+  {
+    "id": 583653810,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/my-starter",
+    "name": "my starter",
+    "description": "SPA app that provides a collection of useful tools and features for everyday use (Group Project)",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h2>Welcome to My Starter app!</h2>\n<hr>\n<h3>Installation &amp; Running</h3>\n<pre><code class=\"language-js\">npm install\nnpm run dev\n</code></pre>\n<h3>Features</h3>\n<p>It&#39;s a SPA app using JavaScript meant for a simple applet targetting those who want a quick starter on his/her day. It&#39;s a type of app that can be converted into a future web extension with possible reprioritization of these features.</p>\n<p>My Starter is a web app that provides a collection of useful tools and features for everyday use. The app includes the following features: Weather applet, Unit converter, Todo list, Password generator, Calculator.</p>\n<p>Whether you need to quickly check the weather, convert units, or keep track of your tasks, My Starter has you covered.</p>\n<p>If you have any feedback or suggestions for improvement, please don&#39;t hesitate to let us know.</p>\n<p>The app is on early developing and it can be converted into a framework after deciding on the suitable features</p>\n<hr>\n<h2>File Structure</h2>\n<p>Here&#39;s an overview of the main folders and files:</p>\n<ul>\n<li><p><strong>src</strong></p>\n<ul>\n<li><strong>router</strong></li>\n<li><strong>page-loader</strong></li>\n<li><strong>features</strong></li>\n<li><strong>sass</strong></li>\n<li><strong>util</strong></li>\n<li><strong>landing</strong>: <code>landing page</code></li>\n</ul>\n</li>\n<li><p><strong>index.js</strong>: <code>The entry point of the application</code></p>\n</li>\n<li><p><strong>index.html</strong>: <code>The main HTML file that serves as the template for the application</code></p>\n</li>\n</ul>\n<hr>\n<h3>Contributors</h3>\n<a href=\"https://github.com/amromoorie/my-starter/graphs/contributors\">\n  <img src=\"https://contrib.rocks/image?repo=amromoorie/my-starter\" />\n</a>\n\n<p>Made with <a href=\"https://contrib.rocks\">contrib.rocks</a>.</p>\n<h3>License</h3>\n<p><a href=\"https://choosealicense.com/licenses/mit/\">MIT</a></p>\n"
+  },
+  {
+    "id": 419558448,
+    "url_live": "https://amrahussein.xyz",
+    "url_repo": "https://github.com/amrahussein/personal-website",
+    "name": "personal website",
+    "description": "Hello World!",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<p>a personal site introducing a bit about myself. Let&#39;s connect &amp; grow together!</p>\n"
+  },
+  null,
+  {
+    "id": 653291417,
+    "url_live": "",
+    "url_repo": "https://github.com/amrahussein/restaurant-ITI-team-project",
+    "name": "restaurant ITI team project",
+    "description": "team project developed using technologies: .NET MVC, C#, EF Core",
+    "isFeatured": false,
+    "priority": "NORMAL",
+    "decodedReadme": "<h1>Restaurant</h1>\n<p>This repository contains the source code for the Restaurant project, a web application aimed at helping users discover and explore different restaurants.</p>\n<h2>Table of Contents</h2>\n<ul>\n<li><a href=\"#introduction\">Introduction</a></li>\n<li><a href=\"#features\">Features</a></li>\n<li><a href=\"#technologies\">Technologies</a></li>\n<li><a href=\"#installation\">Installation</a></li>\n<li><a href=\"#usage\">Usage</a></li>\n<li><a href=\"#contributing\">Contributing</a></li>\n<li><a href=\"#license\">License</a></li>\n</ul>\n<h2>Introduction</h2>\n<p>The Restaurant project is an ASP .Net Core MVC web application designed to provide a comprehensive online store solution with core features and robust administrative capabilities. The application allows for seamless creation, reading, updating, and deletion operations, making it an ideal choice for businesses seeking a powerful and scalable online platform. With its intuitive interface and robust functionality, Restaurant is an excellent choice for businesses seeking to establish a professional and reliable online presence.</p>\n<h2>Features</h2>\n<ul>\n<li>Browse and search for products using Search bar.</li>\n<li>View detailed information about each restaurant, including contact details, operating hours, and menu options.</li>\n<li>Add item to the shopping cart &amp; place order.</li>\n<li>User-friendly interface with an intuitive design for a seamless browsing experience.</li>\n</ul>\n<h2>Technologies</h2>\n<p>The Restaurant project utilizes the following technologies:</p>\n<ul>\n<li>Frontend: HTML5, CSS3, JavaScript</li>\n<li>Backend: ASP.NET Core MVC, C#, Entity Framework Core</li>\n<li>Database: Microsoft SQL Server</li>\n</ul>\n<h2>Installation</h2>\n<p>To run the Restaurant project locally, please ensure you have the following prerequisites installed:</p>\n<ul>\n<li>.NET Core SDK</li>\n<li>SQL Server</li>\n</ul>\n<p>Follow these steps to set up the project:</p>\n<ol>\n<li>Clone the repository: <code>git clone https://github.com/KareemEL-Dessouky/Restaurant.git</code></li>\n<li>Navigate to the project directory: <code>cd Restaurant</code></li>\n<li>Install frontend dependencies: <code>npm install</code></li>\n<li>Install backend dependencies: <code>dotnet restore</code></li>\n<li>Configure the database connection in the appsettings.json file.</li>\n<li>Apply database migrations: <code>dotnet ef database update</code></li>\n<li>Build and run the project: <code>dotnet run</code></li>\n</ol>\n"
+  },
+  {
+    "id": 454943465,
+    "url_live": "https://amromoorie.github.io/Rick-and-Morty_Try-Graphql/",
+    "url_repo": "https://github.com/amrahussein/Rick-and-Morty_Try-Graphql",
+    "name": "Rick and Morty_Try Graphql",
+    "description": "simple project to experiment with graphql made using the Rick and Morty Api",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>Rick-and-Morty_Try-Graphql</h1>\n<p><em>preview</em> \n <a href=\"https://amromoorie.github.io/Rick-and-Morty_Try-Graphql/\">https://amromoorie.github.io/Rick-and-Morty_Try-Graphql/</a></p>\n<p>simple project to experiment with graphql made using the <a href=\"https://rickandmortyapi.com/\">Rick and Morty Api</a></p>\n<p><strong>project made with React &amp; Tailwind for smooth development</strong></p>\n<ul>\n<li>know basic Rick and Morty related info by navigating the gallery</li>\n<li>each character in the gallery has the info that can be shown when clicked</li>\n</ul>\n<hr>\n<h4>technologies:</h4>\n<ul>\n<li>React</li>\n<li>Graphql</li>\n<li>Tailwind</li>\n</ul>\n<hr>\n<h2>project can be run by:</h2>\n<pre><code class=\"language-JavaScript\">yarn &amp;&amp; yarn start\n</code></pre>\n<p>or</p>\n<pre><code class=\"language-JavaScript\">npm install &amp;&amp; npm start\n</code></pre>\n"
+  },
+  {
+    "id": 764950218,
+    "url_live": " https://amrakhussein.github.io/street-suite/",
+    "url_repo": "https://github.com/amrahussein/street-suite",
+    "name": "street suite",
+    "description": "No description available",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>Street Suite</h1>\n<p><em>preview</em> \n    <a href=\"https://amrakhussein.github.io/street-suite/\">https://amrakhussein.github.io/street-suite/</a></p>\n<p>Street Suite is a comprehensive platform that offers a range of training programs, trading solutions, alerts, and automation tools</p>\n<hr>\n<h4>technologies:</h4>\n<ul>\n<li>React, TailwindCSS</li>\n</ul>\n<hr>\n<h2>project can be run by:</h2>\n<pre><code class=\"language-js\">npm i &amp;&amp; npm run start\n</code></pre>\n"
+  },
+  {
+    "id": 486756083,
+    "url_live": "https://amromoorie.github.io/taskify-mantine/",
+    "url_repo": "https://github.com/amrahussein/taskify-mantine",
+    "name": "taskify mantine",
+    "description": "a todo app with react; exploring mantine styling lib",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<h1>taskify</h1>\n<p><em>preview</em> \n    <a href=\"https://amromoorie.github.io/taskify-mantine/\">https://amromoorie.github.io/taskify-mantine/</a></p>\n<p>a todo app to experiment with mantine styling lib</p>\n<ul>\n<li>add, delete, mark complete, filter out completed &amp; show total number of todos</li>\n<li>todos has titles with content</li>\n<li>each todo can be expanded for full view</li>\n<li>data saved in browser local storage</li>\n</ul>\n<hr>\n<h4>technologies:</h4>\n<ul>\n<li>TypeScript</li>\n<li>React</li>\n<li>Mantine</li>\n<li>react-hook-form</li>\n</ul>\n<hr>\n<h2>project can be run by:</h2>\n<pre><code class=\"language-ts\">yarn &amp;&amp; yarn dev\n</code></pre>\n<p>or</p>\n<pre><code class=\"language-ts\">npm install &amp;&amp; npm dev\n</code></pre>\n"
+  },
+  {
+    "id": 402958360,
+    "url_live": "https://amromoorie.github.io/Taskify-MUI/",
+    "url_repo": "https://github.com/amrahussein/Taskify-MUI",
+    "name": "Taskify MUI",
+    "description": "Simple todo app using react hooks with data persistent upon page reload (F5) using local storage..",
+    "isFeatured": false,
+    "priority": "LOW",
+    "decodedReadme": "<p><em>live preview</em> \n<a href=\"https://amromoorie.github.io/Taskify-MUI/\">https://amromoorie.github.io/Taskify-MUI/</a></p>\n<p>Simple todo app using react hooks with data persistent upon page reload (F5) using local storage..</p>\n<p>See developed &amp; enhanced version of the app in this repo: <a href=\"https://github.com/amromoorie/taskify-mantine\">https://github.com/amromoorie/taskify-mantine</a></p>\n<h4>App features::</h4>\n<ul>\n<li>add</li>\n<li>delete</li>\n<li>mark complete</li>\n<li>show total number of todos</li>\n<li>filter out completed todos/tasks..</li>\n</ul>\n<hr>\n<h5>project can be run locally:</h5>\n<pre><code class=\"language-js\">$ yarn &amp;&amp; yarn start\n</code></pre>\n"
+  }
+]

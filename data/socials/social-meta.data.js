@@ -10,14 +10,14 @@ export const socials = [
   {
     id: 1,
     name: 'Twitter',
-    link: 'https://twitter.com/amrahussein',
+    link: 'https://twitter.com/amrahussein3',
     icon: <FontAwesomeIcon size='2x' icon={faTwitter} />,
     ariaLabel: 'Link to Twitter profile page',
   },
   {
     id: 2,
     name: 'Instagram',
-    link: 'https://instagram.com/amrahussein',
+    link: 'https://instagram.com/amrahussein3',
     icon: <FontAwesomeIcon size='2x' icon={faInstagram} />,
     ariaLabel: 'Link to Instagram profile page',
   },

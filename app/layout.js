@@ -5,7 +5,7 @@ import { BottomNavProvider } from '../providers/ShouldDisplayBottomNav.provider'
 import { ThemeProvider } from '../providers/ThemingMode.provider';
 
 export const metadata = {
-  title: "amrakhussein | Let's connect!",
+  title: "amrahussein | Let's connect!",
   description: "Passionate about web development. Let's get connected!",
   authors: [{ name: 'Amr Abdelkamel Hussein' }],
   manifest: '/site.webmanifest',

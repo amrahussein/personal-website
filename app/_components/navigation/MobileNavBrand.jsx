@@ -10,7 +10,7 @@ export default function MobileNavBrand({ paneOpened = false }) {
             paneOpened ? 'text-cool' : 'text-primary dark:text-important'
           }`}
         >
-          akhussein
+          ahussein
         </span>
       </Link>
     </h1>
