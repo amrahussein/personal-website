@@ -54,10 +54,9 @@ export default function MeCard({ w = 300, h = 300 }) {
         <div className='flex flex-col items-center justify-center py-6 text-gray-500 lg:py-8 '>
           <h1 className='md:textd-lg sm:text-md pb-3 text-sm font-extrabold leading-3'>
             <Link
-              aria-label='twitter'
+              aria-label=''
               target='_blank'
-              href='https://twitter.com/amrahussein'
-              rel='twitter'
+              rel=''
             >
               <span className='text-primary hover:text-secondary dark:text-important dark:hover:text-primary'>
                 @

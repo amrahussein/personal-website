@@ -35,7 +35,7 @@ export default function Blog() {
 
             <h2 className='mx-11 mt-11 pt-20 text-center text-3xl text-primary'>
               you can reach me at twitter:
-              <AppLink rel='twitter' href='https://twitter.com/amrahussein'>
+              <AppLink rel='twitter' href='https://twitter.com/amrahussein3'>
                 {' '}
                 <span>@amrahussein</span>
               </AppLink>
